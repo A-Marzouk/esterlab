@@ -464,6 +464,13 @@ h1, h2, h3, h4, h5,
   background-size: cover;
 }
 
+@media (max-width: 340px) {
+  .hideOnPhone{
+    display: none;
+  }
+}
+
+
 .cover-math-modeling{
   background-image: url('/images/cover-1.jpg');
   background-repeat: no-repeat;
