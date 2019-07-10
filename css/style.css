@@ -1229,5 +1229,6 @@ h1, h2, h3, h4, h5,
     padding-top: 30px;
   }
 }
-
-/*.slick-list{padding:0 0 0 10%;}*/
+*:focus {
+  outline: none;
+}
