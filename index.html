@@ -328,7 +328,7 @@
                     <img src="images/R-4.png" alt="Image" class="" style="width: 250px; height: 250px;">
                   </div>
                   <div style="margin-top: 30px;">
-                    <h2 class="h4"><a href="#" class="text-black">Math modeling</a></h2>
+                    <h2 class="h4">Math modeling</h2>
                     <span class="d-block text-secondary mb-4">Solving mechanical problems</span>
                     <p>
                       Structural strength is a mandatory requirement when designing products. In any industry,
@@ -539,25 +539,9 @@
 
   <script>
     $(document).ready(function(){
-      $('.center').slick({
-        centerMode: true,
-        dots: true,
-        arrows: true,
-        centerPadding: '60px',
-        slidesToShow: 3,
-        responsive: [
-          {
-            breakpoint: 480,
-            settings: {
-              arrows: false,
-              centerPadding: '340px',
-              slidesToShow: 1
-            }
-          }
-        ]
-      });
+      let certificatesSlider = $('.multiple-items');
 
-      $('.multiple-items').slick({
+      certificatesSlider.slick({
         centerMode: false,
         arrows:false,
         dots: true,
@@ -575,6 +559,7 @@
         ]
       });
 
+      certificatesSlider.show();
 
     });
 
