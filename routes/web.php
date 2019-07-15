@@ -11,6 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
+
+Route::get('/','HomeController@index');
+Route::get('/green-energy','HomeController@showGreenEnergyPage');
+Route::get('/electric-bus','HomeController@showElectricBusPage');
+Route::get('/math-modeling','HomeController@showMathModelingPage');
