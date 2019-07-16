@@ -10,10 +10,13 @@
         <div class="row align-items-center justify-content-center">
           <div class="col-md-12 col-lg-7 text-center">
             <h1 class="padding-on-phone">ESTERLAB</h1>
-            <p>A fast growing research &amp; developing company with a
-              professional team who is smartly developing your ideas
-              from <span class="hideOnPhone">up to prototype in the world of mechanisms</span>.</p>
-            <p><a href="#contact-section" class="btn btn-white-outline border-w-2 btn-md">Get in touch</a></p>
+            <p>
+              @lang('index/slide.main_text_part1')
+              <span class="hideOnPhone">
+                 @lang('index/slide.main_text_part2')
+              </span>.
+            </p>
+            <p><a href="#contact-section" class="btn btn-white-outline border-w-2 btn-md"> @lang('index/slide.btn_text')</a></p>
           </div>
         </div>
       </div>
@@ -24,7 +27,7 @@
       <div class="container">
         <div class="row align-items-center justify-content-center">
           <div class="col-md-12 col-lg-7 text-center">
-            <h1>We will refund the paid funds if you are not satisfied!</h1>
+            <h1> @lang('index/slide.slide2_main_text')</h1>
           </div>
         </div>
       </div>
