@@ -239,7 +239,7 @@
             <img src="images/R-4.png" alt="Image" class="" style="width: 250px; height: 250px;">
           </div>
           <div style="margin-top: 30px;">
-            <h2 class="h4 text-blackt">Math modeling</h2>
+            <h2 class="h4 text-black">Math modeling</h2>
             <span class="d-block text-secondary mb-4">Solving mechanical problems</span>
             <p>
               Structural strength is a mandatory requirement when designing products. In any industry,
