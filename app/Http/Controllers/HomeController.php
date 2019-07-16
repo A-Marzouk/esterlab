@@ -7,11 +7,12 @@
  */
 
 namespace App\Http\Controllers;
-
+use Illuminate\Support\Facades\App;
 
 class HomeController extends Controller
 {
-    public function index(){
+    public function index($lang = 'en'){
+        App::setlocale($lang);
         return view('index');
     }
 
