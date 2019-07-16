@@ -10,11 +10,11 @@
         <div class="row align-items-center justify-content-center">
           <div class="col-md-12 col-lg-7 text-center">
             <h1 class="padding-on-phone">ESTERLAB</h1>
-            <p>
+            <p class="small-line-height-phone">
               @lang('index/slide.main_text_part1')
               <span class="hideOnPhone">
                  @lang('index/slide.main_text_part2')
-              </span>.
+              </span>
             </p>
             <p><a href="#contact-section" class="btn btn-white-outline border-w-2 btn-md"> @lang('index/slide.btn_text')</a></p>
           </div>
