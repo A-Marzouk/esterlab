@@ -70,7 +70,7 @@
       <div class="row">
         <div class="col-12 text-center">
           <div class="block-heading-1">
-            <h2>Applications which our specialists are using</h2>
+            <h2>@lang('index/section1.applications_header')</h2>
           </div>
         </div>
       </div>
@@ -112,10 +112,13 @@
           <img src="images/design-thinking-min.jpg" alt="" style="width: 100%">
         </div>
         <div class="col-lg-5 ml-auto">
-          <h2 class="text-primary mb-4">Welcome to ESTERLAB</h2>
-          <p>A fast growing research & developing company with a professional team who is smartly developing your ideas from scratch up to prototype in the world of mechanisms.
+          <h2 class="text-primary mb-4">@lang('index/section1.welcome_message')</h2>
+          <p>
+            @lang('index/section1.description1')
           </p>
-          <p>Our success is based on find the optimal solution with high quality & cost effectively results which meet the consumer needs.</p>
+          <p>
+            @lang('index/section1.description1')
+          </p>
 
         </div>
       </div>
@@ -123,30 +126,30 @@
         <div class="col-md-6 mb-4 col-lg-0 col-lg-3">
           <div class="block-counter-1">
             <span class="number"><span data-number="46">0</span></span>
-            <span class="caption">Years of Experience</span><br/>
-            <span class="caption"> in designing in the areas of mechanical engineering & material science</span>
+            <span class="caption">@lang('index/section2.years_of_exp')</span><br/>
+            <span class="caption"> @lang('index/section2.desc1')</span>
           </div>
         </div>
         <div class="col-md-6 mb-4 col-lg-0 col-lg-3">
           <div class="block-counter-1">
             <span class="number">3</span>
-            <span class="caption">Years of Experience</span><br/>
-            <span class="caption">designing details made from polymer composite materials</span>
+            <span class="caption">@lang('index/section2.years_of_exp2')</span><br/>
+            <span class="caption">@lang('index/section2.desc2')</span>
           </div>
         </div>
         <div class="col-md-6 mb-4 col-lg-0 col-lg-3">
           <div class="block-counter-1">
             <span class="number">2</span>
-            <span class="caption">Years of Experience</span><br/>
+            <span class="caption">@lang('index/section2.years_of_exp2')</span><br/>
             <span class="caption">
-                 in developing novel composite material based on rubber with nanoparticles as filler
+                @lang('index/section2.desc3')
               </span>
           </div>
         </div>
         <div class="col-md-6 mb-4 col-lg-0 col-lg-3">
           <div class="block-counter-1">
             <span class="number"><span data-number="35 ">0</span></span>
-            <span class="caption">Open source published papers</span>
+            <span class="caption">@lang('index/section2.desc4')</span>
           </div>
         </div>
       </div>
@@ -158,28 +161,28 @@
       <div class="row mb-5">
         <div class="col-12">
           <div class="block-heading-1 text-center">
-            <h2>Our concept of development</h2>
+            <h2>@lang('index/section3.concept_of_dev_head')</h2>
           </div>
         </div>
       </div>
       <div class="row">
         <div class="col-md-6 col-lg-3 mb-4">
           <span class="icon-find_in_page d-block mb-3 display-3 text-secondary"></span>
-          <h3 class="text-primary h4 mb-2">Scientific research</h3>
+          <h3 class="text-primary h4 mb-2">@lang('index/section3.scientific_research')</h3>
           <p>
             Our team is analyzing market to offer you the best solution
           </p>
         </div>
         <div class="col-md-6 col-lg-3 mb-4">
           <span class="icon-brush d-block mb-3 display-3 text-secondary"></span>
-          <h3 class="text-primary h4 mb-2">Design</h3>
+          <h3 class="text-primary h4 mb-2">@lang('index/section3.design')</h3>
           <p>
             we're finding the optimal solution which meets your needs.
           </p>
         </div>
         <div class="col-md-6 col-lg-3 mb-4">
           <span class="icon-developer_board d-block mb-3 display-3 text-secondary"></span>
-          <h3 class="text-primary h4 mb-2">Production development </h3>
+          <h3 class="text-primary h4 mb-2">@lang('index/section3.production_dev')</h3>
           <p>
             our specialists are turning your idea into reality
           </p>
@@ -187,7 +190,7 @@
 
         <div class="col-md-6 col-lg-3 mb-4">
           <span class="icon-extension d-block mb-3 display-3 text-secondary"></span>
-          <h3 class="text-primary h4 mb-2">Prototype</h3>
+          <h3 class="text-primary h4 mb-2">@lang('index/section3.proto')</h3>
           <p>
             Esterlab is working on your idea till getting sample for testing
           </p>
