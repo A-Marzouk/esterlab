@@ -83,7 +83,6 @@
 
                     <ul class="site-menu main-menu js-clone-nav ml-auto d-none d-lg-block">
                         <li><a href="#home-section" class="nav-link">@lang('navbar.home')</a></li>
-                        <li><a href="#investors-section" class="nav-link">@lang('navbar.technologies')</a></li>
                         <li><a href="#about-section" class="nav-link">@lang('navbar.about')</a></li>
                         <li><a href="#services-section" class="nav-link">@lang('navbar.development_concept')</a></li>
                         <li><a href="#projects-section" class="nav-link">@lang('navbar.our_solutions')</a></li>
@@ -123,13 +122,12 @@
                         <div class="col-md-4 ml-auto">
                             <h2 class="footer-heading mb-4">Quick links</h2>
                             <ul class="list-unstyled">
-                                <li><a href="#home-section" class="nav-link">Home</a></li>
-                                <li><a href="#investors-section" class="nav-link">Technologies</a></li>
-                                <li><a href="#about-section" class="nav-link">About</a></li>
-                                <li><a href="#services-section" class="nav-link">Development concept</a></li>
-                                <li><a href="#projects-section" class="nav-link">Our solutions</a></li>
-                                <li><a href="#certificates" class="nav-link">Certificates</a></li>
-                                <li><a href="#contact-section" class="nav-link">Contact</a></li>
+                                <li><a href="#home-section" class="nav-link">@lang('navbar.home')</a></li>
+                                <li><a href="#about-section" class="nav-link">@lang('navbar.about')</a></li>
+                                <li><a href="#services-section" class="nav-link">@lang('navbar.development_concept')</a></li>
+                                <li><a href="#projects-section" class="nav-link">@lang('navbar.our_solutions')</a></li>
+                                <li><a href="#certificates" class="nav-link">@lang('navbar.certificates')</a></li>
+                                <li><a href="#contact-section" class="nav-link">@lang('navbar.contact')</a></li>
                             </ul>
                         </div>
 
