@@ -291,7 +291,6 @@
           <img src="images/certificates/4.jpg" alt="" style="width: 250px; height: 300px;">
           <div class="certificate-title">
             Intellectual Property Registration Certificate
-
           </div>
         </a>
 

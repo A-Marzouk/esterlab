@@ -233,11 +233,19 @@
             slidesToScroll: 1,
             responsive: [
                 {
-                    breakpoint: 480,
+                    breakpoint: 768,
                     settings: {
                         arrows: false,
                         slidesToShow: 1,
                         slidesToScroll: 1,
+                    }
+                },
+                {
+                    breakpoint: 991,
+                    settings: {
+                        arrows: false,
+                        slidesToShow: 2,
+                        slidesToScroll: 2,
                     }
                 }
             ]
