@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="css/jquery-ui.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
     <link rel="stylesheet" href="css/bootstrap-datepicker.css">
     <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
@@ -66,7 +67,6 @@
         <div class="site-mobile-menu-body"></div>
     </div>
 
-
     <header class="site-navbar js-sticky-header site-navbar-target" role="banner">
 
         <div class="container">
@@ -82,12 +82,21 @@
                 <nav class="site-navigation text-center ml-auto" role="navigation">
 
                     <ul class="site-menu main-menu js-clone-nav ml-auto d-none d-lg-block">
-                        <li><a href="#home-section" class="nav-link">@lang('navbar.home')</a></li>
-                        <li><a href="#about-section" class="nav-link">@lang('navbar.about')</a></li>
-                        <li><a href="#services-section" class="nav-link">@lang('navbar.development_concept')</a></li>
-                        <li><a href="#projects-section" class="nav-link">@lang('navbar.our_solutions')</a></li>
-                        <li><a href="#certificates" class="nav-link">@lang('navbar.certificates')</a></li>
-                        <li><a href="#contact-section" class="nav-link">@lang('navbar.contact')</a></li>
+                        <li>
+                            <a @if(isset($view))href="#home-section" @else href="/#home-section" @endif class="nav-link">@lang('navbar.home')</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                @lang('navbar.about')
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a style="color: black!important;" @if(isset($view))href="#certificates" @else href="/#certificates" @endif class="dropdown-item">@lang('navbar.certificates')</a>
+                                <a class="dropdown-item" href="#" style="color: black!important;" >@lang('navbar.scientific_publications')</a>
+                            </div>
+                        </li>
+                        <li><a @if(isset($view))href="#services-section" @else href="/#services-section" @endif  class="nav-link">@lang('navbar.development_concept')</a></li>
+                        <li><a @if(isset($view))href="#projects-section" @else href="/#projects-section" @endif class="nav-link">@lang('navbar.our_solutions')</a></li>
+                        <li><a  @if(isset($view))href="#services" @else href="/#services" @endif class="nav-link">@lang('navbar.services')</a></li>
                     </ul>
                 </nav>
 
@@ -114,20 +123,26 @@
                 <div class="col-md-6">
                     <div class="row">
                         <div class="col-md-8">
-                            <h2 class="footer-heading mb-4">About Us</h2>
-                            <p >A fast growing research & developing company with a professional team who is smartly developing your ideas from scratch up to prototype in the world of mechanisms.
-                                <br/>
-                                Our success is based on find the optimal solution with high quality & cost effectively results which meet the consumer needs.</p>
+                            <h2 class="footer-heading mb-4">@lang('navbar.about')</h2>
+                            <p>
+                                @lang('footer.about_us_explain')
+                            </p>
                         </div>
                         <div class="col-md-4 ml-auto">
-                            <h2 class="footer-heading mb-4">Quick links</h2>
+                            <h2 class="footer-heading mb-4">@lang('footer.quick_links')</h2>
                             <ul class="list-unstyled">
-                                <li><a href="#home-section" class="nav-link">@lang('navbar.home')</a></li>
+                                <li>
+                                    <a @if(isset($view))href="#home-section" @else href="/#home-section" @endif class="nav-link">@lang('navbar.home')</a>
+                                </li>
                                 <li><a href="#about-section" class="nav-link">@lang('navbar.about')</a></li>
-                                <li><a href="#services-section" class="nav-link">@lang('navbar.development_concept')</a></li>
-                                <li><a href="#projects-section" class="nav-link">@lang('navbar.our_solutions')</a></li>
-                                <li><a href="#certificates" class="nav-link">@lang('navbar.certificates')</a></li>
+                                <li>
+                                    <a  @if(isset($view))href="#certificates" @else href="/#certificates" @endif  class="nav-link">@lang('navbar.certificates')</a>
+                                </li>
                                 <li><a href="#contact-section" class="nav-link">@lang('navbar.contact')</a></li>
+                                <li><a @if(isset($view))href="#services-section" @else href="/#services-section" @endif  class="nav-link">@lang('navbar.development_concept')</a></li>
+                                <li><a @if(isset($view))href="#projects-section" @else href="/#projects-section" @endif class="nav-link">@lang('navbar.our_solutions')</a></li>
+                                <li><a  @if(isset($view))href="#services" @else href="/#services" @endif class="nav-link">@lang('navbar.services')</a></li>
+
                             </ul>
                         </div>
 
@@ -138,7 +153,7 @@
                     <div class="mb-5">
                         <div class="mb-5">
                             <h2 class="footer-heading mb-4">ESTERLAB</h2>
-                            <p>We will refund the paid funds if you are not satisfied!</p>
+                            <p>@lang('index/slide.slide2_main_text')</p>
                         </div>
                     </div>
                 </div>
@@ -204,6 +219,9 @@
         </div>
     </div>
 
+    <a id="button" href="javascript:void(0)"></a>
+
+
 </div>
 
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
@@ -252,6 +270,24 @@
         });
 
         certificatesSlider.show();
+
+        $('#button').on('click' , function () {
+            $('html, body').stop().animate( {
+                'scrollTop': 395
+            }, 900, 'swing',function () {});
+        });
+
+        // back to top button :
+
+        $(window).scroll(function() {
+            console.log($(window).scrollTop());
+            if ($(window).scrollTop() > 1000) {
+                $('#button').addClass('show');
+            } else {
+                $('#button').removeClass('show');
+            }
+        });
+
 
     });
 
