@@ -3,12 +3,11 @@
 // Russian
 
 return [
-    'years_of_exp' => 'Лет опыта',
-    'years_of_exp2' => 'Года опыта',
-    'desc1' => 'В проектировании в области машиностроения и материаловедения',
-    'desc2' => 'Разработки деталей из полимерных композиционных материалов',
-    'desc3' => 'Разработки нового композиционного материала на основе
-каучука с наночастицами в качестве наполнителя',
-    'desc4' => 'Опубликованных работ с открытым исходным кодом',
+    'years_of_exp' => 'järige Erfahrung',
+    'years_of_exp2' => 'järige Erfahrung',
+    'desc1' => 'In der Konstruktionstechnik im Bereich von Maschinenbau und Materialwissenschaft',
+    'desc2' => 'In der Entwicklung von Bauteilen aus polymeren Materialkomposites',
+    'desc3' => 'In der Entwicklung eines neuen Verbundwerkstoffes auf Kautschukbasis mit Nanopartikeln als Füllstoff',
+    'desc4' => 'veröffentlichte Artikel mit geöffnetem Sourcekode',
 ];
 

@@ -3,12 +3,14 @@
 // Russian
 
     return [
-        'home' => 'Главная',
+        'home' => 'Startseite',
         'technologies' => 'Программы',
-        'about' => 'ОНас',
-        'development_concept' => 'Подход к разработкам',
-        'our_solutions' => 'Наши решения',
-        'certificates' => 'Сертификаты',
-        'contact' => 'Контакты',
+        'about' => 'Über uns',
+        'development_concept' => 'Entwicklungsansatz',
+        'our_solutions' => 'Unsere Lösungen',
+        'certificates' => 'Zertifikate',
+        'contact' => 'Kontaktdaten',
+        'scientific_publications' => 'wissenschaftliche Veröffentlichungen',
+        'services' => 'Dienstleistungen',
     ];
 
