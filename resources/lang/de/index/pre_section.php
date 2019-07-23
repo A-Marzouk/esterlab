@@ -4,13 +4,13 @@
 
 
 return [
-   'smart_solutions' => 'Умные решения',
-   'scientific_research' => 'Научные исследования',
-   'cost_effective' => 'Рентабельность',
+   'smart_solutions' => 'Smarte Lösungen',
+   'scientific_research' => 'Wissenschaftliche Forschung',
+   'cost_effective' => 'Rentabilität',
 
-   'smart_solutions_explain' => 'Нашей главной задачей является разработка интеллектуальных решений, чтобы сделать жизнь более безопасной и более комфортной для будущих пользователей многофункциональных механических приложений.',
-   'scientific_research_explain' => 'Это главная опора нашей идеологии. Наши разработки должны идти в ногу с научными тенденциями.',
-   'cost_effective_explain' => 'Недостаточно решить вашу техническую проблему. Мы талантливы в подборе идеального решения экономически эффективным способом.',
+   'smart_solutions_explain' => 'Unsere Hauptaufgabe ist die Entwicklung der intellektuellen Lösungen, die das Leben für die künftigen Nutzer von multifunktionalen Anwendungen sicherer und komfortabler machen.',
+    'scientific_research_explain' => 'Das ist der Hauptanhalt unserer Ideologie. Unsere Entwicklungen müssen mit den wissenschaftlichen Trends Schritt halten.',
+   'cost_effective_explain' => 'Es reicht nicht aus,  Ihr technisches Problem zu lösen. Wir haben das Talent, auf kostengünstige Weise die perfekte Lösung zu finden.',
 ];
 
 

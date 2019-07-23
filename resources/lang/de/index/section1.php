@@ -4,13 +4,9 @@
 
 
 return [
-    'applications_header' => 'Программы, используемые нашими специалистами',
-    'welcome_message' => 'Д.пожаловать в ESTERLAB',
-    'description1' => 'Быстрорастущая и развивающаяся исследовательская компания с
-профессиональной командой, которая разумно разработает ваши идеи с нуля
-до прототипа.',
-    'description2' => 'Наш успех основан на поиске оптимального решения в сочетании с высоким
-качеством и экономически эффективными результатами, отвечающие
-запросам потребителей.',
+    'applications_header' => 'Programme, die unsere Experten anwenden',
+    'welcome_message' => 'Herzlich Willkommen in ESTERLAB',
+    'description1' => 'ESTERLAB ist ein schnell anwachsendes und entwickelndes Forschungsunternehmen mit dem professionellen Team, das Ihre Ideen nach bestem Wissen und Gewissen von Grund auf bis zum Prototyp ausarbeitet.',
+    'description2' => 'Unser Erfolg basiert auf die optimale Lösungssuche in Kombination mit qualitativ hochwertigen und kostengünstigen Ergebnissen, die den Bedürfnissen der Verbraucher entsprechen.',
 ];
 
