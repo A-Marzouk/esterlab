@@ -10,5 +10,7 @@
         'our_solutions' => 'Our solutions',
         'certificates' => 'Certificates',
         'contact' => 'Contact',
+        'scientific_publications' => 'Scientific publications',
+        'services' => 'Services',
     ];
 

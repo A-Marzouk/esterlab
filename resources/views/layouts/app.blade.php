@@ -82,12 +82,21 @@
                 <nav class="site-navigation text-center ml-auto" role="navigation">
 
                     <ul class="site-menu main-menu js-clone-nav ml-auto d-none d-lg-block">
-                        <li><a @if(isset($view))href="#home-section" @else href="/#home-section" @endif class="nav-link">@lang('navbar.home')</a></li>
-                        <li><a @if(isset($view))href="#about-section" @else href="/#about-section" @endif  class="nav-link">@lang('navbar.about')</a></li>
+                        <li>
+                            <a @if(isset($view))href="#home-section" @else href="/#home-section" @endif class="nav-link">@lang('navbar.home')</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                @lang('navbar.about')
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a style="color: black!important;" @if(isset($view))href="#certificates" @else href="/#certificates" @endif class="dropdown-item">@lang('navbar.certificates')</a>
+                                <a class="dropdown-item" href="#" style="color: black!important;" >@lang('navbar.scientific_publications')</a>
+                            </div>
+                        </li>
                         <li><a @if(isset($view))href="#services-section" @else href="/#services-section" @endif  class="nav-link">@lang('navbar.development_concept')</a></li>
                         <li><a @if(isset($view))href="#projects-section" @else href="/#projects-section" @endif class="nav-link">@lang('navbar.our_solutions')</a></li>
-                        <li><a @if(isset($view))href="#certificates" @else href="/#certificates" @endif class="nav-link">@lang('navbar.certificates')</a></li>
-                        <li><a  @if(isset($view))href="#contact-section" @else href="/#contact-section" @endif class="nav-link">@lang('navbar.contact')</a></li>
+                        <li><a  @if(isset($view))href="#services" @else href="/#services" @endif class="nav-link">@lang('navbar.services')</a></li>
                     </ul>
                 </nav>
 
@@ -114,7 +123,7 @@
                 <div class="col-md-6">
                     <div class="row">
                         <div class="col-md-8">
-                            <h2 class="footer-heading mb-4">@lang('navbar.about_us')</h2>
+                            <h2 class="footer-heading mb-4">@lang('navbar.about')</h2>
                             <p>
                                 @lang('footer.about_us_explain')
                             </p>
@@ -122,12 +131,18 @@
                         <div class="col-md-4 ml-auto">
                             <h2 class="footer-heading mb-4">@lang('footer.quick_links')</h2>
                             <ul class="list-unstyled">
-                                <li><a href="#home-section" class="nav-link">@lang('navbar.home')</a></li>
+                                <li>
+                                    <a @if(isset($view))href="#home-section" @else href="/#home-section" @endif class="nav-link">@lang('navbar.home')</a>
+                                </li>
                                 <li><a href="#about-section" class="nav-link">@lang('navbar.about')</a></li>
-                                <li><a href="#services-section" class="nav-link">@lang('navbar.development_concept')</a></li>
-                                <li><a href="#projects-section" class="nav-link">@lang('navbar.our_solutions')</a></li>
-                                <li><a href="#certificates" class="nav-link">@lang('navbar.certificates')</a></li>
+                                <li>
+                                    <a  @if(isset($view))href="#certificates" @else href="/#certificates" @endif  class="nav-link">@lang('navbar.certificates')</a>
+                                </li>
                                 <li><a href="#contact-section" class="nav-link">@lang('navbar.contact')</a></li>
+                                <li><a @if(isset($view))href="#services-section" @else href="/#services-section" @endif  class="nav-link">@lang('navbar.development_concept')</a></li>
+                                <li><a @if(isset($view))href="#projects-section" @else href="/#projects-section" @endif class="nav-link">@lang('navbar.our_solutions')</a></li>
+                                <li><a  @if(isset($view))href="#services" @else href="/#services" @endif class="nav-link">@lang('navbar.services')</a></li>
+
                             </ul>
                         </div>
 

@@ -237,22 +237,27 @@
             </p>
           </div>
         </div>
+      </div>
+    </div>
+  </div>
 
-        <div class="d-flex flex-column flex-wrap w-100 pt-md-0 pt-5 p-3">
-          <div class="mr-lg-5 mb-4 d-flex justify-content-center" style="height: 270px;">
-            <img src="images/R-4.png" alt="Image" class="" style="width: 250px; height: 250px;">
-          </div>
-          <div style="margin-top: 30px;">
-            <h2 class="h4 text-black">@lang('index/section4.math_modeling')</h2>
-            <span class="d-block text-secondary mb-4">@lang('index/section4.math_modeling_sub_head')</span>
-            <p>
-              @lang('index/section4.math_modeling_explain')
-            </p>
-            <p>
-              <a href="/math-modeling">@lang('index/section4.read_more_btn')</a>
-            </p>
-          </div>
-        </div>
+  <div class="site-section pb-0 pt-0 col-md-10 col-12 offset-md-1" id="services">
+    <div class="block-heading-1 text-center p-5 pt-0">
+      <h2> @lang('navbar.services')</h2>
+    </div>
+    <div class="d-flex flex-column flex-wrap w-100 pt-md-0 pt-5 p-3">
+      <div class="mr-lg-5 mb-4 d-flex justify-content-center" style="height: 270px;">
+        <img src="images/R-4.png" alt="Image" class="" style="width: 250px; height: 250px;">
+      </div>
+      <div style="margin-top: 30px;">
+        <h2 class="h4 text-black">@lang('index/section4.math_modeling')</h2>
+        <span class="d-block text-secondary mb-4">@lang('index/section4.math_modeling_sub_head')</span>
+        <p>
+          @lang('index/section4.math_modeling_explain')
+        </p>
+        <p>
+          <a href="/math-modeling">@lang('index/section4.read_more_btn')</a>
+        </p>
       </div>
     </div>
   </div>
