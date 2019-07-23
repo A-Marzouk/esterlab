@@ -3,7 +3,7 @@
 // Russian
 
     return [
-        'home' => 'Начальная',
+        'home' => 'Главная',
         'technologies' => 'Программы',
         'about' => 'ОНас',
         'development_concept' => 'Подход к разработкам',

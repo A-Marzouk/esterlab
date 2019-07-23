@@ -13,7 +13,8 @@ class HomeController extends Controller
 {
     public function index($lang = 'en'){
         App::setlocale($lang);
-        return view('index');
+        $view = 'homepage' ;
+        return view('index',compact('view'));
     }
 
 
