@@ -14,21 +14,24 @@ class HomeController extends Controller
     public function index($lang = 'en'){
         App::setlocale($lang);
         $view = 'homepage' ;
-        return view('index',compact('view'));
+        return view('index',compact('view','lang'));
     }
 
 
-    public function showGreenEnergyPage(){
-        return view('green-energy');
+    public function showGreenEnergyPage($lang = 'en'){
+        App::setlocale($lang);
+        return view('green-energy',compact('lang'));
     }
 
 
-    public function showElectricBusPage(){
-        return view('electric-bus');
+    public function showElectricBusPage($lang = 'en'){
+        App::setlocale($lang);
+        return view('electric-bus',compact('lang'));
     }
 
-    public function showMathModelingPage(){
-        return view('math-modeling');
+    public function showMathModelingPage($lang = 'en'){
+        App::setlocale($lang);
+        return view('math-modeling',compact('lang'));
     }
 
 }

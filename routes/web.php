@@ -13,8 +13,7 @@
 
 
 
-Route::get('/','HomeController@index');
-Route::get('/green-energy','HomeController@showGreenEnergyPage');
-Route::get('/electric-bus','HomeController@showElectricBusPage');
-Route::get('/math-modeling','HomeController@showMathModelingPage');
-Route::get('/{lang}','HomeController@index');
+Route::get('/green-energy/{lang?}','HomeController@showGreenEnergyPage');
+Route::get('/electric-bus/{lang?}','HomeController@showElectricBusPage');
+Route::get('/math-modeling/{lang?}','HomeController@showMathModelingPage');
+Route::get('/{lang?}','HomeController@index');

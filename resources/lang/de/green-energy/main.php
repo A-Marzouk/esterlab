@@ -14,12 +14,3 @@ installierten Geräten) zu erzielen.',
     'tracker_overview' => 'Trackerübersicht',
     'visual_of_5_forms' => 'Visualisierung der ersten 5 Formen der Eigenschwingungen',
 ];
-
-// use for other languages
-//    'green_energy' => '',
-//    'solar_tracker' => '',
-//
-//    'main_description' => '',
-//
-//    'tracker_overview' => '',
-//    'visual_of_5_forms' => '',

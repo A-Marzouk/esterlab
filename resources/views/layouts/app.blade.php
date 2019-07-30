@@ -11,14 +11,14 @@
 
     <link rel="stylesheet" href="fonts/icomoon/style.css">
 
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
-    <link rel="stylesheet" href="css/jquery-ui.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/magnific-popup.css">
+    <link rel="stylesheet" href="/css/jquery-ui.css">
+    <link rel="stylesheet" href="/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/css/owl.theme.default.min.css">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="/css/bootstrap-datepicker.css">
     <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
 
     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
@@ -32,9 +32,9 @@
     <meta property="og:description"        content=" A fast growing research &amp; developing company" />
     <meta property="og:image"              content="http://www.esterlab.org/images/logo-esterlab-min.png" />
 
-    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="/css/aos.css">
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
     <link rel="icon"
           type="image/png"
           href="favicon.png">
@@ -75,7 +75,7 @@
 
                 <div class="site-logo">
                     <a href="/" class="">
-                        <img src="images/esterlabs logo 2.jpg" alt="" style=" width: 216px; height: 67px;">
+                        <img src="/images/esterlabs logo 2.jpg" alt="" style=" width: 216px; height: 67px;">
                     </a>
                 </div>
 
@@ -168,7 +168,7 @@
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content" style="background: none;border:0;">
                 <div class="modal-body">
-                    <img src="images/certificates/1.jpg" alt="" style="width: 100%;">
+                    <img src="/images/certificates/1.jpg" alt="" style="width: 100%;">
                 </div>
             </div>
         </div>
@@ -177,7 +177,7 @@
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content" style="background: none;border:0;">
                 <div class="modal-body">
-                    <img src="images/certificates/2.jpg" alt="" style="width: 100%;">
+                    <img src="/images/certificates/2.jpg" alt="" style="width: 100%;">
                 </div>
             </div>
         </div>
@@ -186,7 +186,7 @@
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content" style="background: none;border:0;">
                 <div class="modal-body">
-                    <img src="images/certificates/3.jpg" alt="" style="width: 100%;">
+                    <img src="/images/certificates/3.jpg" alt="" style="width: 100%;">
                 </div>
             </div>
         </div>
@@ -195,7 +195,7 @@
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content" style="background: none;border:0;">
                 <div class="modal-body">
-                    <img src="images/certificates/4.jpg" alt="" style="width: 100%;">
+                    <img src="/images/certificates/4.jpg" alt="" style="width: 100%;">
                 </div>
             </div>
         </div>
@@ -204,7 +204,7 @@
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content" style="background: none;border:0;">
                 <div class="modal-body">
-                    <img src="images/certificates/5.jpg" alt="" style="width: 100%;">
+                    <img src="/images/certificates/5.jpg" alt="" style="width: 100%;">
                 </div>
             </div>
         </div>
@@ -213,7 +213,7 @@
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content" style="background: none;border:0;">
                 <div class="modal-body">
-                    <img src="images/certificates/6.jpg" alt="" style="width: 100%;">
+                    <img src="/images/certificates/6.jpg" alt="" style="width: 100%;">
                 </div>
             </div>
         </div>
@@ -226,18 +226,18 @@
 
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<script src="js/jquery-ui.js"></script>
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/owl.carousel.min.js"></script>
-<script src="js/jquery.magnific-popup.min.js"></script>
-<script src="js/jquery.sticky.js"></script>
-<script src="js/jquery.waypoints.min.js"></script>
-<script src="js/jquery.animateNumber.min.js"></script>
-<script src="js/aos.js"></script>
+<script src="/js/jquery-ui.js"></script>
+<script src="/js/popper.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/owl.carousel.min.js"></script>
+<script src="/js/jquery.magnific-popup.min.js"></script>
+<script src="/js/jquery.sticky.js"></script>
+<script src="/js/jquery.waypoints.min.js"></script>
+<script src="/js/jquery.animateNumber.min.js"></script>
+<script src="/js/aos.js"></script>
 <script type="text/javascript" src="slick/slick.min.js"></script>
 
-<script src="js/main.js"></script>
+<script src="/js/main.js"></script>
 
 <script>
     $(document).ready(function(){
