@@ -37,7 +37,7 @@
     <link rel="stylesheet" href="/css/style.css">
     <link rel="icon"
           type="image/png"
-          href="favicon.png">
+          href="/favicon.png">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-141185574-1"></script>

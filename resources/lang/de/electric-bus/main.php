@@ -20,7 +20,7 @@ return [
     'create_smart_exp' => 'ENTWICKLUNG VON INTELLIGENTER ERFAHRUNG FÜR...',
     'passengers' => 'FAHRGÄSTE',
     'cities' => 'STÄDTE',
-    'operators' => 'BEDIENUNGSKRÄFTE, FAHRER',
+    'operators' => 'FAHRER',
     'manufacturers' => 'HERSTELLER',
 
 
@@ -40,7 +40,7 @@ return [
 
     'strength_for_samples'=> 'Festigkeitsreserven der Proben',
     'general_properties'=> ' Allgemeine Eigenschaften des Mikrobusses "Tarpan"',
-    'particular_bus'=> 'Praktischer Mikrobus ',
+    'particular_bus'=> 'Praktischer Mikrobus',
 
     'interior_head'=> 'Komfortabler Innenraum',
 
@@ -64,7 +64,7 @@ return [
 
 
     'video_head_1' => 'Statische Festigkeit des Mikrobuskörpers',
-    'video_head_2' => 'die ersten Formen von Eigenschwingungen des Buskörpers',
+    'video_head_2' => 'Die ersten Formen von Eigenschwingungen des Buskörpers',
 
 
 ];
