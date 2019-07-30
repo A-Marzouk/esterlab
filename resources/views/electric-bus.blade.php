@@ -12,8 +12,8 @@
 
           <div class="box-shadow-content">
             <div class="block-heading-1">
-              <h3 class="d-block mb-3 text-white"  data-aos="fade-up">Public Transport</h3>
-              <h1 class="mb-4" data-aos="fade-up" data-aos-delay="100"> Electric Bus "Tarpan" </h1>
+              <h3 class="d-block mb-3 text-white"  data-aos="fade-up">@lang('electric-bus/main.public_transport')</h3>
+              <h1 class="mb-4" data-aos="fade-up" data-aos-delay="100">@lang('electric-bus/main.electric_bus')</h1>
             </div>
 
 
@@ -29,82 +29,82 @@
       <div class="row d-flex justify-content-center">
         <div class="col-md-8 mx-auto blog-content">
           <p class="lead">
-            For too long, buses as a mean of transport have lived on its gains. Nowadays,
-            technological innovations such as electrically-powered transport modes present a
-            world of opportunities for revamping the bus experience on its own terms, matching
-            mobility industry trends and the wider social evolution.
+            @lang('electric-bus/main.main_description')
           </p>
 
-          <p class="text-center"><img src="images/bus.png" alt="Image" class="img-fluid p-4"></p>
+          @if($lang === 'en')
+            <p class="text-center"><img src="/images/bus.png" alt="Image" class="img-fluid p-4"></p>
+          @elseif($lang === 'de')
+            <p class="text-center"><img src="/images/bus-de.png" alt="Image" class="img-fluid p-4" width="70%"></p>
+          @endif
 
           <p>
-            This design charter for “Tarpan” buses has been designed to promote buses as a mode of transportation in their own right. <br/>
-            “Tarpan” forms the ecosystem of the ‘bus of tomorrow’. Design principles are illustrated by conceptual sketches,
-            which should not be viewed as final design specifications. Manufacturer will be able to interpret and adapt these principles according to their own design culture and processes.
+            @lang('electric-bus/main.description_1') <br/>
+            @lang('electric-bus/main.description_2')
           </p>
 
           <blockquote>
             <h3 class="pt-5 pb-3 text-center">
-              MAIN TARGET OF THE PROJECT
+              @lang('electric-bus/main.main_target')
             </h3>
             <p>
-              - Production of electric/CNG/hybrid microbuses <br/>
-              - Reduce the weight of the bus <br/>
-              - Maximum using of electric/green energy <br>
+              - @lang('electric-bus/main.target_1')   <br/>
+              - @lang('electric-bus/main.target_2')   <br/>
+              - @lang('electric-bus/main.target_3')   <br>
             </p>
           </blockquote>
 
           <p>
           <h3 class="pt-5 text-center">
-            CREATING SMART EXPERIENCES FOR
+            @lang('electric-bus/main.create_smart_exp')
           </h3>
           </p>
           <div class="d-flex justify-content-center flex-wrap ">
             <div class="d-flex flex-column align-items-center p-4">
               <div>
-                Passengers
+                @lang('electric-bus/main.passengers')
               </div>
-              <img src="images/bus-images/bus-image-a.png" alt="" style="width: 120px; height: 120px;">
+              <img src="/images/bus-images/bus-image-a.png" alt="" style="width: 120px; height: 120px;">
             </div>
             <div class="d-flex flex-column align-items-center p-4">
               <div>
-                Cities
+                @lang('electric-bus/main.cities')
               </div>
-              <img src="images/bus-images/bus-image-b.png" alt="" style="width: 120px; height: 120px;">
+              <img src="/images/bus-images/bus-image-b.png" alt="" style="width: 120px; height: 120px;">
             </div>
             <div class="d-flex flex-column align-items-center p-4">
               <div>
-                Operators
+                @lang('electric-bus/main.operators')
               </div>
-              <img src="images/bus-images/bus-image-c.png" alt="" style="width: 120px; height: 120px;">
+              <img src="/images/bus-images/bus-image-c.png" alt="" style="width: 120px; height: 120px;">
             </div>
             <div class="d-flex flex-column align-items-center p-4">
               <div>
-                Manufacturers
+                @lang('electric-bus/main.manufacturers')
               </div>
-              <img src="images/bus-images/bus-image-d.png" alt="" style="width: 120px; height: 120px;">
+              <img src="/images/bus-images/bus-image-d.png" alt="" style="width: 120px; height: 120px;">
             </div>
           </div>
 
 
           <blockquote>
             <h3 class="pt-5 pb-3 text-center">
-              BENEFITS
+              @lang('electric-bus/main.benefits')
             </h3>
             <p>
-              - Increased passenger capacity compared with similar length, due to the best layout. <br/>
-              - Effective life cycle costs (fuel savings, fewer parts and reduced body repair costs, body life increased to 10 years compared to similar microbuses).<br/>
-              - Reduced load on suspension and roadbed.<br/>
-              - Environmentally friendly efficient energy recovery during braking - up to 30%. <br/>
-              - Corrosion resistance and adaptation to climatic conditions (hot and moisture weather).<br/>
+              - @lang('electric-bus/main.benefit_1')<br/>
+              - @lang('electric-bus/main.benefit_2')<br/>
+              - @lang('electric-bus/main.benefit_3')<br/>
+              - @lang('electric-bus/main.benefit_4') <br/>
+              - @lang('electric-bus/main.benefit_5')<br/>
             </p>
           </blockquote>
 
         </div>
         <div class="d-flex pt-5 flex-wrap justify-content-center align-items-center">
-          <div class="text-center"><img src="images/bus-images/bus4.jpg" alt="Image" class="img-fluid"  style="width: 350px;" ></div>
-          <div class="text-center"><img src="images/bus-images/bus5.jpg" alt="Image" class="img-fluid"  style="width: 350px;" ></div>
-          <div class="text-center"><img src="images/bus-images/bus6.jpg" alt="Image" class="img-fluid"  style="width: 350px;"></div>
+          <div class="text-center"><img src="/images/bus-images/bus4.jpg" alt="Image" class="img-fluid"  style="width: 350px;" ></div>
+          <div class="text-center"><img src="/images/bus-images/bus5.jpg" alt="Image" class="img-fluid"  style="width: 350px;" ></div>
+          <div class="text-center"><img src="/images/bus-images/bus6.jpg" alt="Image" class="img-fluid"  style="width: 350px;"></div>
         </div>
       </div>
     </div>
@@ -115,110 +115,129 @@
       <div class="col-md-8 mx-auto blog-content">
         <blockquote>
           <h2 class="pt-5 pb-3 text-center">
-            Comparative analysis of the mechanical properties of materials for the bus body manufacturing
+            @lang('electric-bus/main.analysis_head')
           </h2>
           <h4 class="pt-3 pb-0 text-center">
-            Physical and mechanical properties of various materials could be used for bus body
+            @lang('electric-bus/main.analysis_sub_head')
           </h4>
-          <img src="images/bus-images/bus-system1.jpg" alt="Image" class="img-fluid p-2">
-
+          @if($lang === 'en')
+            <img src="/images/bus-images/bus-system1.jpg" alt="Image" class="img-fluid p-2">
+          @elseif($lang === 'de')
+            <img src="/images/bus-images/bus-system1-de.jpg" alt="Image" class="img-fluid p-2">
+            <img src="/images/bus-images/bus-system1_2-de.jpg" alt="Image" class="img-fluid p-2">
+          @endif
           <h4 class="pt-3 pb-0 text-center">
-            Strength reserves for samples
+            @lang('electric-bus/main.strength_for_samples')
           </h4>
           <div class="d-flex justify-content-center flex-wrap">
-            <img src="images/bus-images/bus-system2.jpg" alt="Image" class="img-fluid p-2">
-            <img src="images/bus-images/bus-system3.jpg" alt="Image" class="img-fluid p-2">
-            <img src="images/bus-images/bus-system4.jpg" alt="Image" class="img-fluid p-2">
-            <img src="images/bus-images/bus-system5.jpg" alt="Image" class="img-fluid p-2">
+            @if($lang === 'en')
+              <img src="/images/bus-images/bus-system2.jpg" alt="Image" class="img-fluid p-2">
+              <img src="/images/bus-images/bus-system3.jpg" alt="Image" class="img-fluid p-2">
+              <img src="/images/bus-images/bus-system4.jpg" alt="Image" class="img-fluid p-2">
+              <img src="/images/bus-images/bus-system5.jpg" alt="Image" class="img-fluid p-2">
+            @elseif($lang === 'de')
+              <img src="/images/bus-images/bus-system2-de.jpg" alt="Image" class="img-fluid p-2">
+              <img src="/images/bus-images/bus-system3-de.jpg" alt="Image" class="img-fluid p-2">
+              <img src="/images/bus-images/bus-system4-de.jpg" alt="Image" class="img-fluid p-2">
+              <img src="/images/bus-images/bus-system5-de.jpg" alt="Image" class="img-fluid p-2">
+            @endif
           </div>
 
           <h4 class="pt-3 pb-0 text-center">
-            General properties for “Tarpan”
+            @lang('electric-bus/main.general_properties')
           </h4>
           <div class="d-flex justify-content-center flex-wrap">
-            <img src="images/bus-images/bus-system6.jpg" alt="Image" class="img-fluid p-2">
+            @if($lang === 'en')
+              <img src="/images/bus-images/bus-system6.jpg" alt="Image" class="img-fluid p-2">
+            @elseif($lang === 'de')
+              <img src="/images/bus-images/bus-system6-de.jpg" alt="Image" class="img-fluid p-2">
+            @endif
           </div>
           <h4 class="pt-3 pb-0 text-center">
-            Particular microbus
+            @lang('electric-bus/main.particular_bus')
           </h4>
           <div class="d-flex justify-content-center flex-wrap">
-            <img src="images/bus-images/bus-system7.jpg" alt="Image" class="img-fluid p-2">
+            @if($lang === 'en')
+              <img src="/images/bus-images/bus-system7.jpg" alt="Image" class="img-fluid p-2">
+            @elseif($lang === 'de')
+              <img src="/images/bus-images/bus-system7.jpg" alt="Image" class="img-fluid p-2">
+            @endif
           </div>
 
 
           <h3 class="pt-5 pb-3 text-center">
-            Passenger Friendly interior
+            @lang('electric-bus/main.interior_head')
           </h3>
           <p>
-            - Lower TCO (total cost of ownership) <br/>
-            - At least 70% low floor construction <br/>
-            - Wide corridors and wide doors allow rapid passenger flow <br/>
-            - Spacious interior results high comfort for passengers <br/>
-            - Compared to traditional equal length vehicles, more passenger can fit in <br/>
-            - Semi-automatic ramp for wheelchairs <br/>
-            - Kneeling functio<br/>
+            - @lang('electric-bus/main.interior_1') <br/>
+            - @lang('electric-bus/main.interior_2') <br/>
+            - @lang('electric-bus/main.interior_3') <br/>
+            - @lang('electric-bus/main.interior_4') <br/>
+            - @lang('electric-bus/main.interior_5') <br/>
+            - @lang('electric-bus/main.interior_6') <br/>
+            - @lang('electric-bus/main.interior_7') <br/>
           </p>
           <div class="d-flex justify-content-center flex-wrap">
-            <img src="images/bus-images/bus-system8.jpg" alt="Image" class="img-fluid p-2">
+            <img src="/images/bus-images/bus-system8.jpg" alt="Image" class="img-fluid p-2">
           </div>
 
           <h4 class="pt-3 pb-0 text-center">
-            Mock-up
+            @lang('electric-bus/main.mock_up')
           </h4>
           <div class="d-flex justify-content-center flex-wrap">
-            <img src="images/bus-images/bus-system9.jpg" alt="Image" class="img-fluid p-2">
+            <img src="/images/bus-images/bus-system9.jpg" alt="Image" class="img-fluid p-2">
           </div>
 
           <h4 class="pt-3 pb-0 text-center">
-            E-pay
+            @lang('electric-bus/main.e_pay_head')
           </h4>
 
           <div class="row">
             <div class="col-md-6 d-flex align-items-center" style="font-size: larger;">
-              The microbuses will be equiped with wifi devices for E-payment.
+              @lang('electric-bus/main.e_pay1')
             </div>
             <div class="col-md-6 d-flex justify-content-center">
-              <img src="images/bus-images/bus-system10.jpg" alt="Image" class="img-fluid p-2">
+              <img src="/images/bus-images/bus-system10.jpg" alt="Image" class="img-fluid p-2">
             </div>
           </div>
 
           <div class="row">
             <div class="col-md-6 d-flex align-items-center" style="font-size: larger;">
-              Tickets can be bought cash, using credit cards and on the internet.
+              @lang('electric-bus/main.e_pay2')
             </div>
             <div class="col-md-6 d-flex justify-content-center">
-              <img src="images/bus-images/bus-system11.jpg" alt="Image" class="img-fluid p-2">
+              <img src="/images/bus-images/bus-system11.jpg" alt="Image" class="img-fluid p-2">
             </div>
           </div>
 
           <h4 class="pt-5 pb-0 text-center">
-            GPS tracking application
+            @lang('electric-bus/main.gps_head')
           </h4>
           <div class="row">
             <div class="col-md-6 d-flex align-items-center" style="font-size: larger;">
-              Life for users will be more comfortable thanks to GPS tracking chip which will be installed in every bus. This will enable users to know exactly when their bus should arrive at the bus stop using an easy application.
+              @lang('electric-bus/main.gps1')
             </div>
             <div class="col-md-6 d-flex justify-content-center">
-              <img src="images/bus-images/bus-system12.jpg" alt="Image" class="img-fluid p-2">
+              <img src="/images/bus-images/bus-system12.jpg" alt="Image" class="img-fluid p-2">
             </div>
           </div>
 
           <h4 class="pt-5 pb-0 text-center">
-            Static strength of the microbus body
+            @lang('electric-bus/main.video_head_1')
           </h4>
           <div class="row d-flex justify-content-center">
             <video controls autoplay  class="w-100 p-3" style="max-width:448px;">
-              <source src="videos/bus/f1.mp4" type="video/mp4">
+              <source src="/videos/bus/f1.mp4" type="video/mp4">
               Your browser does not support the video tag.
             </video>
           </div>
 
           <h4 class="pt-5 pb-0 text-center">
-            The first forms of natural oscillations of the microbus body
+            @lang('electric-bus/main.video_head_2')
           </h4>
           <div class="row d-flex justify-content-center">
             <video controls autoplay  class="w-100 p-3" style="max-width:448px;">
-              <source src="videos/bus/f2.mp4" type="video/mp4">
+              <source src="/videos/bus/f2.mp4" type="video/mp4">
               Your browser does not support the video tag.
             </video>
           </div>
