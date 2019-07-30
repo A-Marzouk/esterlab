@@ -8,8 +8,10 @@ return [
     'solving_mechanical_problems' => 'Lösung mechanischer Probleme',
 
 
-    'main_description' => 'Lösung mechanischer Probleme mit numerischem Verfahren
-Die Konstruktionsfestigkeit ist eine strenge Anforderung für den Produktentwurf. In jeder Branche stellen sich Ingenieure die gleichen grundlegenden Fragen: „Wie lange wird dieses Produkt täglich gebraucht?“, „Unter welchen Bedingungen geht es kaputt?“ und viele andere.',
+    'solving_mechanical_problems_head' => 'Lösung mechanischer Probleme mit numerischem Verfahren',
+
+
+    'main_description' => 'Die Konstruktionsfestigkeit ist eine strenge Anforderung für den Produktentwurf. In jeder Branche stellen sich Ingenieure die gleichen grundlegenden Fragen: „Wie lange wird dieses Produkt täglich gebraucht?“, „Unter welchen Bedingungen geht es kaputt?“ und viele andere.',
     'sub_description' => 'Und es gibt unendlich viele Fragen "Was wäre wenn ...", zum Beispiel: "Was passiert, wenn die Dicke dieser Rippe für die Materialeinsparung um 1 mm reduziert wird?" Die Lösungen für die Mechanik deformierbarer Festkörper ermöglichen uns, insbesondere unter Einsatz von ANSYS Mechanical, ähnliche Probleme zu lösen.',
 
 

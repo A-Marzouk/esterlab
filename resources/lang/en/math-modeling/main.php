@@ -8,8 +8,10 @@ return [
     'solving_mechanical_problems' => 'Solving mechanical problems',
     //Lösung mechanischer Probleme
 
-    'main_description' => 'Solving mechanical problems by numerical method
-Structural strength is a mandatory requirement when designing products. In any industry, engineers ask themselves the same fundamental questions: “How long will this product last for daily use?”, “Under what conditions will it break?” And many others.',
+    'solving_mechanical_problems_head' => 'Solving mechanical problems by numerical method',
+
+
+    'main_description' => 'Structural strength is a mandatory requirement when designing products. In any industry, engineers ask themselves the same fundamental questions: “How long will this product last for daily use?”, “Under what conditions will it break?” And many others.',
     'sub_description' => 'And there is an infinite number of questions "What if ...", for example: "What will happen if you reduce the thickness of this rib by 1 mm to save material?" Solutions for the mechanics of a deformable solid, using in particular ANSYS Mechanical, allow us to solve similar problems.',
 
 
