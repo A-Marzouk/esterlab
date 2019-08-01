@@ -15,12 +15,6 @@
             })(window,document,'script','dataLayer','GTM-5H7XXMM');</script>
         <!-- End Google Tag Manager -->
 
-        Additionally, paste this code immediately after the opening <body> tag:
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5H7XXMM"
-                      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-
     <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,700" rel="stylesheet">
 
     <link rel="stylesheet" href="fonts/icomoon/style.css">
@@ -69,6 +63,11 @@
 
 
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5H7XXMM"
+                      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
 <div class="site-wrap"  id="home-section">
 
