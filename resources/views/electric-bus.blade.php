@@ -124,23 +124,36 @@
             <img src="/images/bus-images/bus-system1.jpg" alt="Image" class="img-fluid p-2">
           @elseif($lang === 'de')
             <img src="/images/bus-images/bus-system1-de.jpg" alt="Image" class="img-fluid p-2">
-            <img src="/images/bus-images/bus-system1_2-de.jpg" alt="Image" class="img-fluid p-2">
           @endif
+          <img src="/images/bus-images/bus-system1_2-de.png" alt="Image" class="img-fluid p-2">
+          <div class="text-center pb-4">
+            <small>
+              @lang('electric-bus/main.figure_1')
+            </small>
+          </div>
           <h4 class="pt-3 pb-0 text-center">
             @lang('electric-bus/main.strength_for_samples')
           </h4>
           <div class="d-flex justify-content-center flex-wrap">
-            @if($lang === 'en')
-              <img src="/images/bus-images/bus-system2.jpg" alt="Image" class="img-fluid p-2">
-              <img src="/images/bus-images/bus-system3.jpg" alt="Image" class="img-fluid p-2">
-              <img src="/images/bus-images/bus-system4.jpg" alt="Image" class="img-fluid p-2">
-              <img src="/images/bus-images/bus-system5.jpg" alt="Image" class="img-fluid p-2">
-            @elseif($lang === 'de')
-              <img src="/images/bus-images/bus-system2-de.jpg" alt="Image" class="img-fluid p-2">
-              <img src="/images/bus-images/bus-system3-de.jpg" alt="Image" class="img-fluid p-2">
-              <img src="/images/bus-images/bus-system4-de.jpg" alt="Image" class="img-fluid p-2">
-              <img src="/images/bus-images/bus-system5-de.jpg" alt="Image" class="img-fluid p-2">
-            @endif
+            <img src="/images/bus-images/bus-system2-de.jpg" alt="Image" class="img-fluid p-2">
+            <img src="/images/bus-images/bus-system3-de.png" alt="Image" class="img-fluid p-2">
+            <div class="text-center pb-4">
+              <small>
+                @lang('electric-bus/main.figure_2')
+              </small>
+            </div>
+            <img src="/images/bus-images/bus-system4-de.png" alt="Image" class="img-fluid p-2">
+            <div class="text-center pb-4">
+              <small>
+                @lang('electric-bus/main.figure_3')
+              </small>
+            </div>
+            <img src="/images/bus-images/bus-system5-de.png" alt="Image" class="img-fluid p-2">
+            <div class="text-center pb-4">
+              <small>
+                @lang('electric-bus/main.figure_4')
+              </small>
+            </div>
           </div>
 
           <h4 class="pt-3 pb-0 text-center">

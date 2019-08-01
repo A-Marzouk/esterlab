@@ -36,6 +36,13 @@ return [
     'analysis_sub_head'=> 'Festigkeitseigenschaften der zur Herstellung der Buskarosserie verwendeten Werkstoffe',
 
 
+    // figures :
+    'figure_1'=> 'Abbildung 1 - Verteilung der äquivalenten Spannungen in der Probe unter Einwirkung von der Ausdehnungskraft F = 2500 H',
+    'figure_2'=> 'Abbildung 2 - Dehnung der Glasplastprobe unter Einwirkung von der Ausdehnungskraft F = 2500 H ',
+    'figure_3'=> 'Abbildung 3 - Dehnung der Probe aus kohlenstoffarmem Stahl unter Einwirkung von der Ausdehnungskraft F = 2500 H',
+    'figure_4'=> 'Abbildung 4 - Dehnung der Probe aus Aluminiumlegierung unter Einwirkung von der Ausdehnungskraft F = 2500 H',
+
+
     // sub headings :
 
     'strength_for_samples'=> 'Festigkeitsreserven der Proben',

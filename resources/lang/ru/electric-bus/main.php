@@ -36,6 +36,14 @@ return [
     'analysis_sub_head'=> '',
 
 
+
+    // figures :
+    'figure_1'=> '',
+    'figure_2'=> '',
+    'figure_3'=> '',
+    'figure_4'=> '',
+
+
     // sub headings :
 
     'strength_for_samples'=> '',

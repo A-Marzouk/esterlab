@@ -35,6 +35,12 @@ return [
     'analysis_head'=> 'Comparative analysis of the mechanical properties of materials for the bus body manufacturing',
     'analysis_sub_head'=> 'Physical and mechanical properties of various materials could be used for bus body',
 
+    // figures :
+    'figure_1'=> 'Figure 1 – The distribution of equivalent stresses in the sample under the action of tensile force F = 2500 H',
+    'figure_2'=> 'Figure 2 - Fiberglass sample under stretching force F=2500 H',
+    'figure_3'=> 'Figure 3 - Aluminium alloy sample under stretching force F=2500 H',
+    'figure_4'=> 'Figure 4 - Steel alloy sample under stretching force F=2500 H',
+
 
     // sub headings :
 
