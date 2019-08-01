@@ -29,7 +29,13 @@
             @lang('green-energy/main.main_description')
           </p>
 
-          <p><img src="/images/solar-image.png" alt="Image" class="img-fluid"></p>
+          <p class="text-center">
+            @if($lang === 'en')
+              <img src="/images/solar-image.png" alt="Image" class="img-fluid">
+            @elseif($lang === 'de')
+              <img src="/images/tracker/tracker-de.jpg" alt="Image" class="img-fluid">
+            @endif
+          </p>
           <p class="p-3">
           <h3 class="text-center">
             @lang('green-energy/main.tracker_overview')
