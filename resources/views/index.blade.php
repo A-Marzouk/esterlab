@@ -84,10 +84,10 @@
           <img src="images/image2-min.png" alt="Image" class="img-fluid" style=" margin-top:20px; ">
         </div>
         <div>
-          <img src="images/image3-min.jpg" alt="Image" class="img-fluid" style=" margin-top:20px; ">
+          <img src="images/image3-min.png" alt="Image" class="img-fluid" style=" margin-top:20px; width: 250px ">
         </div>
         <div>
-          <img src="images/image4-min.png" alt="Image" class="img-fluid" style=" margin-top:20px; ">
+          <img src="images/image4-min.png" alt="Image" class="img-fluid" style=" margin-top:20px; width: 250px; ">
         </div>
       </div>
       <div  class="row align-items-center pt-5 d-flex justify-content-center flex-wrap w-100">
