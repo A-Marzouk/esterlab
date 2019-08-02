@@ -92,7 +92,11 @@
                 <span class="icon-close2 js-menu-toggle"></span>
             </div>
         </div>
-        <div class="site-mobile-menu-body"></div>
+        <div class="site-mobile-menu-body">
+            <div id="languageSelector">
+                <language-selector></language-selector>
+            </div>
+        </div>
     </div>
 
     <header class="site-navbar js-sticky-header site-navbar-target" role="banner">
@@ -125,9 +129,6 @@
                         <li><a @if(isset($view))href="#services-section" @else href="/#services-section" @endif  class="nav-link">@lang('navbar.development_concept')</a></li>
                         <li><a @if(isset($view))href="#projects-section" @else href="/#projects-section" @endif class="nav-link">@lang('navbar.our_solutions')</a></li>
                         <li><a  @if(isset($view))href="#services" @else href="/#services" @endif class="nav-link">@lang('navbar.services')</a></li>
-                        <li id="languageSelector">
-                            <language-selector></language-selector>
-                        </li>
                     </ul>
                 </nav>
 
@@ -256,9 +257,9 @@
 </div>
 
 
-<script src="/js/app.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="/js/app.js"></script>
 <script src="/js/jquery-ui.js"></script>
 <script src="/js/popper.min.js"></script>
 <script src="/js/bootstrap.min.js"></script>
