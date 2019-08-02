@@ -5,6 +5,12 @@
   background: whitesmoke !important;
 }
 
+@media (max-width: 991px) {
+  #languageSelector {
+    display: none;
+  }
+}
+
 .spinner {
   position: absolute;
   top: 48%;

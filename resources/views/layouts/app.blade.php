@@ -93,7 +93,7 @@
             </div>
         </div>
         <div class="site-mobile-menu-body">
-            <div id="languageSelector">
+            <div id="languageSelector_navbar">
                 <language-selector></language-selector>
             </div>
         </div>
@@ -129,6 +129,11 @@
                         <li><a @if(isset($view))href="#services-section" @else href="/#services-section" @endif  class="nav-link">@lang('navbar.development_concept')</a></li>
                         <li><a @if(isset($view))href="#projects-section" @else href="/#projects-section" @endif class="nav-link">@lang('navbar.our_solutions')</a></li>
                         <li><a  @if(isset($view))href="#services" @else href="/#services" @endif class="nav-link">@lang('navbar.services')</a></li>
+                        <li>
+                            <div id="languageSelector">
+                                <language-selector></language-selector>
+                            </div>
+                        </li>
                     </ul>
                 </nav>
 

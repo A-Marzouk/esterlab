@@ -1733,7 +1733,6 @@ __webpack_require__.r(__webpack_exports__);
   methods: {
     languageSelection: function languageSelection() {
       this.showLanguageSelection = true;
-      console.log('show selection');
     },
     switchLanguage: function switchLanguage(lang) {
       this.language = lang;
@@ -1744,19 +1743,14 @@ __webpack_require__.r(__webpack_exports__);
 
       axios.get('/language/get/current').then(function (response) {
         _this.language = response.data;
-        console.log(response.data);
       });
+    },
+    hide: function hide() {
+      this.showLanguageSelection = false;
     }
   },
   mounted: function mounted() {
-    var _this2 = this;
-
     this.getCurrentLanguage();
-    $('.js-menu-toggle').click(function () {
-      if (_this2.showLanguageSelection === true) {
-        _this2.showLanguageSelection = false;
-      }
-    });
   }
 });
 
@@ -6219,7 +6213,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".languageBox {\n  border: 1px solid #DADADA;\n  border-radius: 20px;\n  width: 75px;\n  height: 30px;\n}\n@media (max-width: 991px) {\n.languageBox {\n    margin-left: 17px;\n    margin-top: 5px;\n}\n}\n.languageBox div {\n  letter-spacing: -0.1px;\n  font-size: 13px;\n  color: #4A5464;\n  font-family: Roboto;\n  font-style: normal;\n  font-weight: normal;\n  line-height: 13px;\n}\n.languageBox img {\n  margin-right: 10px;\n  margin-left: 16px;\n}", ""]);
+exports.push([module.i, ".languageBox {\n  border: 1px solid #DADADA;\n  border-radius: 20px;\n  width: 75px;\n  height: 30px;\n}\n@media (max-width: 991px) {\n.languageBox {\n    margin-top: 7px;\n}\n}\n.languageBox div {\n  letter-spacing: -0.1px;\n  font-size: 13px;\n  color: #4A5464;\n  font-family: Roboto;\n  font-style: normal;\n  font-weight: normal;\n  line-height: 13px;\n}\n.languageBox img {\n  margin-right: 10px;\n  margin-left: 16px;\n}", ""]);
 
 // exports
 
@@ -37703,24 +37697,38 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("div", [
     _c("div", [
-      _c("div", { on: { click: _vm.languageSelection } }, [
-        _c(
-          "a",
-          {
-            staticClass: "languageBox d-flex align-items-center",
-            attrs: { href: "javascript:void(0)" }
-          },
-          [
-            _c("img", { attrs: { src: "/images/sorting.svg", alt: "" } }),
-            _vm._v(" "),
-            _c("div", [
-              _vm.language === "en" ? _c("span", [_vm._v("EN")]) : _vm._e(),
+      _c(
+        "div",
+        {
+          directives: [
+            {
+              name: "click-outside",
+              rawName: "v-click-outside",
+              value: _vm.hide,
+              expression: "hide"
+            }
+          ],
+          on: { click: _vm.languageSelection }
+        },
+        [
+          _c(
+            "a",
+            {
+              staticClass: "languageBox d-flex align-items-center",
+              attrs: { href: "javascript:void(0)" }
+            },
+            [
+              _c("img", { attrs: { src: "/images/sorting.svg", alt: "" } }),
               _vm._v(" "),
-              _vm.language === "de" ? _c("span", [_vm._v("DE")]) : _vm._e()
-            ])
-          ]
-        )
-      ]),
+              _c("div", [
+                _vm.language === "en" ? _c("span", [_vm._v("EN")]) : _vm._e(),
+                _vm._v(" "),
+                _vm.language === "de" ? _c("span", [_vm._v("DE")]) : _vm._e()
+              ])
+            ]
+          )
+        ]
+      ),
       _vm._v(" "),
       _c(
         "div",
@@ -49924,6 +49932,20 @@ module.exports = function(module) {
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
+Vue.directive('click-outside', {
+  bind: function bind(el, binding, vnode) {
+    this.event = function (event) {
+      if (!(el == event.target || el.contains(event.target))) {
+        vnode.context[binding.expression](event);
+      }
+    };
+
+    document.body.addEventListener('click', this.event);
+  },
+  unbind: function unbind(el) {
+    document.body.removeEventListener('click', this.event);
+  }
+});
 /**
  * The following block of code may be used to automatically register your
  * Vue components. It will recursively scan this directory for the Vue
@@ -49944,6 +49966,12 @@ Vue.component('language-selector', __webpack_require__(/*! ./components/language
 if ($("#languageSelector").length !== 0) {
   var languageSelector = new Vue({
     el: '#languageSelector'
+  });
+}
+
+if ($("#languageSelector_navbar").length !== 0) {
+  var languageSelector_navbar = new Vue({
+    el: '#languageSelector_navbar'
   });
 }
 

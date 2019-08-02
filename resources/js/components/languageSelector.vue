@@ -1,7 +1,7 @@
 <template>
     <div>
         <div>
-            <div @click="languageSelection">
+            <div @click="languageSelection" v-click-outside="hide" >
                 <a href="javascript:void(0)" class="languageBox d-flex align-items-center">
                     <img src="/images/sorting.svg" alt="">
                     <div>
@@ -35,7 +35,6 @@
         methods:{
             languageSelection(){
                 this.showLanguageSelection = true ;
-                console.log('show selection');
             },
             switchLanguage(lang){
                 this.language = lang ;
@@ -45,18 +44,14 @@
             getCurrentLanguage(){
                 axios.get('/language/get/current').then( (response) => {
                     this.language = response.data ;
-                    console.log(response.data);
-
                 });
             },
+            hide(){
+                this.showLanguageSelection = false ;
+            }
         },
         mounted() {
             this.getCurrentLanguage() ;
-            $('.js-menu-toggle').click( () => {
-                if(this.showLanguageSelection === true ){
-                    this.showLanguageSelection = false ;
-                }
-            });
         }
     }
 </script>
@@ -69,8 +64,7 @@
         height: 30px;
 
         @media (max-width: 991px) {
-            margin-left: 17px;
-            margin-top: 5px;
+            margin-top: 7px;
         }
 
         div{

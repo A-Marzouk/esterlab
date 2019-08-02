@@ -2,7 +2,12 @@
   background: whitesmoke !important;
 }
 
+#languageSelector{
+  @media (max-width: 991px) {
+    display: none;
+  }
 
+}
 // spinner
 
 .spinner {

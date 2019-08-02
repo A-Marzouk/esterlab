@@ -8,6 +8,20 @@ require('./bootstrap');
 
 window.Vue = require('vue');
 
+Vue.directive('click-outside', {
+    bind: function (el, binding, vnode) {
+        this.event = function (event) {
+            if (!(el == event.target || el.contains(event.target))) {
+                vnode.context[binding.expression](event);
+            }
+        };
+        document.body.addEventListener('click', this.event)
+    },
+    unbind: function (el) {
+        document.body.removeEventListener('click', this.event)
+    },
+});
+
 /**
  * The following block of code may be used to automatically register your
  * Vue components. It will recursively scan this directory for the Vue
@@ -30,5 +44,12 @@ Vue.component('language-selector', require('./components/languageSelector.vue').
 if ($("#languageSelector").length !== 0){
     let languageSelector = new Vue({
         el:'#languageSelector'
+    });
+}
+
+
+if ($("#languageSelector_navbar").length !== 0){
+    let languageSelector_navbar = new Vue({
+        el:'#languageSelector_navbar'
     });
 }
