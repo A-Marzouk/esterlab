@@ -11,9 +11,20 @@
 |
 */
 
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\App;
+use Illuminate\Support\Facades\Config;
+use Illuminate\Support\Facades\Session;
 
 
-Route::get('/green-energy/{lang?}','HomeController@showGreenEnergyPage');
-Route::get('/electric-bus/{lang?}','HomeController@showElectricBusPage');
-Route::get('/math-modeling/{lang?}','HomeController@showMathModelingPage');
-Route::get('/{lang?}','HomeController@index');
+
+
+
+Route::get('/green-energy/{lang?}','HomeController@showGreenEnergyPage')->name('green.energy');
+Route::get('/electric-bus/{lang?}','HomeController@showElectricBusPage')->name('electric.bus');
+Route::get('/math-modeling/{lang?}','HomeController@showMathModelingPage')->name('math.modeling'); // ? sign to make it optional
+Route::get('/{lang?}','HomeController@index')->name('home');
+
+Route::get('/language/switch/{lang}','HomeController@switchLanguage')->name('switch.language');
+Route::get('/language/get/current','HomeController@getCurrentLanguage')->name('get.language');
+

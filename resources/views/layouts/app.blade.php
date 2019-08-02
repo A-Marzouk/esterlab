@@ -7,6 +7,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+
     <!-- Google Tag Manager -->
         <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
                     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -111,6 +115,9 @@
                         <li><a @if(isset($view))href="#services-section" @else href="/#services-section" @endif  class="nav-link">@lang('navbar.development_concept')</a></li>
                         <li><a @if(isset($view))href="#projects-section" @else href="/#projects-section" @endif class="nav-link">@lang('navbar.our_solutions')</a></li>
                         <li><a  @if(isset($view))href="#services" @else href="/#services" @endif class="nav-link">@lang('navbar.services')</a></li>
+                        <li id="languageSelector">
+                            <language-selector></language-selector>
+                        </li>
                     </ul>
                 </nav>
 
@@ -238,6 +245,8 @@
 
 </div>
 
+
+<script src="/js/app.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script src="/js/jquery-ui.js"></script>
@@ -253,7 +262,7 @@
 
 <script src="/js/main.js"></script>
 
-<script>
+    <script>
     $(document).ready(function(){
         let certificatesSlider = $('.multiple-items');
 
@@ -302,10 +311,10 @@
             }
         });
 
-
     });
 
 </script>
+
 
 </body>
 
