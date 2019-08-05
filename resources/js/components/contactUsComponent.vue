@@ -102,6 +102,13 @@
                 setTimeout(()=>{
                     $('.successMessage').addClass('d-none');
                 },2500);
+
+                this.name = '' ;
+                this.mobile_number = '' ;
+                this.errors = {
+                    'name':'',
+                    'mobile_number':'',
+                };
             },
             checkForm () {
                 if (this.name && this.mobile_number) {

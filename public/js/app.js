@@ -1799,6 +1799,12 @@ __webpack_require__.r(__webpack_exports__);
       setTimeout(function () {
         $('.successMessage').addClass('d-none');
       }, 2500);
+      this.name = '';
+      this.mobile_number = '';
+      this.errors = {
+        'name': '',
+        'mobile_number': ''
+      };
     },
     checkForm: function checkForm() {
       if (this.name && this.mobile_number) {
