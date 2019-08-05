@@ -18,10 +18,7 @@
                         </div>
                         <div class="data d-flex flex-column">
                             <div>
-                                1.800.851.7910
-                            </div>
-                            <div>
-                                512.595.1473
+                                +38 068 192 92 92
                             </div>
                         </div>
                     </div>
@@ -33,8 +30,6 @@
                         <div class="data d-flex flex-column">
                             <div>
                                 info@esterlab.org
-                            </div>  <div>
-                                sales@esterlab.org
                             </div>
                         </div>
                     </div>
@@ -45,23 +40,29 @@
                         </div>
                         <div class="data d-flex flex-column">
                             <div>
-                                600 Congress Ave
+                                60 Sichovych Striltsiv St.
                             </div>
                             <div>
-                                Floor 14
+                                Kiev
                             </div>
                             <div>
-                                Austin,TX 78701
+                                Ukraine, 04050
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="right">
-                <div>
-                    <input type="text" placeholder="Name" class="input">
-                    <input type="tel" placeholder="Mobile number" class="input">
-                    <a href="javascript:void(0)">Call me back</a>
+                <div class="form-inputs w-100">
+                    <div class="w-100 d-flex justify-content-center align-items-center">
+                        <img src="/images/name.png" alt="" class="input-image">
+                        <input type="text" placeholder="Name">
+                    </div>
+                    <div  class="w-100  d-flex justify-content-center align-items-center">
+                        <img src="/images/mail-white.png" alt="" class="input-image">
+                        <input type="tel" placeholder="Mobile number">
+                    </div>
+                    <a href="javascript:void(0)" class="callMeBtn">Call me back</a>
                 </div>
             </div>
         </div>
@@ -80,16 +81,15 @@
         height:400px;
         margin: 100px;
         border-radius: 4px;
+        background-image: url("/images/background_all.png"); /* The image used */
+        background-color: #cccccc; /* Used if the image is unavailable */
+        background-position: center; /* Center the image */
+        background-repeat: no-repeat; /* Do not repeat the image */
+        background-size: cover; /* Resize the background image to cover the entire container */
+
         .left{
             width:50%;
-            padding: 30px;
-
-            background-image: url("/images/adress_map_white.png"); /* The image used */
-            background-color: #cccccc; /* Used if the image is unavailable */
-            background-position: center; /* Center the image */
-            background-repeat: no-repeat; /* Do not repeat the image */
-            background-size: cover; /* Resize the background image to cover the entire container */
-
+            padding: 40px 30px 30px 30px;
             border-bottom-left-radius: 15px;
             border-top-left-radius: 15px;
             .header{
@@ -114,12 +114,61 @@
 
         }
         .right{
-            background: #38c172;
-            padding: 30px;
+
+            padding: 40px 30px 30px 30px;
             width:50%;
 
             border-bottom-right-radius: 15px;
             border-top-right-radius: 15px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .form-inputs{
+                padding-left: 12px;
+                input{
+                    width: 100%;
+                    height: 50px;
+                    border:1px solid white;
+                    border-radius: 10px;
+                    margin-bottom: 12px;
+                    background:none;
+                    color:white;
+                    padding-left: 50px;
+                }
+
+                .input-image{
+                    width: 40px;
+                    margin-right: -42px;
+                    margin-bottom: 15px;
+                    padding-left: 17px;
+                }
+
+                .callMeBtn{
+                    width: 100%;
+                    height: 50px;
+                    border-radius: 50px;
+                    border: solid 1px white;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color:white;
+                    font-size:18px;
+                }
+
+                ::placeholder { /* Firefox, Chrome, Opera */
+                    color: white;
+                }
+
+                :-ms-input-placeholder { /* Internet Explorer 10-11 */
+                    color: white;
+                }
+
+                ::-ms-input-placeholder { /* Microsoft Edge */
+                    color: white;
+                }
+            }
 
         }
 

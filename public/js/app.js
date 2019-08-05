@@ -1767,6 +1767,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "contactUsComponent"
 });
@@ -6298,7 +6299,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".contact-form[data-v-597cb5ca] {\n  width: 725px;\n  height: 400px;\n  margin: 100px;\n  border-radius: 4px;\n}\n.contact-form .left[data-v-597cb5ca] {\n  width: 50%;\n  padding: 30px;\n  background-image: url(\"/images/adress_map_white.png\");\n  /* The image used */\n  background-color: #cccccc;\n  /* Used if the image is unavailable */\n  background-position: center;\n  /* Center the image */\n  background-repeat: no-repeat;\n  /* Do not repeat the image */\n  background-size: cover;\n  /* Resize the background image to cover the entire container */\n  border-bottom-left-radius: 15px;\n  border-top-left-radius: 15px;\n}\n.contact-form .left .header[data-v-597cb5ca] {\n  color: black;\n}\n.contact-form .left .header .main[data-v-597cb5ca] {\n  font-size: 18px;\n  font-weight: 600;\n}\n.contact-form .left .header .sub[data-v-597cb5ca] {\n  font-size: 14px;\n}\n.contact-form .left .content[data-v-597cb5ca] {\n  padding-top: 30px;\n  color: black;\n}\n.contact-form .left .content .data[data-v-597cb5ca] {\n  padding-bottom: 20px;\n  padding-left: 10px;\n}\n.contact-form .right[data-v-597cb5ca] {\n  background: #38c172;\n  padding: 30px;\n  width: 50%;\n  border-bottom-right-radius: 15px;\n  border-top-right-radius: 15px;\n}", ""]);
+exports.push([module.i, ".contact-form[data-v-597cb5ca] {\n  width: 725px;\n  height: 400px;\n  margin: 100px;\n  border-radius: 4px;\n  background-image: url(\"/images/background_all.png\");\n  /* The image used */\n  background-color: #cccccc;\n  /* Used if the image is unavailable */\n  background-position: center;\n  /* Center the image */\n  background-repeat: no-repeat;\n  /* Do not repeat the image */\n  background-size: cover;\n  /* Resize the background image to cover the entire container */\n}\n.contact-form .left[data-v-597cb5ca] {\n  width: 50%;\n  padding: 40px 30px 30px 30px;\n  border-bottom-left-radius: 15px;\n  border-top-left-radius: 15px;\n}\n.contact-form .left .header[data-v-597cb5ca] {\n  color: black;\n}\n.contact-form .left .header .main[data-v-597cb5ca] {\n  font-size: 18px;\n  font-weight: 600;\n}\n.contact-form .left .header .sub[data-v-597cb5ca] {\n  font-size: 14px;\n}\n.contact-form .left .content[data-v-597cb5ca] {\n  padding-top: 30px;\n  color: black;\n}\n.contact-form .left .content .data[data-v-597cb5ca] {\n  padding-bottom: 20px;\n  padding-left: 10px;\n}\n.contact-form .right[data-v-597cb5ca] {\n  padding: 40px 30px 30px 30px;\n  width: 50%;\n  border-bottom-right-radius: 15px;\n  border-top-right-radius: 15px;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n.contact-form .right .form-inputs[data-v-597cb5ca] {\n  padding-left: 12px;\n}\n.contact-form .right .form-inputs input[data-v-597cb5ca] {\n  width: 100%;\n  height: 50px;\n  border: 1px solid white;\n  border-radius: 10px;\n  margin-bottom: 12px;\n  background: none;\n  color: white;\n  padding-left: 50px;\n}\n.contact-form .right .form-inputs .input-image[data-v-597cb5ca] {\n  width: 40px;\n  margin-right: -42px;\n  margin-bottom: 15px;\n  padding-left: 17px;\n}\n.contact-form .right .form-inputs .callMeBtn[data-v-597cb5ca] {\n  width: 100%;\n  height: 50px;\n  border-radius: 50px;\n  border: solid 1px white;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  color: white;\n  font-size: 18px;\n}\n.contact-form .right .form-inputs[data-v-597cb5ca] ::-webkit-input-placeholder {\n  /* Firefox, Chrome, Opera */\n  color: white;\n}\n.contact-form .right .form-inputs[data-v-597cb5ca] ::-moz-placeholder {\n  /* Firefox, Chrome, Opera */\n  color: white;\n}\n.contact-form .right .form-inputs[data-v-597cb5ca] :-ms-input-placeholder {\n  /* Firefox, Chrome, Opera */\n  color: white;\n}\n.contact-form .right .form-inputs[data-v-597cb5ca] ::-ms-input-placeholder {\n  /* Firefox, Chrome, Opera */\n  color: white;\n}\n.contact-form .right .form-inputs[data-v-597cb5ca] ::placeholder {\n  /* Firefox, Chrome, Opera */\n  color: white;\n}\n.contact-form .right .form-inputs[data-v-597cb5ca] :-ms-input-placeholder {\n  /* Internet Explorer 10-11 */\n  color: white;\n}\n.contact-form .right .form-inputs[data-v-597cb5ca] ::-ms-input-placeholder {\n  /* Microsoft Edge */\n  color: white;\n}", ""]);
 
 // exports
 
@@ -37865,13 +37866,7 @@ var staticRenderFns = [
               _c("div", { staticClass: "data d-flex flex-column" }, [
                 _c("div", [
                   _vm._v(
-                    "\n                            1.800.851.7910\n                        "
-                  )
-                ]),
-                _vm._v(" "),
-                _c("div", [
-                  _vm._v(
-                    "\n                            512.595.1473\n                        "
+                    "\n                            +38 068 192 92 92\n                        "
                   )
                 ])
               ])
@@ -37890,12 +37885,6 @@ var staticRenderFns = [
                   _vm._v(
                     "\n                            info@esterlab.org\n                        "
                   )
-                ]),
-                _vm._v(" "),
-                _c("div", [
-                  _vm._v(
-                    "\n                            sales@esterlab.org\n                        "
-                  )
                 ])
               ])
             ]),
@@ -37911,19 +37900,19 @@ var staticRenderFns = [
               _c("div", { staticClass: "data d-flex flex-column" }, [
                 _c("div", [
                   _vm._v(
-                    "\n                            600 Congress Ave\n                        "
+                    "\n                            60 Sichovych Striltsiv St.\n                        "
                   )
                 ]),
                 _vm._v(" "),
                 _c("div", [
                   _vm._v(
-                    "\n                            Floor 14\n                        "
+                    "\n                            Kiev\n                        "
                   )
                 ]),
                 _vm._v(" "),
                 _c("div", [
                   _vm._v(
-                    "\n                            Austin,TX 78701\n                        "
+                    "\n                            Ukraine, 04050\n                        "
                   )
                 ])
               ])
@@ -37932,20 +37921,49 @@ var staticRenderFns = [
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "right" }, [
-          _c("div", [
-            _c("input", {
-              staticClass: "input",
-              attrs: { type: "text", placeholder: "Name" }
-            }),
+          _c("div", { staticClass: "form-inputs w-100" }, [
+            _c(
+              "div",
+              {
+                staticClass:
+                  "w-100 d-flex justify-content-center align-items-center"
+              },
+              [
+                _c("img", {
+                  staticClass: "input-image",
+                  attrs: { src: "/images/name.png", alt: "" }
+                }),
+                _vm._v(" "),
+                _c("input", { attrs: { type: "text", placeholder: "Name" } })
+              ]
+            ),
             _vm._v(" "),
-            _c("input", {
-              staticClass: "input",
-              attrs: { type: "tel", placeholder: "Mobile number" }
-            }),
+            _c(
+              "div",
+              {
+                staticClass:
+                  "w-100  d-flex justify-content-center align-items-center"
+              },
+              [
+                _c("img", {
+                  staticClass: "input-image",
+                  attrs: { src: "/images/mail-white.png", alt: "" }
+                }),
+                _vm._v(" "),
+                _c("input", {
+                  attrs: { type: "tel", placeholder: "Mobile number" }
+                })
+              ]
+            ),
             _vm._v(" "),
-            _c("a", { attrs: { href: "javascript:void(0)" } }, [
-              _vm._v("Call me back")
-            ])
+            _c(
+              "a",
+              {
+                staticClass: "callMeBtn",
+                attrs: { href: "javascript:void(0)" }
+              },
+              [_vm._v("Call me back")]
+            )
           ])
         ])
       ])
