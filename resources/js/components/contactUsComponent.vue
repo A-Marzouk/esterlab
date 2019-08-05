@@ -86,11 +86,28 @@
         background-repeat: no-repeat; /* Do not repeat the image */
         background-size: cover; /* Resize the background image to cover the entire container */
 
+        @media (max-width: 991px) {
+            width: 100%;
+            height: auto;
+            flex-wrap: wrap;
+            flex-direction: column-reverse !important;
+
+            background-image: url("/images/adress_map_white.png"); /* The image used */
+            background-color: #cccccc; /* Used if the image is unavailable */
+            background-position: center; /* Center the image */
+            background-repeat: no-repeat; /* Do not repeat the image */
+            background-size: cover; /* Resize the background image to cover the entire container */
+        }
+
+
         .left{
             width:50%;
             padding: 40px 30px 30px 30px;
             border-bottom-left-radius: 15px;
             border-top-left-radius: 15px;
+            @media (max-width: 991px) {
+                width: 100%;
+            }
             .header{
                 color: black;
                 .main{
@@ -113,6 +130,14 @@
 
         }
         .right{
+
+            @media (max-width: 991px) {
+                width: 100%;
+                background-color:#002594;
+                border-bottom-right-radius: 15px;
+                border-bottom-left-radius: 15px;
+                border-top-right-radius: 0;
+            }
 
             padding: 40px 30px 30px 30px;
             width:50%;

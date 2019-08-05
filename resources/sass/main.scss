@@ -94,6 +94,9 @@
 
 .contactModalDialog{
   padding-left: 40px;
+  @media (max-width: 991px) {
+    padding-left: 0;
+  }
 }
 
 
