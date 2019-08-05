@@ -258,6 +258,10 @@
 
     <a id="button" href="javascript:void(0)"></a>
 
+    <a class="contactBtn" href="javascript:void(0)">
+        <img src="/images/contactUsIcon.png" alt="contact us">
+    </a>
+
 
 </div>
 
