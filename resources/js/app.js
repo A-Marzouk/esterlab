@@ -34,6 +34,7 @@ Vue.directive('click-outside', {
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default));
 
 Vue.component('language-selector', require('./components/languageSelector.vue').default);
+Vue.component('contact-us', require('./components/contactUsComponent.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -44,6 +45,13 @@ Vue.component('language-selector', require('./components/languageSelector.vue').
 if ($("#languageSelector").length !== 0){
     let languageSelector = new Vue({
         el:'#languageSelector'
+    });
+}
+
+
+if ($("#contact_us").length !== 0){
+    let contact_us = new Vue({
+        el:'#contact_us'
     });
 }
 

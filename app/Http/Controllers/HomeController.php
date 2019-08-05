@@ -62,5 +62,9 @@ class HomeController extends Controller
         return 'en' ;
     }
 
+    public function contactUS(){
+        return view('contact');
+    }
+
 
 }

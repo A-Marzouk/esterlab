@@ -28,3 +28,7 @@ Route::get('/{lang?}','HomeController@index')->name('home');
 Route::get('/language/switch/{lang}','HomeController@switchLanguage')->name('switch.language');
 Route::get('/language/get/current','HomeController@getCurrentLanguage')->name('get.language');
 
+
+// test route
+Route::get('/contact-us/test','HomeController@contactUS');
+
