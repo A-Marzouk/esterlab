@@ -258,10 +258,24 @@
 
     <a id="button" href="javascript:void(0)"></a>
 
-    <a class="contactBtn" href="javascript:void(0)">
+    <a class="contactBtn" href="javascript:void(0)" data-toggle="modal" data-target="#contactUsModal">
         <img src="/images/contactUsIcon.png" alt="contact us">
     </a>
 
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="contactUsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg contactModalDialog" role="document">
+            <div class="modal-content" style="background: none;border: none;">
+                <div class="modal-body">
+                    <div id="contact_us">
+                        <contact-us></contact-us>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </div>
 

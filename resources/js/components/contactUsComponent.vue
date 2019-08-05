@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div class="">
         <div class="contact-form d-flex">
             <div class="left">
                 <div class="header">
@@ -79,7 +79,6 @@
     .contact-form{
         width: 725px;
         height:400px;
-        margin: 100px;
         border-radius: 4px;
         background-image: url("/images/background_all.png"); /* The image used */
         background-color: #cccccc; /* Used if the image is unavailable */
