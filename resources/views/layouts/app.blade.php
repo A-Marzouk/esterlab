@@ -262,6 +262,14 @@
         <img src="/images/contactUsIcon.png" alt="contact us">
     </a>
 
+    <div class="successMessage d-none">
+        <div class="alert alert-success">
+            Your request has been successfully submitted
+            <span id="closeMessage">&times;</span>
+        </div>
+    </div>
+
+
 
 
     <!-- Modal -->
@@ -343,6 +351,10 @@
             } else {
                 $('#button').removeClass('show');
             }
+        });
+
+        $('#closeMessage').click( () => {
+            $('.successMessage').addClass('d-none');
         });
 
     });

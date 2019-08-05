@@ -54,7 +54,7 @@
             </div>
             <div class="right">
                 <div>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <button type="button" class="close" id='closeModal' data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true" style="color: white; outline:none">&times;</span>
                     </button>
                 </div>
@@ -67,7 +67,7 @@
                         <img src="/images/mail-white.png" alt="" class="input-image">
                         <input type="tel" placeholder="Mobile number">
                     </div>
-                    <a href="javascript:void(0)" class="callMeBtn">Call me back</a>
+                    <a href="javascript:void(0)" @click="callMeBack" class="callMeBtn">Call me back</a>
                 </div>
             </div>
         </div>
@@ -76,7 +76,17 @@
 
 <script>
     export default {
-        name: "contactUsComponent"
+        name: "contactUsComponent",
+        methods:{
+            callMeBack(){
+                $('#closeModal').click();
+                $('.successMessage').removeClass('d-none');
+
+                setTimeout(()=>{
+                    $('.successMessage').addClass('d-none');
+                },2500);
+            }
+        }
     }
 </script>
 

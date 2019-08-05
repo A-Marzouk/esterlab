@@ -145,6 +145,23 @@
   }
 }
 
+.successMessage {
+  position: fixed;
+  top: 115px;
+  left: 25px;
+  z-index: 1000;
+}
+
+.successMessage div span {
+  padding-left: 10px;
+  color: green;
+  font-size: 18px;
+}
+
+#closeMessage:hover {
+  cursor: pointer;
+}
+
 .select-popup {
   width: 75px;
   background: white;

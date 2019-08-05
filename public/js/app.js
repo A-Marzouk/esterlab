@@ -1774,7 +1774,16 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 /* harmony default export */ __webpack_exports__["default"] = ({
-  name: "contactUsComponent"
+  name: "contactUsComponent",
+  methods: {
+    callMeBack: function callMeBack() {
+      $('#closeModal').click();
+      $('.successMessage').removeClass('d-none');
+      setTimeout(function () {
+        $('.successMessage').addClass('d-none');
+      }, 2500);
+    }
+  }
 });
 
 /***/ }),
@@ -37835,168 +37844,180 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("div", {}, [
+    _c("div", { staticClass: "contact-form d-flex" }, [
+      _vm._m(0),
+      _vm._v(" "),
+      _c("div", { staticClass: "right" }, [
+        _vm._m(1),
+        _vm._v(" "),
+        _c("div", { staticClass: "form-inputs w-100" }, [
+          _vm._m(2),
+          _vm._v(" "),
+          _vm._m(3),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              staticClass: "callMeBtn",
+              attrs: { href: "javascript:void(0)" },
+              on: { click: _vm.callMeBack }
+            },
+            [_vm._v("Call me back")]
+          )
+        ])
+      ])
+    ])
+  ])
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", {}, [
-      _c("div", { staticClass: "contact-form d-flex" }, [
-        _c("div", { staticClass: "left" }, [
-          _c("div", { staticClass: "header" }, [
-            _c("div", { staticClass: "main" }, [
-              _vm._v(
-                "\n                    Let's get in touch\n                "
-              )
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "sub" }, [
-              _vm._v(
-                "\n                    We're open for any suggestions or just to have a chat.\n                "
-              )
-            ])
+    return _c("div", { staticClass: "left" }, [
+      _c("div", { staticClass: "header" }, [
+        _c("div", { staticClass: "main" }, [
+          _vm._v("\n                    Let's get in touch\n                ")
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "sub" }, [
+          _vm._v(
+            "\n                    We're open for any suggestions or just to have a chat.\n                "
+          )
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "content d-flex flex-column" }, [
+        _c("div", { staticClass: "d-flex" }, [
+          _c("div", { staticClass: "icon" }, [
+            _c("img", {
+              staticStyle: { width: "26px" },
+              attrs: { src: "/images/phone.png", alt: "phone icon" }
+            })
           ]),
           _vm._v(" "),
-          _c("div", { staticClass: "content d-flex flex-column" }, [
-            _c("div", { staticClass: "d-flex" }, [
-              _c("div", { staticClass: "icon" }, [
-                _c("img", {
-                  staticStyle: { width: "26px" },
-                  attrs: { src: "/images/phone.png", alt: "phone icon" }
-                })
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "data d-flex flex-column" }, [
-                _c("div", [
-                  _vm._v(
-                    "\n                            +38 068 192 92 92\n                        "
-                  )
-                ])
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "d-flex" }, [
-              _c("div", { staticClass: "icon" }, [
-                _c("img", {
-                  staticStyle: { width: "26px" },
-                  attrs: { src: "/images/mail.png", alt: "mail icon" }
-                })
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "data d-flex flex-column" }, [
-                _c("div", [
-                  _vm._v(
-                    "\n                            info@esterlab.org\n                        "
-                  )
-                ])
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "d-flex" }, [
-              _c("div", { staticClass: "icon" }, [
-                _c("img", {
-                  staticStyle: { width: "26px" },
-                  attrs: { src: "/images/adress.svg", alt: "adress icon" }
-                })
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "data d-flex flex-column" }, [
-                _c("div", [
-                  _vm._v(
-                    "\n                            60 Sichovych Striltsiv St.\n                        "
-                  )
-                ]),
-                _vm._v(" "),
-                _c("div", [
-                  _vm._v(
-                    "\n                            Kiev\n                        "
-                  )
-                ]),
-                _vm._v(" "),
-                _c("div", [
-                  _vm._v(
-                    "\n                            Ukraine, 04050\n                        "
-                  )
-                ])
-              ])
+          _c("div", { staticClass: "data d-flex flex-column" }, [
+            _c("div", [
+              _vm._v(
+                "\n                            +38 068 192 92 92\n                        "
+              )
             ])
           ])
         ]),
         _vm._v(" "),
-        _c("div", { staticClass: "right" }, [
-          _c("div", [
-            _c(
-              "button",
-              {
-                staticClass: "close",
-                attrs: {
-                  type: "button",
-                  "data-dismiss": "modal",
-                  "aria-label": "Close"
-                }
-              },
-              [
-                _c(
-                  "span",
-                  {
-                    staticStyle: { color: "white", outline: "none" },
-                    attrs: { "aria-hidden": "true" }
-                  },
-                  [_vm._v("×")]
-                )
-              ]
-            )
+        _c("div", { staticClass: "d-flex" }, [
+          _c("div", { staticClass: "icon" }, [
+            _c("img", {
+              staticStyle: { width: "26px" },
+              attrs: { src: "/images/mail.png", alt: "mail icon" }
+            })
           ]),
           _vm._v(" "),
-          _c("div", { staticClass: "form-inputs w-100" }, [
-            _c(
-              "div",
-              {
-                staticClass:
-                  "w-100 d-flex justify-content-center align-items-center"
-              },
-              [
-                _c("img", {
-                  staticClass: "input-image",
-                  attrs: { src: "/images/name.png", alt: "" }
-                }),
-                _vm._v(" "),
-                _c("input", { attrs: { type: "text", placeholder: "Name" } })
-              ]
-            ),
+          _c("div", { staticClass: "data d-flex flex-column" }, [
+            _c("div", [
+              _vm._v(
+                "\n                            info@esterlab.org\n                        "
+              )
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "d-flex" }, [
+          _c("div", { staticClass: "icon" }, [
+            _c("img", {
+              staticStyle: { width: "26px" },
+              attrs: { src: "/images/adress.svg", alt: "adress icon" }
+            })
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "data d-flex flex-column" }, [
+            _c("div", [
+              _vm._v(
+                "\n                            60 Sichovych Striltsiv St.\n                        "
+              )
+            ]),
             _vm._v(" "),
-            _c(
-              "div",
-              {
-                staticClass:
-                  "w-100  d-flex justify-content-center align-items-center"
-              },
-              [
-                _c("img", {
-                  staticClass: "input-image",
-                  attrs: { src: "/images/mail-white.png", alt: "" }
-                }),
-                _vm._v(" "),
-                _c("input", {
-                  attrs: { type: "tel", placeholder: "Mobile number" }
-                })
-              ]
-            ),
+            _c("div", [
+              _vm._v(
+                "\n                            Kiev\n                        "
+              )
+            ]),
             _vm._v(" "),
-            _c(
-              "a",
-              {
-                staticClass: "callMeBtn",
-                attrs: { href: "javascript:void(0)" }
-              },
-              [_vm._v("Call me back")]
-            )
+            _c("div", [
+              _vm._v(
+                "\n                            Ukraine, 04050\n                        "
+              )
+            ])
           ])
         ])
       ])
     ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", [
+      _c(
+        "button",
+        {
+          staticClass: "close",
+          attrs: {
+            type: "button",
+            id: "closeModal",
+            "data-dismiss": "modal",
+            "aria-label": "Close"
+          }
+        },
+        [
+          _c(
+            "span",
+            {
+              staticStyle: { color: "white", outline: "none" },
+              attrs: { "aria-hidden": "true" }
+            },
+            [_vm._v("×")]
+          )
+        ]
+      )
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      { staticClass: "w-100 d-flex justify-content-center align-items-center" },
+      [
+        _c("img", {
+          staticClass: "input-image",
+          attrs: { src: "/images/name.png", alt: "" }
+        }),
+        _vm._v(" "),
+        _c("input", { attrs: { type: "text", placeholder: "Name" } })
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      {
+        staticClass: "w-100  d-flex justify-content-center align-items-center"
+      },
+      [
+        _c("img", {
+          staticClass: "input-image",
+          attrs: { src: "/images/mail-white.png", alt: "" }
+        }),
+        _vm._v(" "),
+        _c("input", { attrs: { type: "tel", placeholder: "Mobile number" } })
+      ]
+    )
   }
 ]
 render._withStripped = true
