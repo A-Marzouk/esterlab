@@ -264,7 +264,7 @@
 
     <div class="successMessage d-none">
         <div class="alert alert-success">
-            Your request has been successfully submitted
+            Thank you! We'll contact you soon
             <span id="closeMessage">&times;</span>
         </div>
     </div>

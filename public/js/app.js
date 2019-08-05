@@ -1773,15 +1773,52 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "contactUsComponent",
+  data: function data() {
+    return {
+      name: '',
+      mobile_number: '',
+      errors: {
+        'name': '',
+        'mobile_number': ''
+      }
+    };
+  },
   methods: {
     callMeBack: function callMeBack() {
+      if (!this.checkForm()) {
+        return;
+      }
+
       $('#closeModal').click();
       $('.successMessage').removeClass('d-none');
       setTimeout(function () {
         $('.successMessage').addClass('d-none');
       }, 2500);
+    },
+    checkForm: function checkForm() {
+      if (this.name && this.mobile_number) {
+        return true;
+      }
+
+      this.errors = {
+        'name': '',
+        'mobile_number': ''
+      };
+
+      if (!this.name) {
+        this.errors.name = 'Name required.';
+      }
+
+      if (!this.age) {
+        this.errors.mobile_number = 'Mobile number required.';
+      }
+
+      return false;
     }
   }
 });
@@ -6313,7 +6350,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".contact-form[data-v-597cb5ca] {\n  width: 725px;\n  height: 400px;\n  border-radius: 4px;\n  background-image: url(\"/images/background_all.png\");\n  /* The image used */\n  background-color: #cccccc;\n  /* Used if the image is unavailable */\n  background-position: center;\n  /* Center the image */\n  background-repeat: no-repeat;\n  /* Do not repeat the image */\n  background-size: cover;\n  /* Resize the background image to cover the entire container */\n}\n@media (max-width: 991px) {\n.contact-form[data-v-597cb5ca] {\n    width: 100%;\n    height: auto;\n    flex-wrap: wrap;\n    flex-direction: column-reverse !important;\n    background-image: url(\"/images/adress_map_white.png\");\n    /* The image used */\n    background-color: #cccccc;\n    /* Used if the image is unavailable */\n    background-position: center;\n    /* Center the image */\n    background-repeat: no-repeat;\n    /* Do not repeat the image */\n    background-size: cover;\n    /* Resize the background image to cover the entire container */\n}\n}\n.contact-form .left[data-v-597cb5ca] {\n  width: 50%;\n  padding: 40px 30px 30px 30px;\n  border-bottom-left-radius: 15px;\n  border-top-left-radius: 15px;\n}\n@media (max-width: 991px) {\n.contact-form .left[data-v-597cb5ca] {\n    width: 100%;\n}\n}\n.contact-form .left .header[data-v-597cb5ca] {\n  color: black;\n}\n.contact-form .left .header .main[data-v-597cb5ca] {\n  font-size: 18px;\n  font-weight: 600;\n}\n.contact-form .left .header .sub[data-v-597cb5ca] {\n  font-size: 14px;\n}\n.contact-form .left .content[data-v-597cb5ca] {\n  padding-top: 30px;\n  color: black;\n}\n.contact-form .left .content .data[data-v-597cb5ca] {\n  padding-bottom: 20px;\n  padding-left: 10px;\n}\n.contact-form .right[data-v-597cb5ca] {\n  padding: 40px 30px 30px 30px;\n  width: 50%;\n  border-bottom-right-radius: 15px;\n  border-top-right-radius: 15px;\n}\n@media (max-width: 991px) {\n.contact-form .right[data-v-597cb5ca] {\n    width: 100%;\n    background-color: #002594;\n    border-bottom-right-radius: 15px;\n    border-bottom-left-radius: 15px;\n    border-top-right-radius: 0;\n    padding: 20px 30px 30px 30px;\n}\n}\n.contact-form .right .form-inputs[data-v-597cb5ca] {\n  padding-left: 12px;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  flex-direction: column;\n  margin-top: 25%;\n}\n@media (max-width: 991px) {\n.contact-form .right .form-inputs[data-v-597cb5ca] {\n    margin-top: 15%;\n}\n}\n.contact-form .right .form-inputs input[data-v-597cb5ca] {\n  width: 100%;\n  height: 50px;\n  border: 1px solid white;\n  border-radius: 10px;\n  margin-bottom: 12px;\n  background: none;\n  color: white;\n  padding-left: 50px;\n}\n.contact-form .right .form-inputs .input-image[data-v-597cb5ca] {\n  width: 40px;\n  margin-right: -42px;\n  margin-bottom: 15px;\n  padding-left: 17px;\n}\n.contact-form .right .form-inputs .callMeBtn[data-v-597cb5ca] {\n  width: 100%;\n  height: 50px;\n  border-radius: 50px;\n  border: solid 1px white;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  color: white;\n  font-size: 18px;\n}\n.contact-form .right .form-inputs[data-v-597cb5ca] ::-webkit-input-placeholder {\n  /* Firefox, Chrome, Opera */\n  color: white;\n}\n.contact-form .right .form-inputs[data-v-597cb5ca] ::-moz-placeholder {\n  /* Firefox, Chrome, Opera */\n  color: white;\n}\n.contact-form .right .form-inputs[data-v-597cb5ca] :-ms-input-placeholder {\n  /* Firefox, Chrome, Opera */\n  color: white;\n}\n.contact-form .right .form-inputs[data-v-597cb5ca] ::-ms-input-placeholder {\n  /* Firefox, Chrome, Opera */\n  color: white;\n}\n.contact-form .right .form-inputs[data-v-597cb5ca] ::placeholder {\n  /* Firefox, Chrome, Opera */\n  color: white;\n}\n.contact-form .right .form-inputs[data-v-597cb5ca] :-ms-input-placeholder {\n  /* Internet Explorer 10-11 */\n  color: white;\n}\n.contact-form .right .form-inputs[data-v-597cb5ca] ::-ms-input-placeholder {\n  /* Microsoft Edge */\n  color: white;\n}", ""]);
+exports.push([module.i, ".error[data-v-597cb5ca] {\n  color: red;\n  font-weight: 600;\n}\n.contact-form[data-v-597cb5ca] {\n  width: 725px;\n  height: 400px;\n  border-radius: 4px;\n  background-image: url(\"/images/background_all.png\");\n  /* The image used */\n  background-color: #cccccc;\n  /* Used if the image is unavailable */\n  background-position: center;\n  /* Center the image */\n  background-repeat: no-repeat;\n  /* Do not repeat the image */\n  background-size: cover;\n  /* Resize the background image to cover the entire container */\n}\n@media (max-width: 991px) {\n.contact-form[data-v-597cb5ca] {\n    width: 100%;\n    height: auto;\n    flex-wrap: wrap;\n    flex-direction: column-reverse !important;\n    background-image: url(\"/images/adress_map_white.png\");\n    /* The image used */\n    background-color: #cccccc;\n    /* Used if the image is unavailable */\n    background-position: center;\n    /* Center the image */\n    background-repeat: no-repeat;\n    /* Do not repeat the image */\n    background-size: cover;\n    /* Resize the background image to cover the entire container */\n}\n}\n.contact-form .left[data-v-597cb5ca] {\n  width: 50%;\n  padding: 40px 30px 30px 30px;\n  border-bottom-left-radius: 15px;\n  border-top-left-radius: 15px;\n}\n@media (max-width: 991px) {\n.contact-form .left[data-v-597cb5ca] {\n    width: 100%;\n}\n}\n.contact-form .left .header[data-v-597cb5ca] {\n  color: black;\n}\n.contact-form .left .header .main[data-v-597cb5ca] {\n  font-size: 18px;\n  font-weight: 600;\n}\n.contact-form .left .header .sub[data-v-597cb5ca] {\n  font-size: 14px;\n}\n.contact-form .left .content[data-v-597cb5ca] {\n  padding-top: 30px;\n  color: black;\n}\n.contact-form .left .content .data[data-v-597cb5ca] {\n  padding-bottom: 20px;\n  padding-left: 10px;\n}\n.contact-form .right[data-v-597cb5ca] {\n  padding: 40px 30px 30px 30px;\n  width: 50%;\n  border-bottom-right-radius: 15px;\n  border-top-right-radius: 15px;\n}\n@media (max-width: 991px) {\n.contact-form .right[data-v-597cb5ca] {\n    width: 100%;\n    background-color: #002594;\n    border-bottom-right-radius: 15px;\n    border-bottom-left-radius: 15px;\n    border-top-right-radius: 0;\n    padding: 20px 30px 30px 30px;\n}\n}\n.contact-form .right .form-inputs[data-v-597cb5ca] {\n  padding-left: 12px;\n  display: flex;\n  justify-content: center;\n  flex-direction: column;\n  margin-top: 25%;\n}\n@media (max-width: 991px) {\n.contact-form .right .form-inputs[data-v-597cb5ca] {\n    margin-top: 15%;\n}\n}\n.contact-form .right .form-inputs input[data-v-597cb5ca] {\n  width: 100%;\n  height: 50px;\n  border: 1px solid white;\n  border-radius: 10px;\n  margin-bottom: 12px;\n  background: none;\n  color: white;\n  padding-left: 50px;\n}\n.contact-form .right .form-inputs .input-image[data-v-597cb5ca] {\n  width: 40px;\n  margin-right: -42px;\n  margin-bottom: 15px;\n  padding-left: 17px;\n}\n.contact-form .right .form-inputs .callMeBtn[data-v-597cb5ca] {\n  width: 100%;\n  height: 50px;\n  border-radius: 50px;\n  border: solid 1px white;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  color: white;\n  font-size: 18px;\n}\n.contact-form .right .form-inputs[data-v-597cb5ca] ::-webkit-input-placeholder {\n  /* Firefox, Chrome, Opera */\n  color: white;\n}\n.contact-form .right .form-inputs[data-v-597cb5ca] ::-moz-placeholder {\n  /* Firefox, Chrome, Opera */\n  color: white;\n}\n.contact-form .right .form-inputs[data-v-597cb5ca] :-ms-input-placeholder {\n  /* Firefox, Chrome, Opera */\n  color: white;\n}\n.contact-form .right .form-inputs[data-v-597cb5ca] ::-ms-input-placeholder {\n  /* Firefox, Chrome, Opera */\n  color: white;\n}\n.contact-form .right .form-inputs[data-v-597cb5ca] ::placeholder {\n  /* Firefox, Chrome, Opera */\n  color: white;\n}\n.contact-form .right .form-inputs[data-v-597cb5ca] :-ms-input-placeholder {\n  /* Internet Explorer 10-11 */\n  color: white;\n}\n.contact-form .right .form-inputs[data-v-597cb5ca] ::-ms-input-placeholder {\n  /* Microsoft Edge */\n  color: white;\n}", ""]);
 
 // exports
 
@@ -37852,9 +37889,107 @@ var render = function() {
         _vm._m(1),
         _vm._v(" "),
         _c("div", { staticClass: "form-inputs w-100" }, [
-          _vm._m(2),
+          _c(
+            "span",
+            {
+              directives: [
+                {
+                  name: "show",
+                  rawName: "v-show",
+                  value: _vm.errors.name.length > 0,
+                  expression: "errors.name.length > 0"
+                }
+              ],
+              staticClass: "error"
+            },
+            [_vm._v(_vm._s(_vm.errors.name))]
+          ),
           _vm._v(" "),
-          _vm._m(3),
+          _c(
+            "div",
+            {
+              staticClass:
+                "w-100 d-flex justify-content-center align-items-center"
+            },
+            [
+              _c("img", {
+                staticClass: "input-image",
+                attrs: { src: "/images/name.png", alt: "" }
+              }),
+              _vm._v(" "),
+              _c("input", {
+                directives: [
+                  {
+                    name: "model",
+                    rawName: "v-model",
+                    value: _vm.name,
+                    expression: "name"
+                  }
+                ],
+                attrs: { type: "text", placeholder: "Name" },
+                domProps: { value: _vm.name },
+                on: {
+                  input: function($event) {
+                    if ($event.target.composing) {
+                      return
+                    }
+                    _vm.name = $event.target.value
+                  }
+                }
+              })
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "span",
+            {
+              directives: [
+                {
+                  name: "show",
+                  rawName: "v-show",
+                  value: _vm.errors.mobile_number.length > 0,
+                  expression: "errors.mobile_number.length > 0"
+                }
+              ],
+              staticClass: "error"
+            },
+            [_vm._v(_vm._s(_vm.errors.mobile_number))]
+          ),
+          _vm._v(" "),
+          _c(
+            "div",
+            {
+              staticClass:
+                "w-100  d-flex justify-content-center align-items-center"
+            },
+            [
+              _c("img", {
+                staticClass: "input-image",
+                attrs: { src: "/images/mail-white.png", alt: "" }
+              }),
+              _vm._v(" "),
+              _c("input", {
+                directives: [
+                  {
+                    name: "model",
+                    rawName: "v-model",
+                    value: _vm.mobile_number,
+                    expression: "mobile_number"
+                  }
+                ],
+                attrs: { type: "tel", placeholder: "Mobile number" },
+                domProps: { value: _vm.mobile_number },
+                on: {
+                  input: function($event) {
+                    if ($event.target.composing) {
+                      return
+                    }
+                    _vm.mobile_number = $event.target.value
+                  }
+                }
+              })
+            ]
+          ),
           _vm._v(" "),
           _c(
             "a",
@@ -37982,42 +38117,6 @@ var staticRenderFns = [
         ]
       )
     ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      { staticClass: "w-100 d-flex justify-content-center align-items-center" },
-      [
-        _c("img", {
-          staticClass: "input-image",
-          attrs: { src: "/images/name.png", alt: "" }
-        }),
-        _vm._v(" "),
-        _c("input", { attrs: { type: "text", placeholder: "Name" } })
-      ]
-    )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      {
-        staticClass: "w-100  d-flex justify-content-center align-items-center"
-      },
-      [
-        _c("img", {
-          staticClass: "input-image",
-          attrs: { src: "/images/mail-white.png", alt: "" }
-        }),
-        _vm._v(" "),
-        _c("input", { attrs: { type: "tel", placeholder: "Mobile number" } })
-      ]
-    )
   }
 ]
 render._withStripped = true

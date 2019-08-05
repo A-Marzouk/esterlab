@@ -59,13 +59,16 @@
                     </button>
                 </div>
                 <div class="form-inputs w-100">
+                    <span class="error" v-show="errors.name.length > 0">{{errors.name}}</span>
                     <div class="w-100 d-flex justify-content-center align-items-center">
                         <img src="/images/name.png" alt="" class="input-image">
-                        <input type="text" placeholder="Name">
+                        <input type="text" placeholder="Name" v-model="name">
                     </div>
+
+                    <span class="error"  v-show="errors.mobile_number.length > 0">{{errors.mobile_number}}</span>
                     <div  class="w-100  d-flex justify-content-center align-items-center">
                         <img src="/images/mail-white.png" alt="" class="input-image">
-                        <input type="tel" placeholder="Mobile number">
+                        <input type="tel" placeholder="Mobile number" v-model="mobile_number">
                     </div>
                     <a href="javascript:void(0)" @click="callMeBack" class="callMeBtn">Call me back</a>
                 </div>
@@ -77,20 +80,57 @@
 <script>
     export default {
         name: "contactUsComponent",
+        data(){
+            return{
+                name:'',
+                mobile_number:'',
+                errors:{
+                    'name':'',
+                    'mobile_number':'',
+                }
+            }
+        },
         methods:{
             callMeBack(){
+                if(!this.checkForm()){
+                    return;
+                }
+
                 $('#closeModal').click();
                 $('.successMessage').removeClass('d-none');
 
                 setTimeout(()=>{
                     $('.successMessage').addClass('d-none');
                 },2500);
+            },
+            checkForm () {
+                if (this.name && this.mobile_number) {
+                    return true;
+                }
+
+                this.errors = {
+                    'name':'',
+                    'mobile_number':'',
+                };
+
+                if (!this.name) {
+                    this.errors.name = 'Name required.';
+                }
+                if (!this.age) {
+                    this.errors.mobile_number = 'Mobile number required.';
+                }
+
+                return false;
             }
         }
     }
 </script>
 
 <style lang="scss" scoped>
+    .error{
+        color: red;
+        font-weight: 600;
+    }
     .contact-form{
         width: 725px;
         height:400px;
@@ -165,7 +205,6 @@
             .form-inputs{
                 padding-left: 12px;
                 display: flex;
-                align-items: center;
                 justify-content: center;
                 flex-direction: column;
                 margin-top: 25%;
