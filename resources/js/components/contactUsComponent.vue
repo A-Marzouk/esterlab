@@ -53,6 +53,11 @@
                 </div>
             </div>
             <div class="right">
+                <div>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" style="color: white; outline:none">&times;</span>
+                    </button>
+                </div>
                 <div class="form-inputs w-100">
                     <div class="w-100 d-flex justify-content-center align-items-center">
                         <img src="/images/name.png" alt="" class="input-image">
@@ -137,6 +142,7 @@
                 border-bottom-right-radius: 15px;
                 border-bottom-left-radius: 15px;
                 border-top-right-radius: 0;
+                padding: 20px 30px 30px 30px;
             }
 
             padding: 40px 30px 30px 30px;
@@ -145,12 +151,17 @@
             border-bottom-right-radius: 15px;
             border-top-right-radius: 15px;
 
-            display: flex;
-            align-items: center;
-            justify-content: center;
 
             .form-inputs{
                 padding-left: 12px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                margin-top: 25%;
+                @media (max-width: 991px) {
+                    margin-top: 15%;
+                }
                 input{
                     width: 100%;
                     height: 50px;
