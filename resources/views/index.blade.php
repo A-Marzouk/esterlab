@@ -16,7 +16,7 @@
                  @lang('index/slide.main_text_part2')
               </span>
             </p>
-            <p><a href="#contact-section" class="btn btn-white-outline border-w-2 btn-md"> @lang('index/slide.btn_text')</a></p>
+            <p><a href="javascript:void(0)" data-toggle="modal" data-target="#contactUsModal" class="btn btn-white-outline border-w-2 btn-md"> @lang('index/slide.btn_text')</a></p>
           </div>
         </div>
       </div>

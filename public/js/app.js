@@ -1771,11 +1771,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "contactUsComponent",
   data: function data() {
@@ -37920,7 +37915,8 @@ var render = function() {
             [
               _c("img", {
                 staticClass: "input-image",
-                attrs: { src: "/images/name.png", alt: "" }
+                staticStyle: { height: "19px", width: "38px" },
+                attrs: { src: "/images/person.png", alt: "" }
               }),
               _vm._v(" "),
               _c("input", {
@@ -37971,7 +37967,7 @@ var render = function() {
             [
               _c("img", {
                 staticClass: "input-image",
-                attrs: { src: "/images/mail-white.png", alt: "" }
+                attrs: { src: "/images/phone-white.png", alt: "" }
               }),
               _vm._v(" "),
               _c("input", {
@@ -38075,19 +38071,7 @@ var staticRenderFns = [
           _c("div", { staticClass: "data d-flex flex-column" }, [
             _c("div", [
               _vm._v(
-                "\n                            60 Sichovych Striltsiv St.\n                        "
-              )
-            ]),
-            _vm._v(" "),
-            _c("div", [
-              _vm._v(
-                "\n                            Kiev\n                        "
-              )
-            ]),
-            _vm._v(" "),
-            _c("div", [
-              _vm._v(
-                "\n                            Ukraine, 04050\n                        "
+                "\n                            60 Sichovych Striltsiv St., Kiev, Ukraine, 04050\n                        "
               )
             ])
           ])

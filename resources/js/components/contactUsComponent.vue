@@ -40,13 +40,7 @@
                         </div>
                         <div class="data d-flex flex-column">
                             <div>
-                                60 Sichovych Striltsiv St.
-                            </div>
-                            <div>
-                                Kiev
-                            </div>
-                            <div>
-                                Ukraine, 04050
+                                60 Sichovych Striltsiv St., Kiev, Ukraine, 04050
                             </div>
                         </div>
                     </div>
@@ -61,13 +55,14 @@
                 <div class="form-inputs w-100">
                     <span class="error" v-show="errors.name.length > 0">{{errors.name}}</span>
                     <div class="w-100 d-flex justify-content-center align-items-center">
-                        <img src="/images/name.png" alt="" class="input-image">
+                        <img src="/images/person.png" alt="" class="input-image" style="    height: 19px;
+    width: 38px;">
                         <input type="text" placeholder="Name" v-model="name">
                     </div>
 
                     <span class="error"  v-show="errors.mobile_number.length > 0">{{errors.mobile_number}}</span>
                     <div  class="w-100  d-flex justify-content-center align-items-center">
-                        <img src="/images/mail-white.png" alt="" class="input-image">
+                        <img src="/images/phone-white.png" alt="" class="input-image">
                         <input type="tel" placeholder="Mobile number" v-model="mobile_number">
                     </div>
                     <a href="javascript:void(0)" @click="callMeBack" class="callMeBtn">Call me back</a>
