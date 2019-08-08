@@ -286,7 +286,6 @@ jQuery(document).ready(function($) {
 				$('.number > span').each(function(){
 					var $this = $(this),
 						num = $this.data('number');
-						console.log(num);
 					$this.animateNumber(
 					  {
 					    number: num,

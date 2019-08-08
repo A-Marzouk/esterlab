@@ -28,6 +28,8 @@ Route::get('/{lang?}','HomeController@index')->name('home');
 Route::get('/language/switch/{lang}','HomeController@switchLanguage')->name('switch.language');
 Route::get('/language/get/current','HomeController@getCurrentLanguage')->name('get.language');
 
+// contactus:
+Route::post('/contact-us/submit','ContactUsController@submitContactForm')->name('contact.submit');
 
 // test route
 Route::get('/contact-us/test','HomeController@contactUS');

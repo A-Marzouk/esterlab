@@ -1993,9 +1993,11 @@ __webpack_require__.r(__webpack_exports__);
   name: "contactUsComponent",
   data: function data() {
     return {
-      name: '',
-      mobile_number: '',
-      countryCode: '213',
+      contactUsData: {
+        name: '',
+        mobile_number: '',
+        countryCode: '213'
+      },
       errors: {
         'name': '',
         'mobile_number': ''
@@ -2004,41 +2006,67 @@ __webpack_require__.r(__webpack_exports__);
   },
   methods: {
     callMeBack: function callMeBack() {
+      var _this = this;
+
       if (!this.checkForm()) {
         return;
       }
 
+      axios.post('/contact-us/submit', this.contactUsData).then(function (response) {
+        console.log(response.data);
+
+        _this.successfulSubmission();
+      })["catch"](function (error) {
+        _this.failSubmission();
+      });
+    },
+    successfulSubmission: function successfulSubmission() {
       $('#closeModal').click();
       $('.successMessage').removeClass('d-none');
       setTimeout(function () {
         $('.successMessage').addClass('d-none');
       }, 2500);
-      this.name = '';
-      this.mobile_number = '';
+      this.contactUsData = {
+        'name': '',
+        'mobile_number': ''
+      };
       this.errors = {
         'name': '',
         'mobile_number': ''
       };
     },
+    failSubmission: function failSubmission() {
+      $('#closeModal').click();
+      $('.errorMessage').removeClass('d-none');
+      setTimeout(function () {
+        $('.errorMessage').addClass('d-none');
+      }, 2500);
+    },
     checkForm: function checkForm() {
-      if (this.name && this.mobile_number) {
-        return true;
-      }
-
+      var validated = true;
       this.errors = {
         'name': '',
         'mobile_number': ''
       };
 
-      if (!this.name) {
+      if (!this.contactUsData.name) {
         this.errors.name = 'Name required.';
+        validated = false;
       }
 
-      if (!this.age) {
+      if (!this.contactUsData.mobile_number) {
         this.errors.mobile_number = 'Mobile number required.';
+        validated = false;
       }
 
-      return false;
+      var isNum = /^\d+$/.test(this.contactUsData.mobile_number);
+
+      if (this.contactUsData.mobile_number && !isNum) {
+        this.errors.mobile_number = 'Phone can not contain any chars.';
+        validated = false;
+      }
+
+      return validated;
     }
   }
 });
@@ -38137,18 +38165,18 @@ var render = function() {
                   {
                     name: "model",
                     rawName: "v-model",
-                    value: _vm.name,
-                    expression: "name"
+                    value: _vm.contactUsData.name,
+                    expression: "contactUsData.name"
                   }
                 ],
                 attrs: { type: "text", placeholder: "Name" },
-                domProps: { value: _vm.name },
+                domProps: { value: _vm.contactUsData.name },
                 on: {
                   input: function($event) {
                     if ($event.target.composing) {
                       return
                     }
-                    _vm.name = $event.target.value
+                    _vm.$set(_vm.contactUsData, "name", $event.target.value)
                   }
                 }
               }),
@@ -38192,11 +38220,11 @@ var render = function() {
                       {
                         name: "model",
                         rawName: "v-model",
-                        value: _vm.countryCode,
-                        expression: "countryCode"
+                        value: _vm.contactUsData.countryCode,
+                        expression: "contactUsData.countryCode"
                       }
                     ],
-                    attrs: { name: "country_code" },
+                    attrs: { name: "countryCode" },
                     on: {
                       change: function($event) {
                         var $$selectedVal = Array.prototype.filter
@@ -38207,9 +38235,13 @@ var render = function() {
                             var val = "_value" in o ? o._value : o.value
                             return val
                           })
-                        _vm.countryCode = $event.target.multiple
-                          ? $$selectedVal
-                          : $$selectedVal[0]
+                        _vm.$set(
+                          _vm.contactUsData,
+                          "countryCode",
+                          $event.target.multiple
+                            ? $$selectedVal
+                            : $$selectedVal[0]
+                        )
                       }
                     }
                   },
@@ -40130,19 +40162,27 @@ var render = function() {
                     {
                       name: "model",
                       rawName: "v-model",
-                      value: _vm.mobile_number,
-                      expression: "mobile_number"
+                      value: _vm.contactUsData.mobile_number,
+                      expression: "contactUsData.mobile_number"
                     }
                   ],
                   staticClass: "mobile-number",
-                  attrs: { type: "tel", placeholder: "Mobile number" },
-                  domProps: { value: _vm.mobile_number },
+                  attrs: {
+                    required: "",
+                    type: "tel",
+                    placeholder: "Mobile number"
+                  },
+                  domProps: { value: _vm.contactUsData.mobile_number },
                   on: {
                     input: function($event) {
                       if ($event.target.composing) {
                         return
                       }
-                      _vm.mobile_number = $event.target.value
+                      _vm.$set(
+                        _vm.contactUsData,
+                        "mobile_number",
+                        $event.target.value
+                      )
                     }
                   }
                 })

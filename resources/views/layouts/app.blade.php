@@ -269,6 +269,13 @@
         </div>
     </div>
 
+    <div class="errorMessage d-none">
+        <div class="alert alert-danger">
+            Error while submitting form.
+            <span id="closeMessage">&times;</span>
+        </div>
+    </div>
+
 
 
 
@@ -345,7 +352,6 @@
         // back to top button :
 
         $(window).scroll(function() {
-            console.log($(window).scrollTop());
             if ($(window).scrollTop() > 1000) {
                 $('#button').addClass('show');
             } else {

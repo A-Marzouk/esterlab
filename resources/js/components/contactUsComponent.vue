@@ -55,7 +55,7 @@
                 <div class="form-inputs w-100">
                     <span class="error" v-show="errors.name.length > 0">{{errors.name}}</span>
                     <div class="w-100 d-flex justify-content-center align-items-center">
-                        <input type="text" placeholder="Name" v-model="name">
+                        <input type="text" placeholder="Name" v-model="contactUsData.name">
                         <img src="/images/person.png" alt="" class="input-image" style="    height: 19px;
     width: 38px;">
                     </div>
@@ -63,7 +63,7 @@
                     <span class="error"  v-show="errors.mobile_number.length > 0">{{errors.mobile_number}}</span>
                     <div  class="w-100  d-flex justify-content-center align-items-center">
                         <div class="d-flex w-100">
-                            <select name="country_code" v-model="countryCode">
+                            <select name="countryCode" v-model="contactUsData.countryCode">
                                 <option data-countryCode="DZ" style="color:black;" value="213" :selected="true">Algeria (+213)</option>
                                 <option data-countryCode="AD" style="color:black;" value="376">Andorra (+376)</option>
                                 <option data-countryCode="AO" style="color:black;" value="244">Angola (+244)</option>
@@ -279,7 +279,7 @@
                                 <option data-countryCode="ZM" style="color:black;" value="260">Zambia (+260)</option>
                                 <option data-countryCode="ZW" style="color:black;" value="263">Zimbabwe (+263)</option>
                             </select>
-                            <input class="mobile-number" type="tel" placeholder="Mobile number" v-model="mobile_number">
+                            <input class="mobile-number" required type="tel" placeholder="Mobile number" v-model="contactUsData.mobile_number">
                         </div>
                         <img src="/images/phone-white.png" alt="" class="input-image">
                     </div>
@@ -295,9 +295,11 @@
         name: "contactUsComponent",
         data(){
             return{
-                name:'',
-                mobile_number:'',
-                countryCode:'213',
+                contactUsData:{
+                    name:'',
+                    mobile_number:'',
+                    countryCode:'213',
+                },
                 errors:{
                     'name':'',
                     'mobile_number':'',
@@ -310,6 +312,17 @@
                     return;
                 }
 
+                axios.post('/contact-us/submit',this.contactUsData)
+                    .then( (response) => {
+                        console.log(response.data);
+                        this.successfulSubmission();
+                    })
+                    .catch( (error) => {
+                        this.failSubmission();
+                    });
+
+            },
+            successfulSubmission(){
                 $('#closeModal').click();
                 $('.successMessage').removeClass('d-none');
 
@@ -317,31 +330,48 @@
                     $('.successMessage').addClass('d-none');
                 },2500);
 
-                this.name = '' ;
-                this.mobile_number = '' ;
+                this.contactUsData = {
+                    'name':'',
+                    'mobile_number':'',
+                };
                 this.errors = {
                     'name':'',
                     'mobile_number':'',
                 };
             },
+            failSubmission(){
+                $('#closeModal').click();
+                $('.errorMessage').removeClass('d-none');
+
+                setTimeout(()=>{
+                    $('.errorMessage').addClass('d-none');
+                },2500);
+            },
             checkForm () {
-                if (this.name && this.mobile_number) {
-                    return true;
-                }
+                let validated = true ;
 
                 this.errors = {
                     'name':'',
                     'mobile_number':'',
                 };
 
-                if (!this.name) {
+                if (!this.contactUsData.name) {
                     this.errors.name = 'Name required.';
+                    validated = false;
                 }
-                if (!this.age) {
+                if (!this.contactUsData.mobile_number) {
                     this.errors.mobile_number = 'Mobile number required.';
+                    validated = false;
                 }
 
-                return false;
+                let isNum = /^\d+$/.test(this.contactUsData.mobile_number);
+                if(this.contactUsData.mobile_number && !isNum){
+                    this.errors.mobile_number = 'Phone can not contain any chars.';
+                    validated = false;
+                }
+
+
+                return validated ;
             }
         }
     }

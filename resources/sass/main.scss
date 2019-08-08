@@ -131,6 +131,19 @@
     }
   }
 }
+.errorMessage{
+  position: fixed;
+  top: 115px;
+  left: 25px;
+  z-index: 1000;
+  div{
+    span{
+      padding-left: 10px;
+      color: red;
+      font-size: 18px;
+    }
+  }
+}
 
 #closeMessage:hover{
   cursor: pointer;
