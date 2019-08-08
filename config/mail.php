@@ -56,8 +56,8 @@ return [
     */
 
     'from' => [
-        'address' => env('MAIL_FROM_ADDRESS', 'hello@example.com'),
-        'name' => env('MAIL_FROM_NAME', 'Example'),
+        'address' => env('MAIL_FROM_ADDRESS', 'info@esterlab.org'),
+        'name' => env('MAIL_FROM_NAME', 'Esterlab'),
     ],
 
     /*
@@ -132,5 +132,11 @@ return [
     */
 
     'log_channel' => env('MAIL_LOG_CHANNEL'),
+
+    'recipients' => [
+        'Mahmoud' => 'melkady35@gmail.com',
+        'Esterlab' => 'info@esterlab.org',
+        'Ahmed' => 'AhmedMarzouk266@gmail.com',
+    ],
 
 ];
