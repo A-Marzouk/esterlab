@@ -353,7 +353,7 @@
 
         $('#button').on('click' , function () {
             $('html, body').stop().animate( {
-                'scrollTop': 395
+                'scrollTop': 50
             }, 900, 'swing',function () {});
         });
 
