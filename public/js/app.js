@@ -40238,9 +40238,9 @@ var staticRenderFns = [
           _vm._v(" "),
           _c("div", { staticClass: "data d-flex flex-column" }, [
             _c("div", [
-              _vm._v(
-                "\n                            +38 068 192 92 92\n                        "
-              )
+              _c("a", { attrs: { href: "tel:+38 068 192 92 92" } }, [
+                _vm._v("+38 068 192 92 92")
+              ])
             ])
           ])
         ]),
@@ -40255,9 +40255,9 @@ var staticRenderFns = [
           _vm._v(" "),
           _c("div", { staticClass: "data d-flex flex-column" }, [
             _c("div", [
-              _vm._v(
-                "\n                            info@esterlab.org\n                        "
-              )
+              _c("a", { attrs: { href: "mailto:info@esterlab.org" } }, [
+                _vm._v("info@esterlab.org")
+              ])
             ])
           ])
         ]),
@@ -40272,8 +40272,10 @@ var staticRenderFns = [
           _vm._v(" "),
           _c("div", { staticClass: "data d-flex flex-column" }, [
             _c("div", [
-              _vm._v(
-                "\n                            60 Sichovych Striltsiv St., Kiev, Ukraine, 04050\n                        "
+              _c(
+                "a",
+                { attrs: { href: "https://goo.gl/maps/GMkWJu7zfe9c8piA9" } },
+                [_vm._v("60 Sichovych Striltsiv St., Kiev, Ukraine, 04050")]
               )
             ])
           ])

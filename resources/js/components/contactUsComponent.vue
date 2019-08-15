@@ -18,7 +18,7 @@
                         </div>
                         <div class="data d-flex flex-column">
                             <div>
-                                +38 068 192 92 92
+                                <a href="tel:+38 068 192 92 92">+38 068 192 92 92</a>
                             </div>
                         </div>
                     </div>
@@ -29,7 +29,7 @@
                         </div>
                         <div class="data d-flex flex-column">
                             <div>
-                                info@esterlab.org
+                                <a href="mailto:info@esterlab.org">info@esterlab.org</a>
                             </div>
                         </div>
                     </div>
@@ -40,7 +40,7 @@
                         </div>
                         <div class="data d-flex flex-column">
                             <div>
-                                60 Sichovych Striltsiv St., Kiev, Ukraine, 04050
+                                <a href="https://goo.gl/maps/GMkWJu7zfe9c8piA9">60 Sichovych Striltsiv St., Kiev, Ukraine, 04050</a>
                             </div>
                         </div>
                     </div>
