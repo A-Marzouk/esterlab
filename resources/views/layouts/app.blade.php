@@ -196,7 +196,7 @@
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content" style="background: none;border:0;">
                 <div class="modal-body">
-                    <img src="/images/certificates/webp.jpg" alt="" style="width: 100%;">
+                    <img src="/images/certificates/2.webp" alt="" style="width: 100%;">
                 </div>
             </div>
         </div>
@@ -223,7 +223,7 @@
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content" style="background: none;border:0;">
                 <div class="modal-body">
-                    <img src="/images/certificates/webp.jpg" alt="" style="width: 100%;">
+                    <img src="/images/certificates/5.webp" alt="" style="width: 100%;">
                 </div>
             </div>
         </div>
