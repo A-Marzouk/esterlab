@@ -55,7 +55,7 @@
                 <div class="form-inputs w-100">
                     <span class="error" v-show="errors.name.length > 0">{{errors.name}}</span>
                     <div class="w-100 d-flex justify-content-center align-items-center">
-                        <input type="text" :placeholder="getTrans('name')" v-model="contactUsData.name">
+                        <input type="text" :placeholder="getTrans('name')" v-model="contactUsData.name" autocomplete="off">
                         <img src="/images/person.png" alt="" class="input-image" style="    height: 19px;
     width: 38px;">
                     </div>
@@ -279,7 +279,7 @@
                                 <option data-countryCode="ZM" style="color:black;" value="260">Zambia (+260)</option>
                                 <option data-countryCode="ZW" style="color:black;" value="263">Zimbabwe (+263)</option>
                             </select>
-                            <input class="mobile-number" required type="tel" :placeholder="getTrans('phone')" v-model="contactUsData.mobile_number">
+                            <input class="mobile-number" required type="tel" :placeholder="getTrans('phone')" v-model="contactUsData.mobile_number" autocomplete="off">
                         </div>
                         <img src="/images/phone-white.png" alt="" class="input-image">
                     </div>

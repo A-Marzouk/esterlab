@@ -38245,7 +38245,11 @@ var render = function() {
                     expression: "contactUsData.name"
                   }
                 ],
-                attrs: { type: "text", placeholder: _vm.getTrans("name") },
+                attrs: {
+                  type: "text",
+                  placeholder: _vm.getTrans("name"),
+                  autocomplete: "off"
+                },
                 domProps: { value: _vm.contactUsData.name },
                 on: {
                   input: function($event) {
@@ -40246,7 +40250,8 @@ var render = function() {
                   attrs: {
                     required: "",
                     type: "tel",
-                    placeholder: _vm.getTrans("phone")
+                    placeholder: _vm.getTrans("phone"),
+                    autocomplete: "off"
                   },
                   domProps: { value: _vm.contactUsData.mobile_number },
                   on: {
