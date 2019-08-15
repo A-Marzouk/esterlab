@@ -12,26 +12,29 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <!-- Google Tag Manager -->
-        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-                    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-                j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-                'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-            })(window,document,'script','dataLayer','GTM-5H7XXMM');</script>
-        <!-- End Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-5H7XXMM');</script>
+    <!-- End Google Tag Manager -->
 
+    <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/magnific-popup.css">
+    <link rel="stylesheet" href="/css/jquery-ui.css">
     <link rel="stylesheet" href="/css/owl.carousel.min.css">
     <link rel="stylesheet" href="/css/owl.theme.default.min.css">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="/css/bootstrap-datepicker.css">
     <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+
     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
-
-    <link rel="stylesheet" href="/css/app.css">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="icon"
-          type="image/png"
-          href="/favicon.png">
-
 
     <meta name="description" content="Esterlab, A fast growing research &amp; developing company ">
     <meta name="author" content="Esterlab">
@@ -41,7 +44,13 @@
     <meta property="og:description"        content=" A fast growing research &amp; developing company" />
     <meta property="og:image"              content="http://www.esterlab.org/images/logo-esterlab-min.png" />
 
+    <link rel="stylesheet" href="/css/aos.css">
+    <link rel="stylesheet" href="/css/app.css">
 
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon"
+          type="image/png"
+          href="/favicon.png">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-141185574-1"></script>
@@ -54,7 +63,6 @@
     </script>
 
 </head>
-
 
 
 
