@@ -4,10 +4,10 @@
             <div class="left">
                 <div class="header">
                     <div class="main">
-                        Let's get in touch
+                        {{getTrans('get_in_touch')}}
                     </div>
                     <div class="sub">
-                        We're open for any suggestions or just to have a chat.
+                        {{getTrans('more_details')}}
                     </div>
                 </div>
 
@@ -40,7 +40,7 @@
                         </div>
                         <div class="data d-flex flex-column">
                             <div>
-                                <a href="https://goo.gl/maps/GMkWJu7zfe9c8piA9">60 Sichovych Striltsiv St., Kiev, Ukraine, 04050</a>
+                                <a href="https://goo.gl/maps/GMkWJu7zfe9c8piA9">{{getTrans('address')}}</a>
                             </div>
                         </div>
                     </div>
@@ -55,7 +55,7 @@
                 <div class="form-inputs w-100">
                     <span class="error" v-show="errors.name.length > 0">{{errors.name}}</span>
                     <div class="w-100 d-flex justify-content-center align-items-center">
-                        <input type="text" placeholder="Name" v-model="contactUsData.name">
+                        <input type="text" :placeholder="getTrans('name')" v-model="contactUsData.name">
                         <img src="/images/person.png" alt="" class="input-image" style="    height: 19px;
     width: 38px;">
                     </div>
@@ -279,11 +279,11 @@
                                 <option data-countryCode="ZM" style="color:black;" value="260">Zambia (+260)</option>
                                 <option data-countryCode="ZW" style="color:black;" value="263">Zimbabwe (+263)</option>
                             </select>
-                            <input class="mobile-number" required type="tel" placeholder="Mobile number" v-model="contactUsData.mobile_number">
+                            <input class="mobile-number" required type="tel" :placeholder="getTrans('phone')" v-model="contactUsData.mobile_number">
                         </div>
                         <img src="/images/phone-white.png" alt="" class="input-image">
                     </div>
-                    <a href="javascript:void(0)" @click="callMeBack" class="callMeBtn">Call me back</a>
+                    <a href="javascript:void(0)" @click="callMeBack" class="callMeBtn">{{getTrans('call_me_back')}}</a>
                 </div>
             </div>
         </div>
@@ -293,6 +293,7 @@
 <script>
     export default {
         name: "contactUsComponent",
+        props: ['language'],
         data(){
             return{
                 contactUsData:{
@@ -303,6 +304,40 @@
                 errors:{
                     'name':'',
                     'mobile_number':'',
+                },
+                lang:'',
+                trans:{
+                    en:{
+                        'get_in_touch': 'GET IN TOUCH',
+                        'call_me_back': 'Call me back',
+                        'contact_us': 'Contact Us',
+                        'name': 'Name',
+                        'phone': 'Mobile number',
+
+                        'more_details': 'Need to know more on details ?',
+
+                        'address_title': 'Address: ',
+                        'address': '60 Sichovych Striltsiv St., Kiev, Ukraine, 04050 ',
+
+                        'tel_title': 'Tel./Fax :',
+                        'email_title': 'Email :'
+                    },
+                    de:{
+                        'get_in_touch': 'In Kontakt  kommen',
+                        'call_me_back': 'Rufen Sie mich zurück',
+                        'contact_us': 'Kontaktdaten',
+
+                        'name': 'Vorname',
+                        'phone': 'Handynummer',
+
+                        'more_details': 'Wünschen Sie weitere Informationen?',
+
+                        'address_title': 'Adresse ',
+                        'address': 'ul. Setschevich Strelzov, 60,  St. Kiew, Ukraine, 04050',
+
+                        'tel_title': 'Tel:',
+                        'email_title': 'Email :',
+                    }
                 }
             }
         },
@@ -372,7 +407,19 @@
 
 
                 return validated ;
+            },
+            getTrans(text){
+                if(this.lang === 'en'){
+                    return this.trans['en'][text] ;
+                }
+                else if(this.lang === 'de')
+                {
+                    return this.trans['de'][text] ;
+                }
             }
+        },
+        mounted() {
+            this.lang = this.language;
         }
     }
 </script>

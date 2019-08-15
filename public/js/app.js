@@ -1991,6 +1991,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "contactUsComponent",
+  props: ['language'],
   data: function data() {
     return {
       contactUsData: {
@@ -2001,6 +2002,33 @@ __webpack_require__.r(__webpack_exports__);
       errors: {
         'name': '',
         'mobile_number': ''
+      },
+      lang: '',
+      trans: {
+        en: {
+          'get_in_touch': 'GET IN TOUCH',
+          'call_me_back': 'Call me back',
+          'contact_us': 'Contact Us',
+          'name': 'Name',
+          'phone': 'Mobile number',
+          'more_details': 'Need to know more on details ?',
+          'address_title': 'Address: ',
+          'address': '60 Sichovych Striltsiv St., Kiev, Ukraine, 04050 ',
+          'tel_title': 'Tel./Fax :',
+          'email_title': 'Email :'
+        },
+        de: {
+          'get_in_touch': 'In Kontakt  kommen',
+          'call_me_back': 'Rufen Sie mich zurück',
+          'contact_us': 'Kontaktdaten',
+          'name': 'Vorname',
+          'phone': 'Handynummer',
+          'more_details': 'Wünschen Sie weitere Informationen?',
+          'address_title': 'Adresse ',
+          'address': 'ul. Setschevich Strelzov, 60,  St. Kiew, Ukraine, 04050',
+          'tel_title': 'Tel:',
+          'email_title': 'Email :'
+        }
       }
     };
   },
@@ -2067,7 +2095,17 @@ __webpack_require__.r(__webpack_exports__);
       }
 
       return validated;
+    },
+    getTrans: function getTrans(text) {
+      if (this.lang === 'en') {
+        return this.trans['en'][text];
+      } else if (this.lang === 'de') {
+        return this.trans['de'][text];
+      }
     }
+  },
+  mounted: function mounted() {
+    this.lang = this.language;
   }
 });
 
@@ -38131,10 +38169,48 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("div", {}, [
     _c("div", { staticClass: "contact-form d-flex" }, [
-      _vm._m(0),
+      _c("div", { staticClass: "left" }, [
+        _c("div", { staticClass: "header" }, [
+          _c("div", { staticClass: "main" }, [
+            _vm._v(
+              "\n                    " +
+                _vm._s(_vm.getTrans("get_in_touch")) +
+                "\n                "
+            )
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "sub" }, [
+            _vm._v(
+              "\n                    " +
+                _vm._s(_vm.getTrans("more_details")) +
+                "\n                "
+            )
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "content d-flex flex-column" }, [
+          _vm._m(0),
+          _vm._v(" "),
+          _vm._m(1),
+          _vm._v(" "),
+          _c("div", { staticClass: "d-flex" }, [
+            _vm._m(2),
+            _vm._v(" "),
+            _c("div", { staticClass: "data d-flex flex-column" }, [
+              _c("div", [
+                _c(
+                  "a",
+                  { attrs: { href: "https://goo.gl/maps/GMkWJu7zfe9c8piA9" } },
+                  [_vm._v(_vm._s(_vm.getTrans("address")))]
+                )
+              ])
+            ])
+          ])
+        ])
+      ]),
       _vm._v(" "),
       _c("div", { staticClass: "right" }, [
-        _vm._m(1),
+        _vm._m(3),
         _vm._v(" "),
         _c("div", { staticClass: "form-inputs w-100" }, [
           _c(
@@ -38169,7 +38245,7 @@ var render = function() {
                     expression: "contactUsData.name"
                   }
                 ],
-                attrs: { type: "text", placeholder: "Name" },
+                attrs: { type: "text", placeholder: _vm.getTrans("name") },
                 domProps: { value: _vm.contactUsData.name },
                 on: {
                   input: function($event) {
@@ -40170,7 +40246,7 @@ var render = function() {
                   attrs: {
                     required: "",
                     type: "tel",
-                    placeholder: "Mobile number"
+                    placeholder: _vm.getTrans("phone")
                   },
                   domProps: { value: _vm.contactUsData.mobile_number },
                   on: {
@@ -40202,7 +40278,7 @@ var render = function() {
               attrs: { href: "javascript:void(0)" },
               on: { click: _vm.callMeBack }
             },
-            [_vm._v("Call me back")]
+            [_vm._v(_vm._s(_vm.getTrans("call_me_back")))]
           )
         ])
       ])
@@ -40214,73 +40290,53 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "left" }, [
-      _c("div", { staticClass: "header" }, [
-        _c("div", { staticClass: "main" }, [
-          _vm._v("\n                    Let's get in touch\n                ")
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "sub" }, [
-          _vm._v(
-            "\n                    We're open for any suggestions or just to have a chat.\n                "
-          )
-        ])
+    return _c("div", { staticClass: "d-flex" }, [
+      _c("div", { staticClass: "icon" }, [
+        _c("img", {
+          staticStyle: { width: "26px" },
+          attrs: { src: "/images/phone.png", alt: "phone icon" }
+        })
       ]),
       _vm._v(" "),
-      _c("div", { staticClass: "content d-flex flex-column" }, [
-        _c("div", { staticClass: "d-flex" }, [
-          _c("div", { staticClass: "icon" }, [
-            _c("img", {
-              staticStyle: { width: "26px" },
-              attrs: { src: "/images/phone.png", alt: "phone icon" }
-            })
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "data d-flex flex-column" }, [
-            _c("div", [
-              _c("a", { attrs: { href: "tel:+38 068 192 92 92" } }, [
-                _vm._v("+38 068 192 92 92")
-              ])
-            ])
-          ])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "d-flex" }, [
-          _c("div", { staticClass: "icon" }, [
-            _c("img", {
-              staticStyle: { width: "26px" },
-              attrs: { src: "/images/mail.png", alt: "mail icon" }
-            })
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "data d-flex flex-column" }, [
-            _c("div", [
-              _c("a", { attrs: { href: "mailto:info@esterlab.org" } }, [
-                _vm._v("info@esterlab.org")
-              ])
-            ])
-          ])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "d-flex" }, [
-          _c("div", { staticClass: "icon" }, [
-            _c("img", {
-              staticStyle: { width: "26px" },
-              attrs: { src: "/images/adress.svg", alt: "adress icon" }
-            })
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "data d-flex flex-column" }, [
-            _c("div", [
-              _c(
-                "a",
-                { attrs: { href: "https://goo.gl/maps/GMkWJu7zfe9c8piA9" } },
-                [_vm._v("60 Sichovych Striltsiv St., Kiev, Ukraine, 04050")]
-              )
-            ])
+      _c("div", { staticClass: "data d-flex flex-column" }, [
+        _c("div", [
+          _c("a", { attrs: { href: "tel:+38 068 192 92 92" } }, [
+            _vm._v("+38 068 192 92 92")
           ])
         ])
       ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "d-flex" }, [
+      _c("div", { staticClass: "icon" }, [
+        _c("img", {
+          staticStyle: { width: "26px" },
+          attrs: { src: "/images/mail.png", alt: "mail icon" }
+        })
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "data d-flex flex-column" }, [
+        _c("div", [
+          _c("a", { attrs: { href: "mailto:info@esterlab.org" } }, [
+            _vm._v("info@esterlab.org")
+          ])
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "icon" }, [
+      _c("img", {
+        staticStyle: { width: "26px" },
+        attrs: { src: "/images/adress.svg", alt: "adress icon" }
+      })
     ])
   },
   function() {

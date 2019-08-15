@@ -264,14 +264,22 @@
 
     <div class="successMessage d-none">
         <div class="alert alert-success">
-            Thank you! We'll contact you soon
-            <span id="closeMessage">&times;</span>
+            @if($lang === 'de')
+                Vielen Dank! Wir melden uns umgehend bei Ihnen!
+            @elseif($lang === 'en')
+                Thank you! We'll contact you soon
+            @endif
+                <span id="closeMessage">&times;</span>
         </div>
     </div>
 
     <div class="errorMessage d-none">
         <div class="alert alert-danger">
-            Error while submitting form.
+            @if($lang === 'de')
+                Fehler beim Absenden des Formulars.
+            @elseif($lang === 'en')
+                Error while submitting form.
+            @endif
             <span id="closeMessage">&times;</span>
         </div>
     </div>
@@ -285,7 +293,7 @@
             <div class="modal-content" style="background: none;border: none;">
                 <div class="modal-body">
                     <div id="contact_us">
-                        <contact-us></contact-us>
+                        <contact-us language="{{ Config::get('app.locale') }}"></contact-us>
                     </div>
                 </div>
             </div>
