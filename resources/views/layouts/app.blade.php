@@ -23,13 +23,10 @@
     <link rel="stylesheet" href="/css/owl.theme.default.min.css">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
-
     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 
-    <link rel="stylesheet" href="/css/aos.css">
     <link rel="stylesheet" href="/css/app.css">
-
     <link rel="stylesheet" href="/css/style.css">
     <link rel="icon"
           type="image/png"
@@ -199,7 +196,7 @@
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content" style="background: none;border:0;">
                 <div class="modal-body">
-                    <img src="/images/certificates/2.jpg" alt="" style="width: 100%;">
+                    <img src="/images/certificates/webp.jpg" alt="" style="width: 100%;">
                 </div>
             </div>
         </div>
@@ -226,7 +223,7 @@
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content" style="background: none;border:0;">
                 <div class="modal-body">
-                    <img src="/images/certificates/5.jpg" alt="" style="width: 100%;">
+                    <img src="/images/certificates/webp.jpg" alt="" style="width: 100%;">
                 </div>
             </div>
         </div>

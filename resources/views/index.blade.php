@@ -5,7 +5,7 @@
 
   <div class="owl-carousel slide-one-item">
 
-    <div class="site-section-cover overlay img-bg-section" style="background-image: url('images/hero_2-min.jpg'); " >
+    <div class="site-section-cover overlay img-bg-section" style="background-image: url('images/hero_2-min.webp'); " >
       <div class="container">
         <div class="row align-items-center justify-content-center">
           <div class="col-md-12 col-lg-7 text-center">
@@ -23,7 +23,7 @@
     </div>
 
 
-    <div class="site-section-cover overlay img-bg-section" style="background-image: url('images/hero_1-min.jpg'); " >
+    <div class="site-section-cover overlay img-bg-section" style="background-image: url('images/hero_1.webp'); " >
       <div class="container">
         <div class="row align-items-center justify-content-center">
           <div class="col-md-12 col-lg-7 text-center">
@@ -277,7 +277,7 @@
           </div>
         </a>
         <a class="d-flex justify-content-center" href="javascript:void(0)"  data-toggle="modal" data-target="#certificate_2">
-          <img src="images/certificates/2.jpg" alt="" style="width: 250px; height: 300px;">
+          <img src="images/certificates/2.webp" alt="" style="width: 250px; height: 300px;">
           <div class="certificate-title">
             @lang('index/section5.certificate_2_title')
           </div>
@@ -297,7 +297,7 @@
         </a>
 
         <a class="d-flex justify-content-center" href="javascript:void(0)"  data-toggle="modal" data-target="#certificate_5">
-          <img src="images/certificates/5.jpg" alt="" style="width: 250px; height: 300px;">
+          <img src="images/certificates/5.webp" alt="" style="width: 250px; height: 300px;">
           <div class="certificate-title">
             @lang('index/section5.certificate_5_title')
           </div>
