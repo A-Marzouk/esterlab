@@ -371,6 +371,10 @@
             $('.successMessage').addClass('d-none');
         });
 
+        $('#contactUsModal').on('hidden.bs.modal', function () {
+            $('body')[0].stopScroll();
+        });
+
     });
 
 </script>
