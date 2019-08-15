@@ -19,22 +19,22 @@
             })(window,document,'script','dataLayer','GTM-5H7XXMM');</script>
         <!-- End Google Tag Manager -->
 
-    <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,700" rel="stylesheet">
-
-    <link rel="stylesheet" href="fonts/icomoon/style.css">
-
-    <link rel="stylesheet" href="/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/css/magnific-popup.css">
-    <link rel="stylesheet" href="/css/jquery-ui.css">
     <link rel="stylesheet" href="/css/owl.carousel.min.css">
     <link rel="stylesheet" href="/css/owl.theme.default.min.css">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="/css/bootstrap-datepicker.css">
     <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
 
     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
+    <link rel="stylesheet" href="/css/aos.css">
+    <link rel="stylesheet" href="/css/app.css">
+
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon"
+          type="image/png"
+          href="/favicon.png">
+
 
     <meta name="description" content="Esterlab, A fast growing research &amp; developing company ">
     <meta name="author" content="Esterlab">
@@ -44,13 +44,7 @@
     <meta property="og:description"        content=" A fast growing research &amp; developing company" />
     <meta property="og:image"              content="http://www.esterlab.org/images/logo-esterlab-min.png" />
 
-    <link rel="stylesheet" href="/css/aos.css">
-    <link rel="stylesheet" href="/css/app.css">
 
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="icon"
-          type="image/png"
-          href="/favicon.png">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-141185574-1"></script>
@@ -67,22 +61,13 @@
 
 
 
-<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300" style="background: white;">
 
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5H7XXMM"
                       height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
-    {{--<div class="spinner-wrapper">--}}
-        {{--<div class="spinner">--}}
-            {{--<div class="rect1"></div>--}}
-            {{--<div class="rect2"></div>--}}
-            {{--<div class="rect3"></div>--}}
-            {{--<div class="rect4"></div>--}}
-            {{--<div class="rect5"></div>--}}
-        {{--</div>--}}
-    {{--</div>--}}
 
 <div class="site-wrap"  id="home-section">
 
@@ -107,7 +92,7 @@
 
                 <div class="site-logo">
                     <a href="/" class="">
-                        <img src="/images/logo-new.png" alt="" style=" width: 216px; height: 67px;">
+                        <img src="/images/logo-new.webp" alt="" style=" width: 216px; height: 67px;">
                     </a>
                 </div>
 
@@ -318,80 +303,6 @@
 <script type="text/javascript" src="slick/slick.min.js"></script>
 
 <script src="/js/main.js"></script>
-
-    <script>
-    $(document).ready(function(){
-        let certificatesSlider = $('.multiple-items');
-
-        certificatesSlider.slick({
-            centerMode: false,
-            arrows:false,
-            dots: true,
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            responsive: [
-                {
-                    breakpoint: 768,
-                    settings: {
-                        arrows: false,
-                        slidesToShow: 1,
-                        slidesToScroll: 1,
-                    }
-                },
-                {
-                    breakpoint: 991,
-                    settings: {
-                        arrows: false,
-                        slidesToShow: 2,
-                        slidesToScroll: 2,
-                    }
-                }
-            ]
-        });
-
-        certificatesSlider.show();
-
-        $('#button').on('click' , function () {
-            $('html, body').stop().animate( {
-                'scrollTop': 50
-            }, 900, 'swing',function () {});
-        });
-
-        // back to top button :
-
-        $(window).scroll(function() {
-            if ($(window).scrollTop() > 1000) {
-                $('#button').addClass('show');
-            } else {
-                $('#button').removeClass('show');
-            }
-        });
-
-        $('#closeMessage').click( () => {
-            $('.successMessage').addClass('d-none');
-        });
-
-        $('#contactUsModal').on('hidden.bs.modal', function () {
-            $('body')[0].stopScroll();
-        });
-
-    });
-
-</script>
-
-    <script>
-        // $(document).ready(function() {
-        // //Preloader
-        //     $(window).on("load", function() {
-        //         preloaderFadeOutTime = 500;
-        //         function hidePreloader() {
-        //             var preloader = $('.spinner-wrapper');
-        //             preloader.fadeOut(preloaderFadeOutTime);
-        //         }
-        //         hidePreloader();
-        //     });
-        // });
-    </script>
 
 
 </body>

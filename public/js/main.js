@@ -301,6 +301,59 @@ jQuery(document).ready(function($) {
 	}
 	counter();
 
+		let certificatesSlider = $('.multiple-items');
+
+		certificatesSlider.slick({
+			centerMode: false,
+			arrows:false,
+			dots: true,
+			slidesToShow: 3,
+			slidesToScroll: 1,
+			responsive: [
+				{
+					breakpoint: 768,
+					settings: {
+						arrows: false,
+						slidesToShow: 1,
+						slidesToScroll: 1,
+					}
+				},
+				{
+					breakpoint: 991,
+					settings: {
+						arrows: false,
+						slidesToShow: 2,
+						slidesToScroll: 2,
+					}
+				}
+			]
+		});
+
+		certificatesSlider.show();
+
+		$('#button').on('click' , function () {
+			$('html, body').stop().animate( {
+				'scrollTop': 50
+			}, 900, 'swing',function () {});
+		});
+
+		// back to top button :
+
+		$(window).scroll(function() {
+			if ($(window).scrollTop() > 1000) {
+				$('#button').addClass('show');
+			} else {
+				$('#button').removeClass('show');
+			}
+		});
+
+		$('#closeMessage').click( () => {
+			$('.successMessage').addClass('d-none');
+		});
+
+		$('#contactUsModal').on('hidden.bs.modal', function () {
+			$('body')[0].stopScroll();
+		});
 
 
 });

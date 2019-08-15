@@ -40,21 +40,21 @@
     <div class="container">
       <div class="row smart-solutions-section">
         <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
-          <img src="images/gears-min.jpg" alt="Image" class="img-fluid mb-3" style="height: 195px; width: 350px;">
+          <img src="images/gears-min.webp" alt="Image" class="img-fluid mb-3" style="height: 195px; width: 350px;">
           <h3 class="text-primary h4 mb-2">@lang('index/pre_section.smart_solutions')</h3>
           <p>
             @lang('index/pre_section.smart_solutions_explain')
           </p>
         </div>
         <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
-          <img src="images/science-min.jpg" alt="Image" class="img-fluid mb-3" style="height: 195px; width: 350px;">
+          <img src="images/science-min.webp" alt="Image" class="img-fluid mb-3" style="height: 195px; width: 350px;">
           <h3 class="text-primary h4 mb-2">@lang('index/pre_section.scientific_research')</h3>
           <p>
             @lang('index/pre_section.scientific_research_explain')
           </p>
         </div>
         <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
-          <img src="images/hero_1-min.jpg" alt="Image" class="img-fluid mb-3" style="height: 195px; width: 350px;">
+          <img src="images/hero_1-min.webp" alt="Image" class="img-fluid mb-3" style="height: 195px; width: 350px;">
           <h3 class="text-primary h4 mb-2">
             @lang('index/pre_section.cost_effective')
           </h3>
@@ -78,16 +78,16 @@
       </div>
       <div class="row align-items-center pt-5 d-flex justify-content-center flex-wrap w-100">
         <div>
-          <img src="images/image1.gif" alt="Image" class="img-fluid" style=" margin-top:20px; ">
+          <img src="images/image1.png" alt="Image" class="img-fluid" style=" margin-top:20px; ">
         </div>
         <div>
           <img src="images/image2-min.png" alt="Image" class="img-fluid" style=" margin-top:20px; ">
         </div>
         <div>
-          <img src="images/image3-min.png" alt="Image" class="img-fluid" style=" margin-top:20px; width: 250px ">
+          <img src="images/image3-min.webp" alt="Image" class="img-fluid" style=" margin-top:20px; width: 250px ">
         </div>
         <div>
-          <img src="images/image4-min.png" alt="Image" class="img-fluid" style=" margin-top:20px; width: 250px; ">
+          <img src="images/image4-min.webp" alt="Image" class="img-fluid" style=" margin-top:20px; width: 250px; ">
         </div>
       </div>
       <div  class="row align-items-center pt-5 d-flex justify-content-center flex-wrap w-100">
@@ -111,7 +111,7 @@
     <div class="container">
       <div class="row mb-5">
         <div class="col-lg-6 mb-4">
-          <img src="images/design-thinking-min.jpg" alt="" style="width: 100%">
+          <img src="images/design-thinking-min.webp" alt="" style="width: 100%">
         </div>
         <div class="col-lg-5 ml-auto">
           <h2 class="text-primary mb-4">@lang('index/section1.welcome_message')</h2>
@@ -209,7 +209,7 @@
       <div class="d-flex justify-content-between wrap-on-phone">
         <div class="d-flex flex-column flex-wrap w-100  p-3">
           <div class="mr-lg-5 mb-4 d-flex justify-content-center" style="height: 270px;">
-            <img src="images/TRACKER_2.png" alt="Image" class="" style="width: 250px; height: 250px;">
+            <img src="images/TRACKER_2.webp" alt="Image" class="" style="width: 250px; height: 250px;">
           </div>
           <div style="margin-top: 14px;">
             <h2 class="h4 text-black">@lang('index/section4.green_energy')</h2>
@@ -224,7 +224,7 @@
 
         <div class="d-flex flex-column flex-wrap w-100 pt-md-0 pt-5  p-3">
           <div class="mr-lg-5 mb-4 d-flex justify-content-center" style="height: 270px;">
-            <img src="images/bus-images/bus2.png" alt="Image" class="" style="width: 250px; height: 250px;">
+            <img src="images/bus-images/bus2.webp" alt="Image" class="" style="width: 250px; height: 250px;">
           </div>
           <div style="margin-top: 30px;">
             <h2 class="h4 text-black">@lang('index/section4.automotive')</h2>
@@ -247,7 +247,7 @@
     </div>
     <div class="d-flex flex-column flex-wrap w-100 pt-md-0 pt-5 p-3">
       <div class="mr-lg-5 mb-4 d-flex justify-content-center" style="height: 270px;">
-        <img src="images/R-4.png" alt="Image" class="" style="width: 250px; height: 250px;">
+        <img src="images/R-4.webp" alt="Image" class="" style="width: 250px; height: 250px;">
       </div>
       <div style="margin-top: 30px;">
         <h2 class="h4 text-black">@lang('index/section4.math_modeling')</h2>
