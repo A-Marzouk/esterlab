@@ -23,8 +23,6 @@
 
     <link rel="stylesheet" href="fonts/icomoon/style.css">
 
-    <link rel="stylesheet" href="/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/css/magnific-popup.css">
     <link rel="stylesheet" href="/css/jquery-ui.css">
     <link rel="stylesheet" href="/css/owl.carousel.min.css">
     <link rel="stylesheet" href="/css/owl.theme.default.min.css">
@@ -44,9 +42,7 @@
     <meta property="og:description"        content=" A fast growing research &amp; developing company" />
     <meta property="og:image"              content="http://www.esterlab.org/images/logo-esterlab-min.png" />
 
-    <link rel="stylesheet" href="/css/aos.css">
     <link rel="stylesheet" href="/css/app.css">
-
     <link rel="stylesheet" href="/css/style.css">
     <link rel="icon"
           type="image/png"
