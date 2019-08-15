@@ -107,7 +107,7 @@
 
                 <div class="site-logo">
                     <a href="/" class="">
-                        <img src="/images/esterlabs logo 2.jpg" alt="" style=" width: 216px; height: 67px;">
+                        <img src="/images/logo-new.png" alt="" style=" width: 216px; height: 67px;">
                     </a>
                 </div>
 

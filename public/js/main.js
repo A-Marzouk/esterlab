@@ -14,7 +14,7 @@ jQuery(document).ready(function($) {
 
 		$('.js-clone-nav').each(function() {
 			var $this = $(this);
-			$this.clone().attr('class', 'site-nav-wrap').insertBefore('.site-mobile-menu-body');
+			$this.clone().attr('class', 'site-nav-wrap js-menu-toggle').insertBefore('.site-mobile-menu-body');
 		});
 
 
