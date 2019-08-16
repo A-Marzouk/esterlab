@@ -19,7 +19,7 @@ reduce the weight of the bus with maximum using of electric/green energy.',
     'math_modeling_explain'=> 'Structural strength is a mandatory requirement when designing products. In any industry, engineers ask themselves the same fundamental questions: “How long will this product last for daily use?”, “Under what conditions will it break?”',
 
 
-    'read_more_btn'=> 'Reade more..',
+    'read_more_btn'=> 'Discover',
 ];
 
 // use for other languages

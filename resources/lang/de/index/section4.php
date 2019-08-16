@@ -17,7 +17,7 @@ return [
     'automotive_explain'=> 'Entwicklung von Elektro- / LNG- / Hybrid-Mikrobussen. Das Hauptziel war, das Gewicht des Busses bei maximaler Nutzung von elektrischer / grüner Energie zu reduzieren.',
     'math_modeling_explain'=> 'Die Konstruktionsfestigkeit ist eine strenge Anforderung für den Produktentwurf. In jeder Branche stellen sich Ingenieure die gleichen grundlegenden Fragen: „Wie lange wird dieses Produkt täglich gebraucht?“, „Unter welchen Bedingungen geht es kaputt?“',
 
-    'read_more_btn'=> 'Mehr zu erfahren..',
+    'read_more_btn'=> 'Mehr zu erfahren',
 ];
 
 // use for other languages
