@@ -40,7 +40,7 @@
                         </div>
                         <div class="data d-flex flex-column">
                             <div>
-                                <a href="https://goo.gl/maps/GMkWJu7zfe9c8piA9">{{getTrans('address')}}</a>
+                                <a href="https://goo.gl/maps/GMkWJu7zfe9c8piA9" target="_blank">{{getTrans('address')}}</a>
                             </div>
                         </div>
                     </div>

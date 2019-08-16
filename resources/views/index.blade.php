@@ -114,7 +114,7 @@
         </div>
     </div>
 
-    <div class="site-section" id="about-section">
+    <div class="site-section pb-5" id="about-section">
         <div class="container">
             <div class="row mb-5">
                 <div class="col-lg-6 mb-4">
@@ -165,7 +165,7 @@
         </div>
     </div>
 
-    <div class="site-section bg-light pb-0" id="services-section">
+    <div class="site-section bg-light pb-0  pt-5" id="services-section">
         <div class="container">
             <div class="row mb-5">
                 <div class="col-12">
@@ -208,13 +208,12 @@
         </div>
     </div>
 
-    <div class="site-section pb-0" id="projects-section">
+    <div class="site-section pb-0 pt-0" id="projects-section">
         <div class="container d-flex flex-column">
             <div class="block-heading-1 text-center p-5 pt-0">
                 <h2> @lang('index/section4.our_solutions')</h2>
             </div>
-
-            <div class="d-flex">
+            <div class="solution-box-wrapper">
                 <div class="solution-box">
                     <div class="box-header">
                         @lang('index/section4.our_solutions')
@@ -249,31 +248,37 @@
                     </div>
 
                     <div class="discover-btn">
-                        <a href="/green-energy">@lang('index/section4.read_more_btn')</a>
+                        <a href="/electric-bus">@lang('index/section4.read_more_btn')</a>
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
 
-    <div class="site-section pb-0 pt-0 col-md-10 col-12 offset-md-1" id="services">
-        <div class="block-heading-1 text-center p-5 pt-0">
-            <h2> @lang('navbar.services')</h2>
-        </div>
-        <div class="d-flex flex-column flex-wrap w-100 pt-md-0 pt-5 p-3">
-            <div class="mr-lg-5 mb-4 d-flex justify-content-center" style="height: 270px;">
-                <img src="images/R-4.webp" alt="Image" class="" style="width: 250px; height: 250px;">
+    <div class="site-section pb-0 pt-0" id="services">
+        <div class="container d-flex flex-column">
+            <div class="block-heading-1 text-center p-5 pt-0">
+                <h2> @lang('navbar.services')</h2>
             </div>
-            <div style="margin-top: 30px;">
-                <h2 class="h4 text-black">@lang('index/section4.math_modeling')</h2>
-                <span class="d-block text-secondary mb-4">@lang('index/section4.math_modeling_sub_head')</span>
-                <p>
-                    @lang('index/section4.math_modeling_explain')
-                </p>
-                <p>
-                    <a href="/math-modeling">@lang('index/section4.read_more_btn')</a>
-                </p>
+            <div class="solution-box-wrapper justify-content-center">
+                <div class="solution-box">
+                    <div class="box-header">
+                        @lang('navbar.services')
+                    </div>
+                    <div class="solution-title">
+                        @lang('index/section4.math_modeling')
+                    </div>
+                    <div class="solution-sub-title">
+                        @lang('index/section4.math_modeling_sub_head')
+                    </div>
+                    <div class="solution-description">
+                        @lang('index/section4.math_modeling_explain')
+                    </div>
+
+                    <div class="discover-btn">
+                        <a href="/math-modeling">@lang('index/section4.read_more_btn')</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

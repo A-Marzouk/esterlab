@@ -38200,7 +38200,12 @@ var render = function() {
               _c("div", [
                 _c(
                   "a",
-                  { attrs: { href: "https://goo.gl/maps/GMkWJu7zfe9c8piA9" } },
+                  {
+                    attrs: {
+                      href: "https://goo.gl/maps/GMkWJu7zfe9c8piA9",
+                      target: "_blank"
+                    }
+                  },
                   [_vm._v(_vm._s(_vm.getTrans("address")))]
                 )
               ])

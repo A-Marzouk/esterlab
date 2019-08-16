@@ -175,17 +175,35 @@
   cursor: pointer;
 }
 
-.solution-box {
+.solution-box-wrapper {
+  display: flex;
+}
+
+@media (max-width: 600px) {
+  .solution-box-wrapper {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+
+.solution-box-wrapper .solution-box {
   width: 50%;
   margin: 10px;
-  height: 430px;
+  min-height: 430px;
   background: #1f2b45;
   padding: 50px 40px 50px 40px;
   border-radius: 6px;
   color: white;
 }
 
-.solution-box .box-header {
+@media (max-width: 600px) {
+  .solution-box-wrapper .solution-box {
+    width: 100%;
+    margin: 0 0 15px 0;
+  }
+}
+
+.solution-box-wrapper .solution-box .box-header {
   padding-bottom: 10px;
   border-bottom: 1px solid white;
   font-weight: 500;
@@ -195,7 +213,13 @@
   text-transform: none;
 }
 
-.solution-box .solution-title {
+@media (max-width: 600px) {
+  .solution-box-wrapper .solution-box .box-header {
+    font-size: 14px;
+  }
+}
+
+.solution-box-wrapper .solution-box .solution-title {
   padding-top: 3px;
   font-weight: 500;
   font-style: normal;
@@ -205,17 +229,35 @@
   margin-left: -3px;
 }
 
-.solution-box .solution-sub-title {
+@media (max-width: 600px) {
+  .solution-box-wrapper .solution-box .solution-title {
+    font-size: 26px;
+  }
+}
+
+.solution-box-wrapper .solution-box .solution-sub-title {
   padding-bottom: 12px;
   padding-top: 6px;
 }
 
-.solution-box .discover-btn {
+@media (max-width: 600px) {
+  .solution-box-wrapper .solution-box .solution-sub-title {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 600px) {
+  .solution-box-wrapper .solution-box .solution-description {
+    font-size: 14px;
+  }
+}
+
+.solution-box-wrapper .solution-box .discover-btn {
   padding-top: 40px;
   margin-left: -5px;
 }
 
-.solution-box .discover-btn a {
+.solution-box-wrapper .solution-box .discover-btn a {
   width: 125px;
   height: 45px;
   display: flex;
@@ -227,7 +269,7 @@
   border-radius: 40px;
 }
 
-.solution-box .discover-btn a:hover {
+.solution-box-wrapper .solution-box .discover-btn a:hover {
   background: #1f2b45;
   color: white;
   border: 2px white solid;
