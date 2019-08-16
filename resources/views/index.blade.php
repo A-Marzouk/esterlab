@@ -119,7 +119,7 @@
             @lang('index/section1.description1')
           </p>
           <p>
-            @lang('index/section1.description1')
+            @lang('index/section1.description2')
           </p>
 
         </div>

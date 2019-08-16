@@ -175,6 +175,11 @@
   cursor: pointer;
 }
 
+.anchor-fix {
+  padding-top: 85px;
+  margin-top: -85px;
+}
+
 .select-popup {
   width: 75px;
   background: white;
