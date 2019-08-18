@@ -6,9 +6,9 @@
 
 jQuery(document).ready(function($) {
 
+
 	"use strict";
 
-	
 
 	var siteMenuClone = function() {
 

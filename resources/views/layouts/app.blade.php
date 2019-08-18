@@ -69,6 +69,15 @@
                       height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
+    <div class="spinner-wrapper">
+        <div class="spinner">
+            <div class="rect1"></div>
+            <div class="rect2"></div>
+            <div class="rect3"></div>
+            <div class="rect4"></div>
+            <div class="rect5"></div>
+        </div>
+    </div>
 
 <div class="site-wrap"  id="home-section">
 
@@ -304,6 +313,21 @@
 <script type="text/javascript" src="slick/slick.min.js"></script>
 
 <script src="/js/main.js"></script>
+
+    <script>
+        $(document).ready(function() {
+        //Preloader
+            $(window).on("load", function() {
+                preloaderFadeOutTime = 150;
+                function hidePreloader() {
+                    var preloader = $('.spinner-wrapper');
+                    preloader.fadeOut(preloaderFadeOutTime);
+                }
+                hidePreloader();
+            });
+        });
+    </script>
+
 
 
 </body>
