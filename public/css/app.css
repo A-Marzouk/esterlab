@@ -258,7 +258,11 @@
 }
 
 .solution-box-wrapper .solution-box .discover-btn a {
-  width: 125px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding-left: 20px;
+  padding-right: 20px;
   height: 45px;
   display: flex;
   justify-content: center;

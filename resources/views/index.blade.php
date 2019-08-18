@@ -210,9 +210,6 @@
 
     <div class="site-section pb-0 pt-0" id="projects-section">
         <div class="container d-flex flex-column">
-            <div class="block-heading-1 text-center p-5 pt-0">
-                <h2> @lang('index/section4.our_solutions')</h2>
-            </div>
             <div class="solution-box-wrapper">
                 <div class="solution-box">
                     <div class="box-header">
