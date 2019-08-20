@@ -54,56 +54,62 @@
             <p><img src="/images/tracker.png" alt="Image" class="img-fluid w-100"></p>
           </div>
 
+
           <div class="d-flex justify-content-center pt-5">
             <p><img src="/images/tracker/tracker-4.png" alt="Image" class="img-fluid w-100"></p>
           </div>
 
-
-          <h3 class="text-center p-4 pt-5">
-            @lang('green-energy/main.visual_of_5_forms')
-          </h3>
-
-
-        </div>
-
-        <div class="d-flex justify-content-center flex-wrap">
-          <div>
-            <video controls autoplay  class="w-100 p-3" style="max-width:448px;">
-              <source src="/videos/tracker/f1.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
-          </div>
-
-          <div>
-            <video controls autoplay class="w-100 p-3" style="max-width:448px;">
-              <source src="/videos/tracker/f2.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
-          </div>
-
-          <div>
-            <video controls autoplay class="w-100 p-3" style="max-width:448px;">
-              <source src="/videos/tracker/f3.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
-          </div>
-
-          <div>
-            <video controls autoplay class="w-100 p-3" style="max-width:448px;">
-              <source src="/videos/tracker/f4.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
-          </div>
-
-          <div>
-            <video controls autoplay class="w-100 p-3" style="max-width:448px;">
-              <source src="/videos/tracker/f5.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
-          </div>
         </div>
       </div>
     </div>
+
+    @include('includes.contact_us_button_section')
+
+    <div class="container">
+
+      <h3 class="text-center p-4 pt-5">
+        @lang('green-energy/main.visual_of_5_forms')
+      </h3>
+
+
+      <div class="d-flex justify-content-center flex-wrap">
+        <div>
+          <video controls autoplay  class="w-100 p-3" style="max-width:448px;">
+            <source src="/videos/tracker/f1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+
+        <div>
+          <video controls autoplay class="w-100 p-3" style="max-width:448px;">
+            <source src="/videos/tracker/f2.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+
+        <div>
+          <video controls autoplay class="w-100 p-3" style="max-width:448px;">
+            <source src="/videos/tracker/f3.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+
+        <div>
+          <video controls autoplay class="w-100 p-3" style="max-width:448px;">
+            <source src="/videos/tracker/f4.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+
+        <div>
+          <video controls autoplay class="w-100 p-3" style="max-width:448px;">
+            <source src="/videos/tracker/f5.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+    </div>
+
   </section>
 
 @endsection

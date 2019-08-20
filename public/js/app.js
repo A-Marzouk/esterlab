@@ -2008,7 +2008,7 @@ __webpack_require__.r(__webpack_exports__);
         en: {
           'get_in_touch': 'GET IN TOUCH',
           'call_me_back': 'Call me back',
-          'contact_us': 'Contact Us',
+          'contact_us': 'Contact us',
           'name': 'Name',
           'phone': 'Mobile number',
           'more_details': 'Need to know more on details ?',

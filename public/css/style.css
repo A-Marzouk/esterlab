@@ -237,6 +237,11 @@ h1, h2, h3, h4, h5,
     background: #fff;
     border-color: white;}
 
+.btn.btn-red-outline-contact {
+  border-color: red;
+  background: red;
+  color: #fff; }
+
 .text-black {
   color: #000 !important; }
 
