@@ -246,7 +246,7 @@
     <a id="button" href="javascript:void(0)"></a>
 
     <a class="contactBtn"  href="javascript:void(0)" data-toggle="modal" data-target="#contactUsModal">
-        <img src="/images/phone-red.svg" alt="contact us">
+        <img src="/images/phone.svg" alt="contact us">
     </a>
 
     <div class="successMessage d-none">
