@@ -228,13 +228,14 @@ h1, h2, h3, h4, h5,
 .border-2 {
   border-width: 2px; }
 
-.btn.btn-white-outline {
-  border-color: #fff;
-  background: transparent;
+.btn.btn-red-outline {
+  border-color: red;
+  background: red;
   color: #fff; }
-  .btn.btn-white-outline:hover {
+  .btn.btn-red-outline:hover {
     color: #000;
-    background: #fff; }
+    background: #fff;
+    border-color: white;}
 
 .text-black {
   color: #000 !important; }
@@ -1269,7 +1270,7 @@ h1, h2, h3, h4, h5,
 
 #button {
   display: inline-block;
-  background-color: #002594;
+  background-color: red;
   width: 50px;
   height: 50px;
   text-align: center;
