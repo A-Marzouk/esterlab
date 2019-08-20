@@ -139,6 +139,54 @@
     </div>
 
 
+    <div class="site-section bg-light pt-5" id="contact-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <div class="block-heading-1">
+                        <span> @lang('index/contact.get_in_touch')</span>
+                        <h2>   @lang('index/contact.contact_us')</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 ml-auto">
+                    <h4 class="text-black pt-1">   @lang('index/contact.more_details')<br><br/>
+                    </h4>
+                    <h6>
+                        <div class="row pt-1">
+                            <div class="col-md-2">
+                                @lang('index/contact.address_title')
+                            </div>
+                            <div class="col-md-4">
+                                <a target="_blank"
+                                   href="https://www.google.com/maps/place/ул.+Сечевых+Стрельцов,+60,+Киев,+04050/@50.4565667,30.4894762,17z/data=!4m5!3m4!1s0x40d4ce63673bc087:0xb0a3a2c1274c970!8m2!3d50.4569751!4d30.4899461/">
+                                    @lang('index/contact.address')
+                                </a><br>
+                            </div>
+                        </div>
+                        <div class="row pt-1">
+                            <div class="col-md-2 col-4">
+                                @lang('index/contact.tel_title')
+                            </div>
+                            <div class="col-md-4 col-8">
+                                <a href="tel:+38 068 192 92 92">+38 068 192 92 92
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row pt-1">
+                            <div class="col-md-2 col-4">
+                                @lang('index/contact.email_title')
+                            </div>
+                            <div class="col-md-4 col-8">
+                                <a href="mailto:info@esterlab.org">info@esterlab.org</a>
+                            </div>
+                        </div>
+                    </h6>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <footer class="site-footer">
