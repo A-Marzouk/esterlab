@@ -38202,7 +38202,8 @@ var render = function() {
                   "a",
                   {
                     attrs: {
-                      href: "https://goo.gl/maps/GMkWJu7zfe9c8piA9",
+                      href:
+                        "https://www.google.com/maps/place/ул.+Сечевых+Стрельцов,+60,+Киев,+04050/@50.4565667,30.4894762,17z/data=!4m5!3m4!1s0x40d4ce63673bc087:0xb0a3a2c1274c970!8m2!3d50.4569751!4d30.4899461/",
                       target: "_blank"
                     }
                   },
