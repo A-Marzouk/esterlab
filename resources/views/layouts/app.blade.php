@@ -42,7 +42,7 @@
     <meta property="og:type"               content="website" />
     <meta property="og:title"              content="Esterlab" />
     <meta property="og:description"        content=" A fast growing research &amp; developing company" />
-    <meta property="og:image"              content="https://www.esterlab.org/images/logo-new.webp" />
+    <meta property="og:image"              content="https://www.esterlab.org/images/logo-new-og.webp" />
 
     <link rel="stylesheet" href="/css/app.css">
     <link rel="stylesheet" href="/css/style.css">
@@ -294,7 +294,7 @@
     <a id="button" href="javascript:void(0)"></a>
 
     <a class="contactBtn"  href="javascript:void(0)" data-toggle="modal" data-target="#contactUsModal">
-        <img src="/images/phone-red.svg" alt="contact us">
+        <img src="/images/phone-red-light.svg" alt="contact us">
     </a>
 
     <div class="successMessage d-none">
