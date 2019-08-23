@@ -2008,7 +2008,7 @@ __webpack_require__.r(__webpack_exports__);
         en: {
           'get_in_touch': 'GET IN TOUCH',
           'call_me_back': 'Call me back',
-          'contact_us': 'Contact us',
+          'contact_us': 'Contact Us',
           'name': 'Name',
           'phone': 'Mobile number',
           'more_details': 'Need to know more on details ?',
@@ -2044,6 +2044,8 @@ __webpack_require__.r(__webpack_exports__);
         console.log(response.data);
 
         _this.successfulSubmission();
+
+        ga('send', 'event', 'Get in touch', 'Form submitted');
       })["catch"](function (error) {
         _this.failSubmission();
       });

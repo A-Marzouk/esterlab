@@ -19,7 +19,7 @@
                         </p>
                         <p>
                             <a href="javascript:void(0)" data-toggle="modal" data-target="#contactUsModal"
-                              class="btn btn-red-outline border-w-2 btn-md"> @lang('index/slide.btn_text')</a>
+                              class="getInTouch btn btn-red-outline border-w-2 btn-md"> @lang('index/slide.btn_text')</a>
                         </p>
                     </div>
                 </div>
@@ -34,7 +34,7 @@
                         <h1> @lang('index/slide.slide2_main_text')</h1>
                         <div>
                             <a href="javascript:void(0)" data-toggle="modal" data-target="#contactUsModal"
-                               class="btn btn-red-outline border-w-2 btn-md"> @lang('index/slide.btn_text')</a>
+                               class="getInTouch btn btn-red-outline border-w-2 btn-md"> @lang('index/slide.btn_text')</a>
                         </div>
                     </div>
                 </div>

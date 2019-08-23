@@ -362,4 +362,10 @@ jQuery(document).ready(function($) {
         });
 
 
+		$('getInTouch').on('click',function(){
+			console.log('fire fb event') ;
+				fbq('trackCustom','Get in touch', {type: 'Form submitted', currency: "USD", value: 2.00});
+			}
+		);
+
 });
