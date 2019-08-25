@@ -32,5 +32,5 @@ Route::get('/language/get/current','HomeController@getCurrentLanguage')->name('g
 Route::post('/contact-us/submit','ContactUsController@submitContactForm')->name('contact.submit');
 
 // test route
-Route::get('/contact-us/test','HomeController@contactUS');
+Route::get('/client/geo','HomeController@getClientGEO');
 
