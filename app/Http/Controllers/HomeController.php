@@ -66,5 +66,10 @@ class HomeController extends Controller
         return view('contact');
     }
 
+    public function getClientGEO(){
+        dd(geoip($ip = \Request::ip()));
+    }
+
+
 
 }
