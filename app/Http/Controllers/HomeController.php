@@ -7,9 +7,8 @@
  */
 
 namespace App\Http\Controllers;
-use http\Env\Request;
 use Illuminate\Support\Facades\App;
-use Illuminate\Support\Facades\Cookie;
+use Illuminate\Support\Facades\Request;
 use Illuminate\Support\Facades\Session;
 
 class HomeController extends Controller
@@ -67,7 +66,9 @@ class HomeController extends Controller
     }
 
     public function getClientGEO(){
-        dd(geoip($ip = \Request::ip()));
+        return [
+            'country_name' =>  geoip($ip = Request::ip())->iso_code
+        ] ;
     }
 
 
