@@ -2042,9 +2042,9 @@ __webpack_require__.r(__webpack_exports__);
       }
 
       axios.post('/contact-us/submit', this.contactUsData).then(function (response) {
-        console.log(response.data);
-
         _this.successfulSubmission();
+
+        ga('send', 'event', 'Get in touch', 'Form submitted');
       })["catch"](function (error) {
         _this.failSubmission();
       });
