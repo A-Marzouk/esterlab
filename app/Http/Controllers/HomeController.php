@@ -9,6 +9,7 @@
 namespace App\Http\Controllers;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Request;
+use Torann\GeoIP\Facades\GeoIP;
 use Illuminate\Support\Facades\Session;
 
 class HomeController extends Controller
@@ -59,10 +60,6 @@ class HomeController extends Controller
             return Session::get('language');
         }
         return 'en' ;
-    }
-
-    public function contactUS(){
-        return view('contact');
     }
 
     public function getClientGEO(){

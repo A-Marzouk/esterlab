@@ -350,8 +350,8 @@
 
                 axios.post('/contact-us/submit',this.contactUsData)
                     .then( (response) => {
-                        console.log(response.data);
                         this.successfulSubmission();
+                        ga('send', 'event', 'Get in touch', 'Form submitted');
                     })
                     .catch( (error) => {
                         this.failSubmission();
