@@ -295,7 +295,6 @@
 <script src="/js/app.js"></script>
 <script src="/js/jquery-ui.js"></script>
 <script src="/js/popper.min.js"></script>
-<script src="/js/bootstrap.min.js"></script>
 <script src="/js/owl.carousel.min.js"></script>
 <script src="/js/jquery.magnific-popup.min.js"></script>
 <script src="/js/jquery.sticky.js"></script>
