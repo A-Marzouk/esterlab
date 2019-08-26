@@ -63,7 +63,7 @@
                     <span class="error"  v-show="errors.mobile_number.length > 0">{{errors.mobile_number}}</span>
                     <div  class="w-100  d-flex justify-content-center align-items-center">
                         <div class="d-flex w-100">
-                            <select name="countryCode" v-model="contactUsData.countryCode">
+                            <select name="countryCode" v-model="contactUsData.countryCode" class="selectionOptions">
                                 <option data-countryCode="DZ" style="color:black;" value="213" :selected="true">Algeria (+213)</option>
                                 <option data-countryCode="AD" style="color:black;" value="376">Andorra (+376)</option>
                                 <option data-countryCode="AO" style="color:black;" value="244">Angola (+244)</option>
@@ -261,11 +261,11 @@
                                 <option data-countryCode="TC" style="color:black;" value="1649">Turks &amp; Caicos Islands (+1649)</option>
                                 <option data-countryCode="TV" style="color:black;" value="688">Tuvalu (+688)</option>
                                 <option data-countryCode="UG" style="color:black;" value="256">Uganda (+256)</option>
-                                <!-- <option data-countryCode="GB" style="color:black;" value="44">UK (+44)</option> -->
+                                 <option data-countryCode="GB" style="color:black;" value="44">UK (+44)</option>
                                 <option data-countryCode="UA" style="color:black;" value="380">Ukraine (+380)</option>
                                 <option data-countryCode="AE" style="color:black;" value="971">United Arab Emirates (+971)</option>
                                 <option data-countryCode="UY" style="color:black;" value="598">Uruguay (+598)</option>
-                                <!-- <option data-countryCode="US" style="color:black;" value="1">USA (+1)</option> -->
+                                 <option data-countryCode="US" style="color:black;" value="1">USA (+1)</option>
                                 <option data-countryCode="UZ" style="color:black;" value="7">Uzbekistan (+7)</option>
                                 <option data-countryCode="VU" style="color:black;" value="678">Vanuatu (+678)</option>
                                 <option data-countryCode="VA" style="color:black;" value="379">Vatican City (+379)</option>
@@ -306,6 +306,7 @@
                     'mobile_number':'',
                 },
                 lang:'',
+                countryName:'',
                 trans:{
                     en:{
                         'get_in_touch': 'GET IN TOUCH',
@@ -416,10 +417,30 @@
                 {
                     return this.trans['de'][text] ;
                 }
+            },
+            getGEOInfo(){
+                axios.get('/client/geo')
+                    .then( (response) => {
+                        this.countryName = response.data.country_name ;
+
+                        $('.selectionOptions').children('option').each( (i,option) => {
+                            let countryCode = $(option).attr('data-countryCode');
+
+                            if(countryCode === this.countryName){
+                                this.contactUsData.countryCode = $(option).attr('value');
+                            }
+                        });
+
+                    })
+                    .catch( (error) => {
+                        console.log('Error getting geo data, ' + error);
+                    });
+
             }
         },
         mounted() {
             this.lang = this.language;
+            this.getGEOInfo();
         }
     }
 </script>
