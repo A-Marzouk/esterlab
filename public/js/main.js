@@ -356,9 +356,11 @@ jQuery(document).ready(function($) {
 		});
 
 
-		$('.site-nav-wrap').on('click', () =>{
+		$('.site-nav-wrap').on('click', (element) => {
+			if($(element.target).hasClass('dropdown-toggle')){
+				return ;
+			}
 		    $('.icon-close2').click();
-		    console.log('close');
         });
 
 
