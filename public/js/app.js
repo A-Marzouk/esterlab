@@ -2004,6 +2004,7 @@ __webpack_require__.r(__webpack_exports__);
         'mobile_number': ''
       },
       lang: '',
+      countryName: '',
       trans: {
         en: {
           'get_in_touch': 'GET IN TOUCH',
@@ -2102,10 +2103,27 @@ __webpack_require__.r(__webpack_exports__);
       } else if (this.lang === 'de') {
         return this.trans['de'][text];
       }
+    },
+    getGEOInfo: function getGEOInfo() {
+      var _this2 = this;
+
+      axios.get('/client/geo').then(function (response) {
+        _this2.countryName = response.data.country_name;
+        $('.selectionOptions').children('option').each(function (i, option) {
+          var countryCode = $(option).attr('data-countryCode');
+
+          if (countryCode === _this2.countryName) {
+            _this2.contactUsData.countryCode = $(option).attr('value');
+          }
+        });
+      })["catch"](function (error) {
+        console.log('Error getting geo data, ' + error);
+      });
     }
   },
   mounted: function mounted() {
     this.lang = this.language;
+    this.getGEOInfo();
   }
 });
 
@@ -38310,6 +38328,7 @@ var render = function() {
                         expression: "contactUsData.countryCode"
                       }
                     ],
+                    staticClass: "selectionOptions",
                     attrs: { name: "countryCode" },
                     on: {
                       change: function($event) {
@@ -40110,6 +40129,15 @@ var render = function() {
                       "option",
                       {
                         staticStyle: { color: "black" },
+                        attrs: { "data-countryCode": "GB", value: "44" }
+                      },
+                      [_vm._v("UK (+44)")]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "option",
+                      {
+                        staticStyle: { color: "black" },
                         attrs: { "data-countryCode": "UA", value: "380" }
                       },
                       [_vm._v("Ukraine (+380)")]
@@ -40131,6 +40159,15 @@ var render = function() {
                         attrs: { "data-countryCode": "UY", value: "598" }
                       },
                       [_vm._v("Uruguay (+598)")]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "option",
+                      {
+                        staticStyle: { color: "black" },
+                        attrs: { "data-countryCode": "US", value: "1" }
+                      },
+                      [_vm._v("USA (+1)")]
                     ),
                     _vm._v(" "),
                     _c(

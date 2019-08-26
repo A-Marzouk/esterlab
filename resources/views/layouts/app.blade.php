@@ -48,8 +48,8 @@
     <meta property="og:type"               content="website" />
     <meta property="og:title"              content="Esterlab" />
     <meta property="og:description"        content=" A fast growing research &amp; developing company" />
-    <meta property="og:image"              content="https://www.esterlab.org/images/logo-new-og.webp" />
 
+    <meta property="og:image"              content="https://www.esterlab.org/images/logo-new-og.webp" />
     <link rel="stylesheet" href="/css/app.css">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="icon"
