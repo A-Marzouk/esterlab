@@ -63,10 +63,6 @@ class HomeController extends Controller
     }
 
     public function getClientGEO(){
-        dd(geoip($ip = Request::ip()));
-    }
-
-    public function getClientGEO(){
         return [
             'country_name' =>  geoip($ip = Request::ip())->iso_code
         ] ;
