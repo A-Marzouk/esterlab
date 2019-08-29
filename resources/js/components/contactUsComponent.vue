@@ -351,7 +351,6 @@
                 axios.post('/contact-us/submit',this.contactUsData)
                     .then( (response) => {
                         this.successfulSubmission();
-                        ga('send', 'event', 'Get in touch', 'Form submitted');
                     })
                     .catch( (error) => {
                         this.failSubmission();
@@ -374,6 +373,9 @@
                     'name':'',
                     'mobile_number':'',
                 };
+
+                // facebook event
+                ga('send', 'event', 'Get in touch', 'Form submitted');
             },
             failSubmission(){
                 $('#closeModal').click();

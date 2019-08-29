@@ -2043,8 +2043,6 @@ __webpack_require__.r(__webpack_exports__);
 
       axios.post('/contact-us/submit', this.contactUsData).then(function (response) {
         _this.successfulSubmission();
-
-        ga('send', 'event', 'Get in touch', 'Form submitted');
       })["catch"](function (error) {
         _this.failSubmission();
       });
@@ -2062,7 +2060,9 @@ __webpack_require__.r(__webpack_exports__);
       this.errors = {
         'name': '',
         'mobile_number': ''
-      };
+      }; // facebook event
+
+      ga('send', 'event', 'Get in touch', 'Form submitted');
     },
     failSubmission: function failSubmission() {
       $('#closeModal').click();
