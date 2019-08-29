@@ -2061,9 +2061,11 @@ __webpack_require__.r(__webpack_exports__);
         'name': '',
         'mobile_number': ''
       }; // facebook event
+      // ga('send', 'event', 'Get in touch sub', 'Form submitted');
 
-      ga('send', 'event', 'Get in touch sub', 'Form submitted');
-      console.log('form submitted');
+      axios.get('/contact-us/submit/successful').then(function (response) {
+        console.log('successful');
+      });
     },
     failSubmission: function failSubmission() {
       $('#closeModal').click();

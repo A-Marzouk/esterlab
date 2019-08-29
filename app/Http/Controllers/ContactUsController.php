@@ -25,5 +25,9 @@ class ContactUsController extends Controller
         return $validated ;
     }
 
+    public function successful(){
+        return 'success';
+    }
+
 }
 

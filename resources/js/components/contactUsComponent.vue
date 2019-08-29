@@ -375,8 +375,11 @@
                 };
 
                 // facebook event
-                ga('send', 'event', 'Get in touch sub', 'Form submitted');
-                console.log('form submitted')
+                // ga('send', 'event', 'Get in touch sub', 'Form submitted');
+
+                axios.get('/contact-us/submit/successful').then((response)=> {
+                    console.log('successful');
+                });
             },
             failSubmission(){
                 $('#closeModal').click();

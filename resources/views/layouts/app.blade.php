@@ -62,11 +62,6 @@
 
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300" style="background: white;">
 
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5H7XXMM"
-                      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-
     <div class="spinner-wrapper">
         <div class="spinner">
             <div class="rect1"></div>
