@@ -2134,10 +2134,8 @@ __webpack_require__.r(__webpack_exports__);
       setTimeout(function () {
         $('.successMessage').addClass('d-none');
       }, 2500);
-      this.contactUsData = {
-        'name': '',
-        'mobile_number': ''
-      };
+      this.contactUsData.name = '';
+      this.contactUsData.mobile_number = '';
       this.errors = {
         'name': '',
         'mobile_number': ''

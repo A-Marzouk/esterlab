@@ -26,7 +26,7 @@ class ContactUsRequest extends FormRequest
         return [
             'name' => 'required|max:150',
             'mobile_number' => 'required|max:150|min:7',
-            'countryCode' => 'required|max:150|min:2',
+            'countryCode' => 'required|max:150|min:1',
         ];
     }
 }
