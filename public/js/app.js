@@ -1989,6 +1989,87 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "contactUsComponent",
   props: ['language'],
@@ -2060,11 +2141,12 @@ __webpack_require__.r(__webpack_exports__);
       this.errors = {
         'name': '',
         'mobile_number': ''
-      }; // facebook event
-      // ga('send', 'event', 'Get in touch sub', 'Form submitted');
-
-      axios.get('/contact-us/submit/successful').then(function (response) {
-        console.log('successful');
+      };
+      ga('send', 'event', 'Get in touch submission', 'Form submitted');
+      fbq('trackCustom', 'Get in touch submission', {
+        type: 'Form Submitted',
+        value: 2.00,
+        currency: 'USD'
       });
     },
     failSubmission: function failSubmission() {
@@ -38361,7 +38443,11 @@ var render = function() {
                         attrs: { "data-countryCode": "DZ", value: "213" },
                         domProps: { selected: true }
                       },
-                      [_vm._v("Algeria (+213)")]
+                      [
+                        _vm._v(
+                          "Algeria\n                                (+213)\n                            "
+                        )
+                      ]
                     ),
                     _vm._v(" "),
                     _c(
@@ -38388,7 +38474,7 @@ var render = function() {
                         staticStyle: { color: "black" },
                         attrs: { "data-countryCode": "AI", value: "1264" }
                       },
-                      [_vm._v("Anguilla (+1264)")]
+                      [_vm._v("Anguilla (+1264)\n                            ")]
                     ),
                     _vm._v(" "),
                     _c(
@@ -38397,7 +38483,11 @@ var render = function() {
                         staticStyle: { color: "black" },
                         attrs: { "data-countryCode": "AG", value: "1268" }
                       },
-                      [_vm._v("Antigua & Barbuda (+1268)")]
+                      [
+                        _vm._v(
+                          "Antigua & Barbuda\n                                (+1268)\n                            "
+                        )
+                      ]
                     ),
                     _vm._v(" "),
                     _c(
@@ -38451,7 +38541,11 @@ var render = function() {
                         staticStyle: { color: "black" },
                         attrs: { "data-countryCode": "AZ", value: "994" }
                       },
-                      [_vm._v("Azerbaijan (+994)")]
+                      [
+                        _vm._v(
+                          "Azerbaijan (+994)\n                            "
+                        )
+                      ]
                     ),
                     _vm._v(" "),
                     _c(
@@ -38478,7 +38572,11 @@ var render = function() {
                         staticStyle: { color: "black" },
                         attrs: { "data-countryCode": "BD", value: "880" }
                       },
-                      [_vm._v("Bangladesh (+880)")]
+                      [
+                        _vm._v(
+                          "Bangladesh (+880)\n                            "
+                        )
+                      ]
                     ),
                     _vm._v(" "),
                     _c(
@@ -38487,7 +38585,7 @@ var render = function() {
                         staticStyle: { color: "black" },
                         attrs: { "data-countryCode": "BB", value: "1246" }
                       },
-                      [_vm._v("Barbados (+1246)")]
+                      [_vm._v("Barbados (+1246)\n                            ")]
                     ),
                     _vm._v(" "),
                     _c(
@@ -38559,7 +38657,11 @@ var render = function() {
                         staticStyle: { color: "black" },
                         attrs: { "data-countryCode": "BA", value: "387" }
                       },
-                      [_vm._v("Bosnia Herzegovina (+387)")]
+                      [
+                        _vm._v(
+                          "Bosnia Herzegovina\n                                (+387)\n                            "
+                        )
+                      ]
                     ),
                     _vm._v(" "),
                     _c(
@@ -38604,7 +38706,11 @@ var render = function() {
                         staticStyle: { color: "black" },
                         attrs: { "data-countryCode": "BF", value: "226" }
                       },
-                      [_vm._v("Burkina Faso (+226)")]
+                      [
+                        _vm._v(
+                          "Burkina Faso (+226)\n                            "
+                        )
+                      ]
                     ),
                     _vm._v(" "),
                     _c(
@@ -38649,7 +38755,11 @@ var render = function() {
                         staticStyle: { color: "black" },
                         attrs: { "data-countryCode": "CV", value: "238" }
                       },
-                      [_vm._v("Cape Verde Islands (+238)")]
+                      [
+                        _vm._v(
+                          "Cape Verde Islands\n                                (+238)\n                            "
+                        )
+                      ]
                     ),
                     _vm._v(" "),
                     _c(
@@ -38658,7 +38768,11 @@ var render = function() {
                         staticStyle: { color: "black" },
                         attrs: { "data-countryCode": "KY", value: "1345" }
                       },
-                      [_vm._v("Cayman Islands (+1345)")]
+                      [
+                        _vm._v(
+                          "Cayman Islands (+1345)\n                            "
+                        )
+                      ]
                     ),
                     _vm._v(" "),
                     _c(
@@ -38667,7 +38781,11 @@ var render = function() {
                         staticStyle: { color: "black" },
                         attrs: { "data-countryCode": "CF", value: "236" }
                       },
-                      [_vm._v("Central African Republic (+236)")]
+                      [
+                        _vm._v(
+                          "Central African Republic\n                                (+236)\n                            "
+                        )
+                      ]
                     ),
                     _vm._v(" "),
                     _c(
@@ -38721,7 +38839,11 @@ var render = function() {
                         staticStyle: { color: "black" },
                         attrs: { "data-countryCode": "CK", value: "682" }
                       },
-                      [_vm._v("Cook Islands (+682)")]
+                      [
+                        _vm._v(
+                          "Cook Islands (+682)\n                            "
+                        )
+                      ]
                     ),
                     _vm._v(" "),
                     _c(
@@ -38730,7 +38852,11 @@ var render = function() {
                         staticStyle: { color: "black" },
                         attrs: { "data-countryCode": "CR", value: "506" }
                       },
-                      [_vm._v("Costa Rica (+506)")]
+                      [
+                        _vm._v(
+                          "Costa Rica (+506)\n                            "
+                        )
+                      ]
                     ),
                     _vm._v(" "),
                     _c(
@@ -38757,7 +38883,11 @@ var render = function() {
                         staticStyle: { color: "black" },
                         attrs: { "data-countryCode": "CY", value: "90392" }
                       },
-                      [_vm._v("Cyprus North (+90392)")]
+                      [
+                        _vm._v(
+                          "Cyprus North (+90392)\n                            "
+                        )
+                      ]
                     ),
                     _vm._v(" "),
                     _c(
@@ -38766,7 +38896,11 @@ var render = function() {
                         staticStyle: { color: "black" },
                         attrs: { "data-countryCode": "CY", value: "357" }
                       },
-                      [_vm._v("Cyprus South (+357)")]
+                      [
+                        _vm._v(
+                          "Cyprus South (+357)\n                            "
+                        )
+                      ]
                     ),
                     _vm._v(" "),
                     _c(
@@ -38775,7 +38909,11 @@ var render = function() {
                         staticStyle: { color: "black" },
                         attrs: { "data-countryCode": "CZ", value: "42" }
                       },
-                      [_vm._v("Czech Republic (+42)")]
+                      [
+                        _vm._v(
+                          "Czech Republic (+42)\n                            "
+                        )
+                      ]
                     ),
                     _vm._v(" "),
                     _c(
@@ -38802,7 +38940,7 @@ var render = function() {
                         staticStyle: { color: "black" },
                         attrs: { "data-countryCode": "DM", value: "1809" }
                       },
-                      [_vm._v("Dominica (+1809)")]
+                      [_vm._v("Dominica (+1809)\n                            ")]
                     ),
                     _vm._v(" "),
                     _c(
@@ -38811,7 +38949,11 @@ var render = function() {
                         staticStyle: { color: "black" },
                         attrs: { "data-countryCode": "DO", value: "1809" }
                       },
-                      [_vm._v("Dominican Republic (+1809)")]
+                      [
+                        _vm._v(
+                          "Dominican Republic\n                                (+1809)\n                            "
+                        )
+                      ]
                     ),
                     _vm._v(" "),
                     _c(
@@ -38838,7 +38980,11 @@ var render = function() {
                         staticStyle: { color: "black" },
                         attrs: { "data-countryCode": "SV", value: "503" }
                       },
-                      [_vm._v("El Salvador (+503)")]
+                      [
+                        _vm._v(
+                          "El Salvador (+503)\n                            "
+                        )
+                      ]
                     ),
                     _vm._v(" "),
                     _c(
@@ -38847,7 +38993,11 @@ var render = function() {
                         staticStyle: { color: "black" },
                         attrs: { "data-countryCode": "GQ", value: "240" }
                       },
-                      [_vm._v("Equatorial Guinea (+240)")]
+                      [
+                        _vm._v(
+                          "Equatorial Guinea\n                                (+240)\n                            "
+                        )
+                      ]
                     ),
                     _vm._v(" "),
                     _c(
@@ -38883,7 +39033,11 @@ var render = function() {
                         staticStyle: { color: "black" },
                         attrs: { "data-countryCode": "FK", value: "500" }
                       },
-                      [_vm._v("Falkland Islands (+500)")]
+                      [
+                        _vm._v(
+                          "Falkland Islands (+500)\n                            "
+                        )
+                      ]
                     ),
                     _vm._v(" "),
                     _c(
@@ -38892,7 +39046,11 @@ var render = function() {
                         staticStyle: { color: "black" },
                         attrs: { "data-countryCode": "FO", value: "298" }
                       },
-                      [_vm._v("Faroe Islands (+298)")]
+                      [
+                        _vm._v(
+                          "Faroe Islands (+298)\n                            "
+                        )
+                      ]
                     ),
                     _vm._v(" "),
                     _c(
@@ -38928,7 +39086,11 @@ var render = function() {
                         staticStyle: { color: "black" },
                         attrs: { "data-countryCode": "GF", value: "594" }
                       },
-                      [_vm._v("French Guiana (+594)")]
+                      [
+                        _vm._v(
+                          "French Guiana (+594)\n                            "
+                        )
+                      ]
                     ),
                     _vm._v(" "),
                     _c(
@@ -38937,7 +39099,11 @@ var render = function() {
                         staticStyle: { color: "black" },
                         attrs: { "data-countryCode": "PF", value: "689" }
                       },
-                      [_vm._v("French Polynesia (+689)")]
+                      [
+                        _vm._v(
+                          "French Polynesia (+689)\n                            "
+                        )
+                      ]
                     ),
                     _vm._v(" "),
                     _c(
@@ -39027,7 +39193,11 @@ var render = function() {
                         staticStyle: { color: "black" },
                         attrs: { "data-countryCode": "GP", value: "590" }
                       },
-                      [_vm._v("Guadeloupe (+590)")]
+                      [
+                        _vm._v(
+                          "Guadeloupe (+590)\n                            "
+                        )
+                      ]
                     ),
                     _vm._v(" "),
                     _c(
@@ -39063,7 +39233,11 @@ var render = function() {
                         staticStyle: { color: "black" },
                         attrs: { "data-countryCode": "GW", value: "245" }
                       },
-                      [_vm._v("Guinea - Bissau (+245)")]
+                      [
+                        _vm._v(
+                          "Guinea - Bissau (+245)\n                            "
+                        )
+                      ]
                     ),
                     _vm._v(" "),
                     _c(
@@ -39243,7 +39417,11 @@ var render = function() {
                         staticStyle: { color: "black" },
                         attrs: { "data-countryCode": "KP", value: "850" }
                       },
-                      [_vm._v("Korea North (+850)")]
+                      [
+                        _vm._v(
+                          "Korea North (+850)\n                            "
+                        )
+                      ]
                     ),
                     _vm._v(" "),
                     _c(
@@ -39270,7 +39448,11 @@ var render = function() {
                         staticStyle: { color: "black" },
                         attrs: { "data-countryCode": "KG", value: "996" }
                       },
-                      [_vm._v("Kyrgyzstan (+996)")]
+                      [
+                        _vm._v(
+                          "Kyrgyzstan (+996)\n                            "
+                        )
+                      ]
                     ),
                     _vm._v(" "),
                     _c(
@@ -39333,7 +39515,11 @@ var render = function() {
                         staticStyle: { color: "black" },
                         attrs: { "data-countryCode": "LI", value: "417" }
                       },
-                      [_vm._v("Liechtenstein (+417)")]
+                      [
+                        _vm._v(
+                          "Liechtenstein (+417)\n                            "
+                        )
+                      ]
                     ),
                     _vm._v(" "),
                     _c(
@@ -39351,7 +39537,11 @@ var render = function() {
                         staticStyle: { color: "black" },
                         attrs: { "data-countryCode": "LU", value: "352" }
                       },
-                      [_vm._v("Luxembourg (+352)")]
+                      [
+                        _vm._v(
+                          "Luxembourg (+352)\n                            "
+                        )
+                      ]
                     ),
                     _vm._v(" "),
                     _c(
@@ -39378,7 +39568,11 @@ var render = function() {
                         staticStyle: { color: "black" },
                         attrs: { "data-countryCode": "MG", value: "261" }
                       },
-                      [_vm._v("Madagascar (+261)")]
+                      [
+                        _vm._v(
+                          "Madagascar (+261)\n                            "
+                        )
+                      ]
                     ),
                     _vm._v(" "),
                     _c(
@@ -39432,7 +39626,11 @@ var render = function() {
                         staticStyle: { color: "black" },
                         attrs: { "data-countryCode": "MH", value: "692" }
                       },
-                      [_vm._v("Marshall Islands (+692)")]
+                      [
+                        _vm._v(
+                          "Marshall Islands (+692)\n                            "
+                        )
+                      ]
                     ),
                     _vm._v(" "),
                     _c(
@@ -39441,7 +39639,11 @@ var render = function() {
                         staticStyle: { color: "black" },
                         attrs: { "data-countryCode": "MQ", value: "596" }
                       },
-                      [_vm._v("Martinique (+596)")]
+                      [
+                        _vm._v(
+                          "Martinique (+596)\n                            "
+                        )
+                      ]
                     ),
                     _vm._v(" "),
                     _c(
@@ -39450,7 +39652,11 @@ var render = function() {
                         staticStyle: { color: "black" },
                         attrs: { "data-countryCode": "MR", value: "222" }
                       },
-                      [_vm._v("Mauritania (+222)")]
+                      [
+                        _vm._v(
+                          "Mauritania (+222)\n                            "
+                        )
+                      ]
                     ),
                     _vm._v(" "),
                     _c(
@@ -39477,7 +39683,11 @@ var render = function() {
                         staticStyle: { color: "black" },
                         attrs: { "data-countryCode": "FM", value: "691" }
                       },
-                      [_vm._v("Micronesia (+691)")]
+                      [
+                        _vm._v(
+                          "Micronesia (+691)\n                            "
+                        )
+                      ]
                     ),
                     _vm._v(" "),
                     _c(
@@ -39513,7 +39723,11 @@ var render = function() {
                         staticStyle: { color: "black" },
                         attrs: { "data-countryCode": "MS", value: "1664" }
                       },
-                      [_vm._v("Montserrat (+1664)")]
+                      [
+                        _vm._v(
+                          "Montserrat (+1664)\n                            "
+                        )
+                      ]
                     ),
                     _vm._v(" "),
                     _c(
@@ -39531,7 +39745,11 @@ var render = function() {
                         staticStyle: { color: "black" },
                         attrs: { "data-countryCode": "MZ", value: "258" }
                       },
-                      [_vm._v("Mozambique (+258)")]
+                      [
+                        _vm._v(
+                          "Mozambique (+258)\n                            "
+                        )
+                      ]
                     ),
                     _vm._v(" "),
                     _c(
@@ -39585,7 +39803,11 @@ var render = function() {
                         staticStyle: { color: "black" },
                         attrs: { "data-countryCode": "NC", value: "687" }
                       },
-                      [_vm._v("New Caledonia (+687)")]
+                      [
+                        _vm._v(
+                          "New Caledonia (+687)\n                            "
+                        )
+                      ]
                     ),
                     _vm._v(" "),
                     _c(
@@ -39639,7 +39861,11 @@ var render = function() {
                         staticStyle: { color: "black" },
                         attrs: { "data-countryCode": "NF", value: "672" }
                       },
-                      [_vm._v("Norfolk Islands (+672)")]
+                      [
+                        _vm._v(
+                          "Norfolk Islands (+672)\n                            "
+                        )
+                      ]
                     ),
                     _vm._v(" "),
                     _c(
@@ -39648,7 +39874,11 @@ var render = function() {
                         staticStyle: { color: "black" },
                         attrs: { "data-countryCode": "NP", value: "670" }
                       },
-                      [_vm._v("Northern Marianas (+670)")]
+                      [
+                        _vm._v(
+                          "Northern Marianas\n                                (+670)\n                            "
+                        )
+                      ]
                     ),
                     _vm._v(" "),
                     _c(
@@ -39693,7 +39923,11 @@ var render = function() {
                         staticStyle: { color: "black" },
                         attrs: { "data-countryCode": "PG", value: "675" }
                       },
-                      [_vm._v("Papua New Guinea (+675)")]
+                      [
+                        _vm._v(
+                          "Papua New Guinea (+675)\n                            "
+                        )
+                      ]
                     ),
                     _vm._v(" "),
                     _c(
@@ -39747,7 +39981,11 @@ var render = function() {
                         staticStyle: { color: "black" },
                         attrs: { "data-countryCode": "PR", value: "1787" }
                       },
-                      [_vm._v("Puerto Rico (+1787)")]
+                      [
+                        _vm._v(
+                          "Puerto Rico (+1787)\n                            "
+                        )
+                      ]
                     ),
                     _vm._v(" "),
                     _c(
@@ -39801,7 +40039,11 @@ var render = function() {
                         staticStyle: { color: "black" },
                         attrs: { "data-countryCode": "SM", value: "378" }
                       },
-                      [_vm._v("San Marino (+378)")]
+                      [
+                        _vm._v(
+                          "San Marino (+378)\n                            "
+                        )
+                      ]
                     ),
                     _vm._v(" "),
                     _c(
@@ -39810,7 +40052,11 @@ var render = function() {
                         staticStyle: { color: "black" },
                         attrs: { "data-countryCode": "ST", value: "239" }
                       },
-                      [_vm._v("Sao Tome & Principe (+239)")]
+                      [
+                        _vm._v(
+                          "Sao Tome & Principe\n                                (+239)\n                            "
+                        )
+                      ]
                     ),
                     _vm._v(" "),
                     _c(
@@ -39819,7 +40065,11 @@ var render = function() {
                         staticStyle: { color: "black" },
                         attrs: { "data-countryCode": "SA", value: "966" }
                       },
-                      [_vm._v("Saudi Arabia (+966)")]
+                      [
+                        _vm._v(
+                          "Saudi Arabia (+966)\n                            "
+                        )
+                      ]
                     ),
                     _vm._v(" "),
                     _c(
@@ -39846,7 +40096,11 @@ var render = function() {
                         staticStyle: { color: "black" },
                         attrs: { "data-countryCode": "SC", value: "248" }
                       },
-                      [_vm._v("Seychelles (+248)")]
+                      [
+                        _vm._v(
+                          "Seychelles (+248)\n                            "
+                        )
+                      ]
                     ),
                     _vm._v(" "),
                     _c(
@@ -39855,7 +40109,11 @@ var render = function() {
                         staticStyle: { color: "black" },
                         attrs: { "data-countryCode": "SL", value: "232" }
                       },
-                      [_vm._v("Sierra Leone (+232)")]
+                      [
+                        _vm._v(
+                          "Sierra Leone (+232)\n                            "
+                        )
+                      ]
                     ),
                     _vm._v(" "),
                     _c(
@@ -39873,7 +40131,11 @@ var render = function() {
                         staticStyle: { color: "black" },
                         attrs: { "data-countryCode": "SK", value: "421" }
                       },
-                      [_vm._v("Slovak Republic (+421)")]
+                      [
+                        _vm._v(
+                          "Slovak Republic (+421)\n                            "
+                        )
+                      ]
                     ),
                     _vm._v(" "),
                     _c(
@@ -39891,7 +40153,11 @@ var render = function() {
                         staticStyle: { color: "black" },
                         attrs: { "data-countryCode": "SB", value: "677" }
                       },
-                      [_vm._v("Solomon Islands (+677)")]
+                      [
+                        _vm._v(
+                          "Solomon Islands (+677)\n                            "
+                        )
+                      ]
                     ),
                     _vm._v(" "),
                     _c(
@@ -39909,7 +40175,11 @@ var render = function() {
                         staticStyle: { color: "black" },
                         attrs: { "data-countryCode": "ZA", value: "27" }
                       },
-                      [_vm._v("South Africa (+27)")]
+                      [
+                        _vm._v(
+                          "South Africa (+27)\n                            "
+                        )
+                      ]
                     ),
                     _vm._v(" "),
                     _c(
@@ -39936,7 +40206,11 @@ var render = function() {
                         staticStyle: { color: "black" },
                         attrs: { "data-countryCode": "SH", value: "290" }
                       },
-                      [_vm._v("St. Helena (+290)")]
+                      [
+                        _vm._v(
+                          "St. Helena (+290)\n                            "
+                        )
+                      ]
                     ),
                     _vm._v(" "),
                     _c(
@@ -39945,7 +40219,11 @@ var render = function() {
                         staticStyle: { color: "black" },
                         attrs: { "data-countryCode": "KN", value: "1869" }
                       },
-                      [_vm._v("St. Kitts (+1869)")]
+                      [
+                        _vm._v(
+                          "St. Kitts (+1869)\n                            "
+                        )
+                      ]
                     ),
                     _vm._v(" "),
                     _c(
@@ -39954,7 +40232,11 @@ var render = function() {
                         staticStyle: { color: "black" },
                         attrs: { "data-countryCode": "SC", value: "1758" }
                       },
-                      [_vm._v("St. Lucia (+1758)")]
+                      [
+                        _vm._v(
+                          "St. Lucia (+1758)\n                            "
+                        )
+                      ]
                     ),
                     _vm._v(" "),
                     _c(
@@ -40062,7 +40344,11 @@ var render = function() {
                         staticStyle: { color: "black" },
                         attrs: { "data-countryCode": "TT", value: "1868" }
                       },
-                      [_vm._v("Trinidad & Tobago (+1868)")]
+                      [
+                        _vm._v(
+                          "Trinidad & Tobago\n                                (+1868)\n                            "
+                        )
+                      ]
                     ),
                     _vm._v(" "),
                     _c(
@@ -40098,7 +40384,11 @@ var render = function() {
                         staticStyle: { color: "black" },
                         attrs: { "data-countryCode": "TM", value: "993" }
                       },
-                      [_vm._v("Turkmenistan (+993)")]
+                      [
+                        _vm._v(
+                          "Turkmenistan (+993)\n                            "
+                        )
+                      ]
                     ),
                     _vm._v(" "),
                     _c(
@@ -40107,7 +40397,11 @@ var render = function() {
                         staticStyle: { color: "black" },
                         attrs: { "data-countryCode": "TC", value: "1649" }
                       },
-                      [_vm._v("Turks & Caicos Islands (+1649)")]
+                      [
+                        _vm._v(
+                          "Turks & Caicos\n                                Islands (+1649)\n                            "
+                        )
+                      ]
                     ),
                     _vm._v(" "),
                     _c(
@@ -40152,7 +40446,11 @@ var render = function() {
                         staticStyle: { color: "black" },
                         attrs: { "data-countryCode": "AE", value: "971" }
                       },
-                      [_vm._v("United Arab Emirates (+971)")]
+                      [
+                        _vm._v(
+                          "United Arab Emirates\n                                (+971)\n                            "
+                        )
+                      ]
                     ),
                     _vm._v(" "),
                     _c(
@@ -40197,7 +40495,11 @@ var render = function() {
                         staticStyle: { color: "black" },
                         attrs: { "data-countryCode": "VA", value: "379" }
                       },
-                      [_vm._v("Vatican City (+379)")]
+                      [
+                        _vm._v(
+                          "Vatican City (+379)\n                            "
+                        )
+                      ]
                     ),
                     _vm._v(" "),
                     _c(
@@ -40224,7 +40526,11 @@ var render = function() {
                         staticStyle: { color: "black" },
                         attrs: { "data-countryCode": "VG", value: "84" }
                       },
-                      [_vm._v("Virgin Islands - British (+1284)")]
+                      [
+                        _vm._v(
+                          "Virgin Islands - British\n                                (+1284)\n                            "
+                        )
+                      ]
                     ),
                     _vm._v(" "),
                     _c(
@@ -40233,7 +40539,11 @@ var render = function() {
                         staticStyle: { color: "black" },
                         attrs: { "data-countryCode": "VI", value: "84" }
                       },
-                      [_vm._v("Virgin Islands - US (+1340)")]
+                      [
+                        _vm._v(
+                          "Virgin Islands - US\n                                (+1340)\n                            "
+                        )
+                      ]
                     ),
                     _vm._v(" "),
                     _c(
@@ -40242,7 +40552,11 @@ var render = function() {
                         staticStyle: { color: "black" },
                         attrs: { "data-countryCode": "WF", value: "681" }
                       },
-                      [_vm._v("Wallis & Futuna (+681)")]
+                      [
+                        _vm._v(
+                          "Wallis & Futuna\n                                (+681)\n                            "
+                        )
+                      ]
                     ),
                     _vm._v(" "),
                     _c(
@@ -40251,7 +40565,11 @@ var render = function() {
                         staticStyle: { color: "black" },
                         attrs: { "data-countryCode": "YE", value: "969" }
                       },
-                      [_vm._v("Yemen (North)(+969)")]
+                      [
+                        _vm._v(
+                          "Yemen (North)(+969)\n                            "
+                        )
+                      ]
                     ),
                     _vm._v(" "),
                     _c(
@@ -40260,7 +40578,11 @@ var render = function() {
                         staticStyle: { color: "black" },
                         attrs: { "data-countryCode": "YE", value: "967" }
                       },
-                      [_vm._v("Yemen (South)(+967)")]
+                      [
+                        _vm._v(
+                          "Yemen (South)(+967)\n                            "
+                        )
+                      ]
                     ),
                     _vm._v(" "),
                     _c(
