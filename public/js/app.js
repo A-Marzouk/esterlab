@@ -2062,7 +2062,8 @@ __webpack_require__.r(__webpack_exports__);
         'mobile_number': ''
       }; // facebook event
 
-      ga('send', 'event', 'Get in touch', 'Form submitted');
+      ga('send', 'event', 'Get in touch sub', 'Form submitted');
+      console.log('form submitted');
     },
     failSubmission: function failSubmission() {
       $('#closeModal').click();

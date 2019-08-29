@@ -375,7 +375,8 @@
                 };
 
                 // facebook event
-                ga('send', 'event', 'Get in touch', 'Form submitted');
+                ga('send', 'event', 'Get in touch sub', 'Form submitted');
+                console.log('form submitted')
             },
             failSubmission(){
                 $('#closeModal').click();
