@@ -455,11 +455,11 @@
                 };
 
 
-                ga('send', 'event', 'Get in touch submission', 'Form submitted');
+                ga('send', 'event', 'Get in touch submission', 'Form submitted', window.location.href);
 
                 fbq('trackCustom', 'Get in touch submission', {
                     type: 'Form Submitted', value: 2.00,
-                    currency: 'USD',
+                    currency: 'USD', url : window.location.href
                 });
             },
             failSubmission() {
