@@ -48,11 +48,12 @@
                             </div>
                         </div>
                     </div>
-
-
                 </div>
             </div>
         </div>
+
+        @include('includes.contact_us_button_section')
+
 
 
     </section>
