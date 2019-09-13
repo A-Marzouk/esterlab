@@ -458,6 +458,14 @@ h1, h2, h3, h4, h5,
   background-position-y:81%;
 }
 
+.science-cover{
+  background-image: url('/images/scientific-publications/science.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+
 @media (max-width: 600px) {
   .solar-cover{
     background-position-y:center;

@@ -123,7 +123,7 @@
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <a style="color: black!important;" @if(isset($view))href="#certificates" @else href="/#certificates" @endif class="dropdown-item">@lang('navbar.certificates')</a>
-                                <a class="dropdown-item" href="#" style="color: black!important;" >@lang('navbar.scientific_publications')</a>
+                                <a class="dropdown-item" href="{{route('scientific.publication')}}" style="color: black!important;" >@lang('navbar.scientific_publications')</a>
                             </div>
                         </li>
                         <li><a @if(isset($view))href="#services-section" @else href="/#services-section" @endif  class="nav-link">@lang('navbar.development_concept')</a></li>

@@ -23,6 +23,7 @@ use Illuminate\Support\Facades\Session;
 Route::get('/green-energy/{lang?}','HomeController@showGreenEnergyPage')->name('green.energy');
 Route::get('/electric-bus/{lang?}','HomeController@showElectricBusPage')->name('electric.bus');
 Route::get('/math-modeling/{lang?}','HomeController@showMathModelingPage')->name('math.modeling'); // ? sign to make it optional
+Route::get('/scientific-publications/{lang?}','HomeController@showScientificPublicationsPage')->name('scientific.publication');
 Route::get('/{lang?}','HomeController@index')->name('home');
 
 Route::get('/language/switch/{lang}','HomeController@switchLanguage')->name('switch.language');
@@ -31,6 +32,10 @@ Route::get('/language/get/current','HomeController@getCurrentLanguage')->name('g
 // contactus:
 Route::post('/contact-us/submit','ContactUsController@submitContactForm')->name('contact.submit');
 Route::get('/contact-us/submit/successful','ContactUsController@successful')->name('contact.submit');
+
+// download pdf file :
+Route::get('/scientific-publications/download/pdf','HomeController@getDownload')->name('download.scientific.pdf');
+
 
 // test route
 Route::get('/client/geo','HomeController@getClientGEO');

@@ -32,6 +32,14 @@ class HomeController extends Controller
         return view('green-energy',compact('lang'));
     }
 
+    public function showScientificPublicationsPage($lang = 'en'){
+        if(Session::has('language')){
+            $lang =  Session::get('language');
+        }
+        App::setlocale($lang);
+        return view('scientific-publications',compact('lang'));
+    }
+
 
     public function showElectricBusPage($lang = 'en'){
         if(Session::has('language')){
@@ -66,6 +74,19 @@ class HomeController extends Controller
         return [
             'country_name' =>  geoip($ip = Request::ip())->iso_code
         ] ;
+    }
+
+
+    public function getDownload()
+    {
+        //PDF file is stored under project/public/download/info.pdf
+        $file= public_path(). "/download/scientific_publications.pdf";
+
+        $headers = [
+            'Content-Type' => 'application/pdf',
+        ];
+
+        return response()->download($file, 'scientific_publications.pdf', $headers);
     }
 
 
