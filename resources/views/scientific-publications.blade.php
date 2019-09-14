@@ -10,8 +10,7 @@
 
                     <div class="box-shadow-content">
                         <div class="block-heading-1">
-                            <h3 class="d-block mb-3 text-white"  data-aos="fade-up">@lang('scientific-publications/main.scientific_publications_sub')</h3>
-                            <h1 class="mb-4" data-aos="fade-up"
+                            <h1 class="mb-4 mt-4" data-aos="fade-up"
                                 data-aos-delay="100">@lang('scientific-publications/main.scientific_publications')</h1>
                         </div>
                     </div>
@@ -22,32 +21,32 @@
 
     </div>
     <section class="site-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 mx-auto blog-content">
-                    <p class="lead">
-                        @lang('scientific-publications/main.main_description')
-                    </p>
-                        <br/>
-                    <p>
-                        @lang('scientific-publications/main.sub_description')
-                    </p>
 
-                    <div class="row">
-                        <div class="col-12">
-                            <div>
-                                @lang('scientific-publications/main.more_info')
-                            </div>
-                            <div class="mt-3">
-                                <a href="{{route('download.scientific.pdf')}}" class="d-flex align-items-center pr-3"  style="border:1px lightgrey dotted; width: fit-content;">
-                                    <img src="/images/scientific-publications/pdf-icon.png" width="100px" alt="download pdf icon">
-                                    <div>
-                                        @lang('scientific-publications/main.download_pdf')
-                                    </div>
-                                </a>
-                            </div>
+        <div class="site-section pb-0 pt-0" id="projects-section">
+            <div class="container d-flex flex-column">
+                <div class="solution-box-wrapper">
+                    <div class="solution-box w-100">
+                        <div class="box-header">
+                            Scientific Publication
+                        </div>
+                        <div class="solution-sub-title" style="padding-bottom: 0;padding-top: 15px;">
+                            Paper title :
+                        </div>
+                        <div class="solution-title pt-0" style="font-size: 20px;">
+                            @lang('scientific-publications/main.main_description')
+                        </div>
+                        <div class="solution-sub-title"  style="padding-bottom: 0;padding-top: 15px; font-size: 16px;">
+                            Abstract :
+                        </div>
+                        <div class="solution-description">
+                            @lang('scientific-publications/main.sub_description')
+                        </div>
+
+                        <div class="discover-btn">
+                            <a  href="{{route('download.scientific.pdf')}}"> @lang('scientific-publications/main.download_pdf')</a>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>

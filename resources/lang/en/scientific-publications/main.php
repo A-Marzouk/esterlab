@@ -11,5 +11,5 @@ return [
     used for successful mathematical modeling of the designed object which was developed on the parameters of a specific climatic zone.',
 
     'more_info' => 'For more information :',
-    'download_pdf' => 'Download Technical Science PDF file.',
+    'download_pdf' => 'Click here to download paper',
 ];
