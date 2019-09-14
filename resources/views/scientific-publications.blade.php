@@ -32,7 +32,7 @@
                         <div class="solution-sub-title" style="padding-bottom: 0;padding-top: 15px;">
                             Paper title :
                         </div>
-                        <div class="solution-title pt-0" style="font-size: 20px;">
+                        <div class="solution-title pt-0" style="font-size: 20px; text-transform: none; margin-left: 0;">
                             @lang('scientific-publications/main.main_description')
                         </div>
                         <div class="solution-sub-title"  style="padding-bottom: 0;padding-top: 15px; font-size: 16px;">
