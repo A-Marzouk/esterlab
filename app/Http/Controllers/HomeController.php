@@ -57,6 +57,30 @@ class HomeController extends Controller
         return view('math-modeling',compact('lang'));
     }
 
+    public function showDesigningMechanismsPage($lang = 'en'){
+        if(Session::has('language')){
+            $lang =  Session::get('language');
+        }
+        App::setlocale($lang);
+        return view('designing-mechanisms',compact('lang'));
+    }
+
+    public function showExpertiseOfMechanismsPage($lang = 'en'){
+        if(Session::has('language')){
+            $lang =  Session::get('language');
+        }
+        App::setlocale($lang);
+        return view('expertise-of-mechanisms',compact('lang'));
+    }
+
+    public function showTechnicalDevelopmentPage($lang = 'en'){
+        if(Session::has('language')){
+            $lang =  Session::get('language');
+        }
+        App::setlocale($lang);
+        return view('technical-development',compact('lang'));
+    }
+
     public function switchLanguage($lang){
         Session::put('language', $lang);
         return redirect()->back();

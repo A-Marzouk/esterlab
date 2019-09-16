@@ -24,6 +24,10 @@ Route::get('/green-energy/{lang?}','HomeController@showGreenEnergyPage')->name('
 Route::get('/electric-bus/{lang?}','HomeController@showElectricBusPage')->name('electric.bus');
 Route::get('/math-modeling/{lang?}','HomeController@showMathModelingPage')->name('math.modeling'); // ? sign to make it optional
 Route::get('/scientific-publications/{lang?}','HomeController@showScientificPublicationsPage')->name('scientific.publication');
+Route::get('/designing-mechanisms/{lang?}','HomeController@showDesigningMechanismsPage')->name('designing.mechanisms');
+Route::get('/expertise-of-mechanisms/{lang?}','HomeController@showExpertiseOfMechanismsPage')->name('expertise.of.mechanisms');
+Route::get('/technical-development/{lang?}','HomeController@showTechnicalDevelopmentPage')->name('technical.development');
+
 Route::get('/{lang?}','HomeController@index')->name('home');
 
 Route::get('/language/switch/{lang}','HomeController@switchLanguage')->name('switch.language');

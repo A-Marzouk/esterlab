@@ -266,26 +266,9 @@
             <div class="block-heading-1 text-center p-5 pt-0">
                 <h2> @lang('navbar.services')</h2>
             </div>
-            <div class="solution-box-wrapper justify-content-center">
-                <div class="solution-box">
-                    <div class="box-header">
-                        @lang('navbar.services')
-                    </div>
-                    <div class="solution-title">
-                        @lang('index/section4.math_modeling')
-                    </div>
-                    <div class="solution-sub-title">
-                        @lang('index/section4.math_modeling_sub_head')
-                    </div>
-                    <div class="solution-description">
-                        @lang('index/section4.math_modeling_explain')
-                    </div>
 
-                    <div class="discover-btn">
-                        <a href="/math-modeling">@lang('index/section4.read_more_btn')</a>
-                    </div>
-                </div>
-            </div>
+            <services-component lang="{{($lang)}}"></services-component>
+
         </div>
     </div>
 
