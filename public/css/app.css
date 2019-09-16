@@ -288,6 +288,14 @@
   background: url(/images/contact-us.jpg) no-repeat center;
 }
 
+.slide-one-item .owl-nav .owl-next {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.slide-one-item .owl-nav .owl-prev {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
 .select-popup {
   width: 75px;
   background: white;

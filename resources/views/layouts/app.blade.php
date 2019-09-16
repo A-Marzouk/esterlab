@@ -12,25 +12,48 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-NJP735K');</script>
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-NJP735K');</script>
 
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-5H7XXMM');</script>
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-5H7XXMM');</script>
     <!-- End Google Tag Manager -->
 
     <!-- Google Analytics -->
     <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
         ga('create', 'UA-146363355-1', 'auto');
         ga('send', 'pageview');
@@ -44,24 +67,27 @@
     <link rel="stylesheet" href="/css/jquery-ui.css">
     <link rel="stylesheet" href="/css/owl.carousel.min.css">
     <link rel="stylesheet" href="/css/owl.theme.default.min.css">
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
     <link rel="stylesheet" href="/css/bootstrap-datepicker.css">
     <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
 
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" integrity="sha256-3h45mwconzsKjTUULjY+EoEkoRhXcOIU4l5YAw2tSOU=" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" integrity="sha256-etrwgFLGpqD4oNAFW08ZH9Bzif5ByXK2lXNHKy7LQGo=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"
+          integrity="sha256-3h45mwconzsKjTUULjY+EoEkoRhXcOIU4l5YAw2tSOU=" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
+          integrity="sha256-etrwgFLGpqD4oNAFW08ZH9Bzif5ByXK2lXNHKy7LQGo=" crossorigin="anonymous"/>
 
 
     <meta name="description" content="Esterlab, A fast growing research &amp; developing company ">
     <meta name="author" content="Esterlab">
 
-    <meta property="og:type"               content="website" />
-    <meta property="og:title"              content="Esterlab" />
-    <meta property="og:description"        content=" A fast growing research &amp; developing company" />
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="Esterlab"/>
+    <meta property="og:description" content=" A fast growing research &amp; developing company"/>
 
-    <meta property="og:image"              content="https://www.esterlab.org/images/logo-new-og.webp" />
+    <meta property="og:image" content="https://www.esterlab.org/images/logo-new-og.webp"/>
     <link rel="stylesheet" href="/css/app.css">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="icon"
@@ -71,20 +97,19 @@
 </head>
 
 
-
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300" style="background: white;">
 
-    <div class="spinner-wrapper">
-        <div class="spinner">
-            <div class="rect1"></div>
-            <div class="rect2"></div>
-            <div class="rect3"></div>
-            <div class="rect4"></div>
-            <div class="rect5"></div>
-        </div>
+<div class="spinner-wrapper">
+    <div class="spinner">
+        <div class="rect1"></div>
+        <div class="rect2"></div>
+        <div class="rect3"></div>
+        <div class="rect4"></div>
+        <div class="rect5"></div>
     </div>
+</div>
 
-<div class="site-wrap"  id="home-section">
+<div class="site-wrap" id="home-section">
 
     <div class="site-mobile-menu site-navbar-target">
         <div class="site-mobile-menu-header">
@@ -115,20 +140,28 @@
 
                     <ul class="site-menu main-menu js-clone-nav ml-auto d-none d-lg-block">
                         <li>
-                            <a @if(isset($view))href="#home-section" @else href="/#home-section" @endif class="nav-link">@lang('navbar.home')</a>
+                            <a @if(isset($view))href="#home-section" @else href="/#home-section"
+                               @endif class="nav-link">@lang('navbar.home')</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 @lang('navbar.about')
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a style="color: black!important;" @if(isset($view))href="#certificates" @else href="/#certificates" @endif class="dropdown-item">@lang('navbar.certificates')</a>
-                                <a class="dropdown-item" href="{{route('scientific.publication')}}" style="color: black!important;" >@lang('navbar.scientific_publications')</a>
+                                <a style="color: black!important;" @if(isset($view))href="#certificates"
+                                   @else href="/#certificates"
+                                   @endif class="dropdown-item">@lang('navbar.certificates')</a>
+                                <a class="dropdown-item" href="{{route('scientific.publication')}}"
+                                   style="color: black!important;">@lang('navbar.scientific_publications')</a>
                             </div>
                         </li>
-                        <li><a @if(isset($view))href="#services-section" @else href="/#services-section" @endif  class="nav-link">@lang('navbar.development_concept')</a></li>
-                        <li><a @if(isset($view))href="#projects-section" @else href="/#projects-section" @endif class="nav-link">@lang('navbar.our_solutions')</a></li>
-                        <li><a  @if(isset($view))href="#services" @else href="/#services" @endif class="nav-link">@lang('navbar.services')</a></li>
+                        <li><a @if(isset($view))href="#services-section" @else href="/#services-section"
+                               @endif  class="nav-link">@lang('navbar.development_concept')</a></li>
+                        <li><a @if(isset($view))href="#projects-section" @else href="/#projects-section"
+                               @endif class="nav-link">@lang('navbar.our_solutions')</a></li>
+                        <li><a @if(isset($view))href="#services" @else href="/#services"
+                               @endif class="nav-link">@lang('navbar.services')</a></li>
                         <li>
                             <div id="languageSelector">
                                 <language-selector></language-selector>
@@ -138,8 +171,9 @@
                 </nav>
 
 
-
-                <div class="toggle-button d-inline-block d-lg-none"><a href="#" class="site-menu-toggle py-5 js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+                <div class="toggle-button d-inline-block d-lg-none"><a href="#"
+                                                                       class="site-menu-toggle py-5 js-menu-toggle text-black"><span
+                                class="icon-menu h3"></span></a></div>
 
             </div>
         </div>
@@ -217,16 +251,21 @@
                             <h2 class="footer-heading mb-4">@lang('footer.quick_links')</h2>
                             <ul class="list-unstyled">
                                 <li>
-                                    <a @if(isset($view))href="#home-section" @else href="/#home-section" @endif class="nav-link">@lang('navbar.home')</a>
+                                    <a @if(isset($view))href="#home-section" @else href="/#home-section"
+                                       @endif class="nav-link">@lang('navbar.home')</a>
                                 </li>
                                 <li><a href="#about-section" class="nav-link">@lang('navbar.about')</a></li>
                                 <li>
-                                    <a  @if(isset($view))href="#certificates" @else href="/#certificates" @endif  class="nav-link">@lang('navbar.certificates')</a>
+                                    <a @if(isset($view))href="#certificates" @else href="/#certificates"
+                                       @endif  class="nav-link">@lang('navbar.certificates')</a>
                                 </li>
                                 <li><a href="#contact-section" class="nav-link">@lang('navbar.contact')</a></li>
-                                <li><a @if(isset($view))href="#services-section" @else href="/#services-section" @endif  class="nav-link">@lang('navbar.development_concept')</a></li>
-                                <li><a @if(isset($view))href="#projects-section" @else href="/#projects-section" @endif class="nav-link">@lang('navbar.our_solutions')</a></li>
-                                <li><a  @if(isset($view))href="#services" @else href="/#services" @endif class="nav-link">@lang('navbar.services')</a></li>
+                                <li><a @if(isset($view))href="#services-section" @else href="/#services-section"
+                                       @endif  class="nav-link">@lang('navbar.development_concept')</a></li>
+                                <li><a @if(isset($view))href="#projects-section" @else href="/#projects-section"
+                                       @endif class="nav-link">@lang('navbar.our_solutions')</a></li>
+                                <li><a @if(isset($view))href="#services" @else href="/#services"
+                                       @endif class="nav-link">@lang('navbar.services')</a></li>
 
                             </ul>
                         </div>
@@ -249,7 +288,8 @@
     <!-- modals -->
 
     <!-- Modal -->
-    <div class="modal fade" id="certificate_1" tabindex="-1" role="dialog" aria-labelledby="certificate" aria-hidden="true">
+    <div class="modal fade" id="certificate_1" tabindex="-1" role="dialog" aria-labelledby="certificate"
+         aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content" style="background: none;border:0;">
                 <div class="modal-body">
@@ -258,7 +298,8 @@
             </div>
         </div>
     </div>
-    <div class="modal fade" id="certificate_2" tabindex="-1" role="dialog" aria-labelledby="certificate" aria-hidden="true">
+    <div class="modal fade" id="certificate_2" tabindex="-1" role="dialog" aria-labelledby="certificate"
+         aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content" style="background: none;border:0;">
                 <div class="modal-body">
@@ -267,7 +308,8 @@
             </div>
         </div>
     </div>
-    <div class="modal fade" id="certificate_3" tabindex="-1" role="dialog" aria-labelledby="certificate" aria-hidden="true">
+    <div class="modal fade" id="certificate_3" tabindex="-1" role="dialog" aria-labelledby="certificate"
+         aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content" style="background: none;border:0;">
                 <div class="modal-body">
@@ -276,7 +318,8 @@
             </div>
         </div>
     </div>
-    <div class="modal fade" id="certificate_4" tabindex="-1" role="dialog" aria-labelledby="certificate" aria-hidden="true">
+    <div class="modal fade" id="certificate_4" tabindex="-1" role="dialog" aria-labelledby="certificate"
+         aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content" style="background: none;border:0;">
                 <div class="modal-body">
@@ -285,7 +328,8 @@
             </div>
         </div>
     </div>
-    <div class="modal fade" id="certificate_5" tabindex="-1" role="dialog" aria-labelledby="certificate" aria-hidden="true">
+    <div class="modal fade" id="certificate_5" tabindex="-1" role="dialog" aria-labelledby="certificate"
+         aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content" style="background: none;border:0;">
                 <div class="modal-body">
@@ -294,7 +338,8 @@
             </div>
         </div>
     </div>
-    <div class="modal fade" id="certificate_6" tabindex="-1" role="dialog" aria-labelledby="certificate" aria-hidden="true">
+    <div class="modal fade" id="certificate_6" tabindex="-1" role="dialog" aria-labelledby="certificate"
+         aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content" style="background: none;border:0;">
                 <div class="modal-body">
@@ -306,7 +351,7 @@
 
     <a id="button" href="javascript:void(0)"></a>
 
-    <a class="contactBtn"  href="javascript:void(0)" data-toggle="modal" data-target="#contactUsModal">
+    <a class="contactBtn" href="javascript:void(0)" data-toggle="modal" data-target="#contactUsModal">
         <img src="/images/phone-red-light.svg" alt="contact us">
     </a>
 
@@ -317,7 +362,7 @@
             @elseif($lang === 'en')
                 Thank you! We'll contact you soon
             @endif
-                <span id="closeMessage">&times;</span>
+            <span id="closeMessage">&times;</span>
         </div>
     </div>
 
@@ -333,10 +378,9 @@
     </div>
 
 
-
-
     <!-- Modal -->
-    <div class="modal fade" id="contactUsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="contactUsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+         aria-hidden="true">
         <div class="modal-dialog modal-lg contactModalDialog" role="document">
             <div class="modal-content" style="background: none;border: none;">
                 <div class="modal-body">
@@ -362,24 +406,31 @@
 <script src="/js/jquery.waypoints.min.js"></script>
 <script src="/js/jquery.animateNumber.min.js"></script>
 <script src="/js/aos.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha256-NXRS8qVcmZ3dOv3LziwznUHPegFhPZ1F/4inU7uC8h0=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+        integrity="sha256-NXRS8qVcmZ3dOv3LziwznUHPegFhPZ1F/4inU7uC8h0=" crossorigin="anonymous"></script>
 
 <script src="/js/main.js"></script>
 
-    <script>
-        $(document).ready(function() {
+<script>
+    $(document).ready(function () {
         //Preloader
-            $(window).on("load", function() {
-                preloaderFadeOutTime = 150;
-                function hidePreloader() {
-                    var preloader = $('.spinner-wrapper');
-                    preloader.fadeOut(preloaderFadeOutTime);
-                }
-                hidePreloader();
-            });
-        });
-    </script>
+        $(window).on("load", function () {
+            preloaderFadeOutTime = 150;
 
+            function hidePreloader() {
+                var preloader = $('.spinner-wrapper');
+                preloader.fadeOut(preloaderFadeOutTime);
+            }
+
+            hidePreloader();
+        });
+
+        // main album auto listing every 7 seconds
+        setInterval(() => {
+            $('.owl-next').click();
+        }, 7000 );
+    });
+</script>
 
 
 </body>
