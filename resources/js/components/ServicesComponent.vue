@@ -1,6 +1,5 @@
 <template>
     <div class="wrapper">
-
         <slick ref="slick" :options="slickOptions" class="w-100">
             <div class="solution-box-wrapper justify-content-center">
                 <div class="solution-box">
@@ -55,8 +54,11 @@
                     <div class="box-header">
                         {{ languageData.services }}
                     </div>
-                    <div class="solution-title">
+                    <div class="solution-title development">
                         {{ languageData.expertise }}
+                    </div>
+                    <div class="solution-sub-title">
+                        {{ languageData.expertise_sub_head }}
                     </div>
                     <div class="solution-description" v-html="languageData.expertise_explain">
 
@@ -74,6 +76,9 @@
                     </div>
                     <div class="solution-title development">
                         {{ languageData.development_technical }}
+                    </div>
+                    <div class="solution-sub-title">
+                        {{languageData.development_technical_sub}}
                     </div>
                     <div class="solution-description" v-html="languageData.development_technical_explain">
 
@@ -102,6 +107,9 @@
                 languageData: {},
                 slickOptions: {
                     slidesToShow: 2,
+                    autoplay:true,
+                    arrows:true,
+                    dots: true,
                     responsive: [
                         {
                             breakpoint: 1024,
@@ -167,7 +175,7 @@
     .solution-box-wrapper {
         .solution-box {
             width: 520px !important;
-            height: 515px !important;
+            height: 445px !important;
             @media (max-width: 600px) {
                 width: 100% !important;
                 height: 450px !important;

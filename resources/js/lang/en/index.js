@@ -16,13 +16,16 @@ let translations = {
             '&bull; Perform the necessary analytical assessment of structural unit strength.',
 
 
-        'expertise' : 'Expertise of mechanisms',
+        'expertise' : 'Structural design expertise',
+        'expertise_sub_head' : 'Expertise of mechanisms',
         'expertise_explain' : '&bull; Analyze the structural system layout <br/>' +
             '&bull; Assess the stress-strain state of the unit or certain details <br/>' +
             '&bull; Formulate recommendations for design changes <br/>' +
             '&bull; Prepare technical reports on the work performed',
 
-        'development_technical':'Development of technical processes of parts and tackle Mechanical parts & tackle',
+
+        'development_technical':'Mechanical parts & tackle',
+        'development_technical_sub':'Development of technical processes of parts and tackle',
         'development_technical_explain':'In the case of receiving an order for a full design cycle, after developing and printing assembly and working drawings, we proceed to the development of technological processes to manufacture structural parts.',
 
     },
@@ -40,14 +43,16 @@ let translations = {
             '&bull; Create a general layout and determine preliminary purpose of part materials.<br/>' +
             '&bull; Perform the necessary analytical assessment of structural unit strength.',
 
-        'expertise' : 'Expertise of mechanisms',
+        'expertise' : 'Structural design expertise',
+        'expertise_sub_head' : 'Expertise of mechanisms',
         'expertise_explain' : '&bull; Analyze the structural system layout <br/>' +
             '&bull; Assess the stress-strain state of the unit or certain details <br/>' +
             '&bull; Formulate recommendations for design changes <br/>' +
             '&bull; Prepare technical reports on the work performed',
 
 
-        'development_technical':'Development of technical processes of parts and tackle Mechanical parts & tackle',
+        'development_technical':'Mechanical parts & tackle',
+        'development_technical_sub':'Development of technical processes of parts and tackle',
         'development_technical_explain':'In the case of receiving an order for a full design cycle, after developing and printing assembly and working drawings, we proceed to the development of technological processes to manufacture structural parts.',
 
 

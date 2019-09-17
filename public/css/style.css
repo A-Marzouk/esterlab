@@ -865,9 +865,12 @@ h1, h2, h3, h4, h5,
     font-size: 4.5rem;
     color: #fff;
     line-height: 1; }
+.site-section-cover.smaller h1 {font-size: 3.5rem !important; }
     @media (max-width: 991.98px) {
       .site-section-cover h1 {
-        font-size: 2rem; } }
+        font-size: 2rem; }
+      .site-section-cover.smaller h1 {font-size: 2rem !important; }
+    }
   .site-section-cover p {
     font-size: 1.6rem;
     color: rgba(255, 255, 255, 0.8); }

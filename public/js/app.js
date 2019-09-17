@@ -1790,6 +1790,11 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -1803,6 +1808,9 @@ __webpack_require__.r(__webpack_exports__);
       languageData: {},
       slickOptions: {
         slidesToShow: 2,
+        autoplay: true,
+        arrows: true,
+        dots: true,
         responsive: [{
           breakpoint: 1024,
           settings: {
@@ -6899,7 +6907,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".development[data-v-1e616838] {\n  font-size: 26px !important;\n}\n@media (max-width: 600px) {\n.development[data-v-1e616838] {\n    font-size: 20px !important;\n    padding-bottom: 12px;\n}\n}\n.wrapper[data-v-1e616838] {\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: center;\n}\n.solution-box-wrapper .solution-box[data-v-1e616838] {\n  width: 520px !important;\n  height: 515px !important;\n}\n@media (max-width: 600px) {\n.solution-box-wrapper .solution-box[data-v-1e616838] {\n    width: 100% !important;\n    height: 450px !important;\n}\n}\n@media (max-width: 400px) {\n.solution-box-wrapper .solution-box[data-v-1e616838] {\n    width: 100% !important;\n    height: 530px !important;\n}\n}", ""]);
+exports.push([module.i, ".development[data-v-1e616838] {\n  font-size: 26px !important;\n}\n@media (max-width: 600px) {\n.development[data-v-1e616838] {\n    font-size: 20px !important;\n    padding-bottom: 12px;\n}\n}\n.wrapper[data-v-1e616838] {\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: center;\n}\n.solution-box-wrapper .solution-box[data-v-1e616838] {\n  width: 520px !important;\n  height: 445px !important;\n}\n@media (max-width: 600px) {\n.solution-box-wrapper .solution-box[data-v-1e616838] {\n    width: 100% !important;\n    height: 450px !important;\n}\n}\n@media (max-width: 400px) {\n.solution-box-wrapper .solution-box[data-v-1e616838] {\n    width: 100% !important;\n    height: 530px !important;\n}\n}", ""]);
 
 // exports
 
@@ -38599,10 +38607,18 @@ var render = function() {
                   )
                 ]),
                 _vm._v(" "),
-                _c("div", { staticClass: "solution-title" }, [
+                _c("div", { staticClass: "solution-title development" }, [
                   _vm._v(
                     "\n                    " +
                       _vm._s(_vm.languageData.expertise) +
+                      "\n                "
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "solution-sub-title" }, [
+                  _vm._v(
+                    "\n                    " +
+                      _vm._s(_vm.languageData.expertise_sub_head) +
                       "\n                "
                   )
                 ]),
@@ -38640,6 +38656,14 @@ var render = function() {
                   _vm._v(
                     "\n                    " +
                       _vm._s(_vm.languageData.development_technical) +
+                      "\n                "
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "solution-sub-title" }, [
+                  _vm._v(
+                    "\n                    " +
+                      _vm._s(_vm.languageData.development_technical_sub) +
                       "\n                "
                   )
                 ]),
@@ -57060,9 +57084,11 @@ var translations = {
     'development_mechanisms': 'Development of mechanisms',
     'designing': 'Designing mechanisms with "0"',
     'designing_explain': '&bull; Determine the purpose and working conditions of the construction. <br/>' + '&bull; Create a general layout and determine preliminary purpose of part materials.<br/>' + '&bull; Perform the necessary analytical assessment of structural unit strength.',
-    'expertise': 'Expertise of mechanisms',
+    'expertise': 'Structural design expertise',
+    'expertise_sub_head': 'Expertise of mechanisms',
     'expertise_explain': '&bull; Analyze the structural system layout <br/>' + '&bull; Assess the stress-strain state of the unit or certain details <br/>' + '&bull; Formulate recommendations for design changes <br/>' + '&bull; Prepare technical reports on the work performed',
-    'development_technical': 'Development of technical processes of parts and tackle Mechanical parts & tackle',
+    'development_technical': 'Mechanical parts & tackle',
+    'development_technical_sub': 'Development of technical processes of parts and tackle',
     'development_technical_explain': 'In the case of receiving an order for a full design cycle, after developing and printing assembly and working drawings, we proceed to the development of technological processes to manufacture structural parts.'
   },
   'de': {
@@ -57074,9 +57100,11 @@ var translations = {
     'development_mechanisms': 'Development of mechanisms',
     'designing': 'Designing mechanisms with "0"',
     'designing_explain': '&bull; Determine the purpose and working conditions of the construction. <br/>' + '&bull; Create a general layout and determine preliminary purpose of part materials.<br/>' + '&bull; Perform the necessary analytical assessment of structural unit strength.',
-    'expertise': 'Expertise of mechanisms',
+    'expertise': 'Structural design expertise',
+    'expertise_sub_head': 'Expertise of mechanisms',
     'expertise_explain': '&bull; Analyze the structural system layout <br/>' + '&bull; Assess the stress-strain state of the unit or certain details <br/>' + '&bull; Formulate recommendations for design changes <br/>' + '&bull; Prepare technical reports on the work performed',
-    'development_technical': 'Development of technical processes of parts and tackle Mechanical parts & tackle',
+    'development_technical': 'Mechanical parts & tackle',
+    'development_technical_sub': 'Development of technical processes of parts and tackle',
     'development_technical_explain': 'In the case of receiving an order for a full design cycle, after developing and printing assembly and working drawings, we proceed to the development of technological processes to manufacture structural parts.'
   }
 };
