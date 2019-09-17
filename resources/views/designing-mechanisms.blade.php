@@ -33,6 +33,21 @@
 
                 </div>
             </div>
+
+            <div class="d-flex pt-0 flex-wrap justify-content-center align-items-center">
+                <div class="text-center"><img src="/images/designing-mechanisms/image4.webp" alt="Image" class="img-fluid p-2"  style="width: 450px;" ></div>
+                <div class="text-center"><img src="/images/designing-mechanisms/image2.webp" alt="Image" class="img-fluid p-2"  style="width: 450px;" ></div>
+                <div class="text-center"><img src="/images/designing-mechanisms/image5.webp" alt="Image" class="img-fluid p-2"  style="width: 450px;"></div>
+                <div class="text-center"><img src="/images/designing-mechanisms/image6.webp" alt="Image" class="img-fluid p-2"  style="width: 450px;"></div>
+
+
+                <div class="text-center"><img src="/images/designing-mechanisms/image1.webp" alt="Image" class="img-fluid p-2 mt-5"  style="width: 450px;"></div>
+                <div class="text-center"><img src="/images/designing-mechanisms/image3.webp" alt="Image" class="img-fluid p-2 mt-5"  style="width: 450px;"></div>
+            </div>
+
+        </div>
+
+
         </div>
 
         @include('includes.contact_us_button_section')
