@@ -1905,7 +1905,7 @@ __webpack_require__.r(__webpack_exports__);
     return {
       slickOptions: {
         slidesToShow: 1,
-        autoplay: false,
+        autoplay: true,
         arrows: false,
         dots: true,
         responsive: [{

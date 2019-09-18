@@ -32,7 +32,7 @@
             return{
                 slickOptions: {
                     slidesToShow: 1,
-                    autoplay:false,
+                    autoplay:true,
                     arrows:false,
                     dots: true,
                     responsive: [
