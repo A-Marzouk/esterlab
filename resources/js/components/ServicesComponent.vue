@@ -107,7 +107,7 @@
                 languageData: {},
                 slickOptions: {
                     slidesToShow: 2,
-                    autoplay:true,
+                    autoplay:false,
                     arrows:true,
                     dots: true,
                     responsive: [

@@ -37,6 +37,10 @@ Vue.component('language-selector', require('./components/languageSelector.vue').
 Vue.component('contact-us', require('./components/contactUsComponent.vue').default);
 Vue.component('services-component', require('./components/ServicesComponent.vue').default);
 
+// albums
+Vue.component('designing-mechanisms-album', require('./components/albums/designingMechanismsAlbum.vue').default);
+
+
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
@@ -46,6 +50,13 @@ Vue.component('services-component', require('./components/ServicesComponent.vue'
 if ($("#languageSelector").length !== 0){
     let languageSelector = new Vue({
         el:'#languageSelector'
+    });
+}
+
+
+if ($("#designingMechanismsAlbum").length !== 0){
+    let designingMechanismsAlbum = new Vue({
+        el:'#designingMechanismsAlbum'
     });
 }
 
