@@ -222,45 +222,56 @@
             <div class="block-heading-1 text-center p-5 pt-0">
                 <h2> @lang('navbar.our_solutions')</h2>
             </div>
-            <div class="solution-box-wrapper">
+
+            <div class="solution-box-wrapper d-flex justify-content-center">
                 <div class="solution-box">
                     <div class="box-header">
                         @lang('index/section4.our_solutions')
                     </div>
-                    <div class="solution-title">
-                        @lang('index/section4.green_energy')
-                    </div>
-                    <div class="solution-sub-title">
-                        @lang('index/section4.green_energy_sub_head')
-                    </div>
-                    <div class="solution-description">
-                        @lang('index/section4.green_energy_explain')
-                    </div>
 
-                    <div class="discover-btn">
-                        <a href="/green-energy">@lang('index/section4.read_more_btn')</a>
-                    </div>
-                </div>
+                    <div class="solution-box-content">
+                        <div class="solution-title">
+                            @lang('index/section4.automotive')
+                        </div>
+                        <div class="solution-sub-title">
+                            @lang('index/section4.automotive_sub_head')
+                        </div>
+                        <div class="solution-description">
+                            @lang('index/section4.automotive_explain')
+                        </div>
 
-                <div class="solution-box">
-                    <div class="box-header">
-                        @lang('index/section4.our_solutions')
-                    </div>
-                    <div class="solution-title">
-                        @lang('index/section4.automotive')
-                    </div>
-                    <div class="solution-sub-title">
-                        @lang('index/section4.automotive_sub_head')
-                    </div>
-                    <div class="solution-description">
-                        @lang('index/section4.automotive_explain')
                     </div>
 
                     <div class="discover-btn">
                         <a href="/electric-bus">@lang('index/section4.read_more_btn')</a>
                     </div>
+
+                </div>
+                <div class="solution-box">
+                    <div class="box-header">
+                        @lang('index/section4.our_solutions')
+                    </div>
+
+                    <div class="solution-box-content">
+                        <div class="solution-title">
+                            @lang('index/section4.green_energy')
+                        </div>
+                        <div class="solution-sub-title">
+                            @lang('index/section4.green_energy_sub_head')
+                        </div>
+                        <div class="solution-description">
+                            @lang('index/section4.green_energy_explain')
+                        </div>
+
+                    </div>
+
+                    <div class="discover-btn">
+                        <a href="/green-energy">@lang('index/section4.read_more_btn')</a>
+                    </div>
+
                 </div>
             </div>
+
         </div>
     </div>
 

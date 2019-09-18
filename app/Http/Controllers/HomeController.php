@@ -78,7 +78,15 @@ class HomeController extends Controller
             $lang =  Session::get('language');
         }
         App::setlocale($lang);
-        return view('expertise-of-mechanisms',compact('lang'));
+        $images = [
+            '/images/design-expertise/image7.webp',
+            '/images/design-expertise/image8.webp',
+            '/images/design-expertise/image9.webp',
+            '/images/design-expertise/image10.webp',
+            '/images/design-expertise/image11.webp',
+            '/images/design-expertise/image12.webp',
+        ] ;
+        return view('expertise-of-mechanisms',compact('lang','images'));
     }
 
     public function showTechnicalDevelopmentPage($lang = 'en'){
@@ -86,7 +94,10 @@ class HomeController extends Controller
             $lang =  Session::get('language');
         }
         App::setlocale($lang);
-        return view('technical-development',compact('lang'));
+        $images = [
+            '/images/technical-development/image13-emf.webp',
+        ] ;
+        return view('technical-development',compact('lang','images'));
     }
 
     public function switchLanguage($lang){

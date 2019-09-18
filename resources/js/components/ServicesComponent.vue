@@ -120,7 +120,7 @@
                 languageData: {},
                 slickOptions: {
                     slidesToShow: 2,
-                    autoplay:false,
+                    autoplay:true,
                     arrows:true,
                     dots: true,
                     responsive: [

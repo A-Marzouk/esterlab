@@ -491,6 +491,12 @@ h1, h2, h3, h4, h5,
   background-size: cover;
 }
 
+.cover-structural-design{
+  background-image: url('/images/design-expertise/structural-design.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .cover-electric-bus{
   background-image: url('/images/cover 2.png');
   background-repeat: no-repeat;

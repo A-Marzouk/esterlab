@@ -1821,7 +1821,7 @@ __webpack_require__.r(__webpack_exports__);
       languageData: {},
       slickOptions: {
         slidesToShow: 2,
-        autoplay: false,
+        autoplay: true,
         arrows: true,
         dots: true,
         responsive: [{
@@ -1872,6 +1872,22 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue_slick__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue-slick */ "./node_modules/vue-slick/dist/slickCarousel.esm.js");
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -7006,7 +7022,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, ".designingMechanisms .slick-slide {\n  min-height: 430px !important;\n  display: flex !important;\n  align-items: center !important;\n  justify-content: center !important;\n}\n@media (max-width: 600px) {\n.designingMechanisms .slick-slide {\n    min-height: 325px !important;\n}\n}", ""]);
+exports.push([module.i, ".designingMechanisms .slick-slide {\n  height: 430px !important;\n  display: flex !important;\n  align-items: center !important;\n  justify-content: center !important;\n}\n@media (max-width: 600px) {\n.designingMechanisms .slick-slide {\n    min-height: 325px !important;\n}\n}", ""]);
 
 // exports
 
@@ -38849,27 +38865,84 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c(
-    "slick",
-    {
-      ref: "slick",
-      staticClass:
-        "designingMechanisms d-flex pt-0 flex-wrap justify-content-center align-items-center w-100",
-      attrs: { options: _vm.slickOptions }
-    },
-    _vm._l(_vm.images, function(image, index) {
-      return _c(
-        "div",
-        { key: index, staticClass: "d-flex justify-content-center" },
-        [
-          _c("img", {
-            staticClass: "img-fluid p-2",
-            staticStyle: { width: "450px" },
-            attrs: { src: image, alt: "Image" }
-          })
-        ]
-      )
-    }),
-    0
+    "div",
+    [
+      _c(
+        "slick",
+        {
+          ref: "slick",
+          staticClass:
+            "designingMechanisms d-flex pt-0 flex-wrap justify-content-center align-items-center w-100",
+          attrs: { options: _vm.slickOptions }
+        },
+        _vm._l(_vm.images, function(image, index) {
+          return _c(
+            "a",
+            {
+              key: index,
+              staticClass: "d-flex justify-content-center",
+              attrs: {
+                href: "javascript:void(0)",
+                "data-toggle": "modal",
+                "data-target": "#image_" + index
+              }
+            },
+            [
+              _c("img", {
+                staticClass: "img-fluid p-2",
+                staticStyle: { width: "340px", height: "auto" },
+                attrs: { src: image, alt: "Image" }
+              })
+            ]
+          )
+        }),
+        0
+      ),
+      _vm._v(" "),
+      _vm._l(_vm.images, function(image, index) {
+        return _c(
+          "div",
+          {
+            key: index + "A",
+            staticClass: "modal fade",
+            attrs: {
+              id: "image_" + index,
+              tabindex: "-1",
+              role: "dialog",
+              "aria-labelledby": "certificate",
+              "aria-hidden": "true"
+            }
+          },
+          [
+            _c(
+              "div",
+              {
+                staticClass: "modal-dialog modal-lg",
+                attrs: { role: "document" }
+              },
+              [
+                _c(
+                  "div",
+                  {
+                    staticClass: "modal-content",
+                    staticStyle: { background: "none", border: "0" }
+                  },
+                  [
+                    _c("div", { staticClass: "modal-body" }, [
+                      _c("img", {
+                        staticStyle: { width: "100%" },
+                        attrs: { src: image, alt: "" }
+                      })
+                    ])
+                  ]
+                )
+              ]
+            )
+          ]
+        )
+      })
+    ],
+    2
   )
 }
 var staticRenderFns = []
