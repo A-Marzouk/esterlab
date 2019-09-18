@@ -62,7 +62,15 @@ class HomeController extends Controller
             $lang =  Session::get('language');
         }
         App::setlocale($lang);
-        return view('designing-mechanisms',compact('lang'));
+        $images = [
+            '/images/designing-mechanisms/image4.webp',
+            '/images/designing-mechanisms/image2.webp',
+            '/images/designing-mechanisms/image3.webp',
+            '/images/designing-mechanisms/image1.webp',
+            '/images/designing-mechanisms/image5.webp',
+            '/images/designing-mechanisms/image6.webp',
+        ] ;
+        return view('designing-mechanisms',compact('lang','images'));
     }
 
     public function showExpertiseOfMechanismsPage($lang = 'en'){

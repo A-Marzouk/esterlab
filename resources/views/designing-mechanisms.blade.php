@@ -38,8 +38,8 @@
         @include('includes.contact_us_button_section')
 
 
-        <div id="designingMechanismsAlbum">
-            <designing-mechanisms-album></designing-mechanisms-album>
+        <div id="slickAlbum">
+            <slick-album :images="{{json_encode($images)}}"></slick-album>
         </div>
 
 

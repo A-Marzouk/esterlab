@@ -1,11 +1,6 @@
 <template>
     <slick ref="slick" :options="slickOptions" class="designingMechanisms d-flex pt-0 flex-wrap justify-content-center align-items-center w-100">
-        <div class="d-flex justify-content-center"><img src="/images/designing-mechanisms/image4.webp" alt="Image" class="img-fluid p-2"  style="width: 450px;" ></div>
-        <div class="d-flex justify-content-center"><img src="/images/designing-mechanisms/image2.webp" alt="Image" class="img-fluid p-2"  style="width: 450px;" ></div>
-        <div class="d-flex justify-content-center"><img src="/images/designing-mechanisms/image5.webp" alt="Image" class="img-fluid p-2"  style="width: 450px;"></div>
-        <div class="d-flex justify-content-center"><img src="/images/designing-mechanisms/image6.webp" alt="Image" class="img-fluid p-2"  style="width: 450px;"></div>
-        <div class="d-flex justify-content-center"><img src="/images/designing-mechanisms/image1.webp" alt="Image" class="img-fluid p-2 mt-5"  style="width: 450px;"></div>
-        <div class="d-flex justify-content-center"><img src="/images/designing-mechanisms/image3.webp" alt="Image" class="img-fluid p-2 mt-5"  style="width: 450px;"></div>
+        <div v-for="(image,index) in images" :key="index" class="d-flex justify-content-center"><img :src="image" alt="Image" class="img-fluid p-2"  style="width: 450px;" ></div>
     </slick>
 </template>
 
@@ -16,6 +11,7 @@
     export default {
         name: "designingMechanismsAlbum",
         components: {Slick},
+        props:['images'],
         data(){
             return{
                 slickOptions: {
@@ -54,6 +50,17 @@
                     ]
                 },
             }
+        },
+        methods:{
+            reInit() {
+                // Helpful if you have to deal with v-for to update dynamic lists
+                this.$nextTick(() => {
+                    this.$refs.slick.reSlick();
+                });
+            },
+        },
+        mounted() {
+            this.reInit();
         }
     }
 </script>
@@ -64,7 +71,10 @@
             min-height: 430px !important;
             display: flex !important;;
             align-items: center !important;;
-            justify-content: center !important;;
+            justify-content: center !important;
+            @media (max-width: 600px) {
+                min-height: 325px !important;
+            }
         }
     }
 

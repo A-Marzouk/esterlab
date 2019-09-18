@@ -38,7 +38,7 @@ Vue.component('contact-us', require('./components/contactUsComponent.vue').defau
 Vue.component('services-component', require('./components/ServicesComponent.vue').default);
 
 // albums
-Vue.component('designing-mechanisms-album', require('./components/albums/designingMechanismsAlbum.vue').default);
+Vue.component('slick-album', require('./components/albums/SlickAlbum.vue').default);
 
 
 /**
@@ -54,9 +54,9 @@ if ($("#languageSelector").length !== 0){
 }
 
 
-if ($("#designingMechanismsAlbum").length !== 0){
-    let designingMechanismsAlbum = new Vue({
-        el:'#designingMechanismsAlbum'
+if ($("#slickAlbum").length !== 0){
+    let slickAlbum = new Vue({
+        el:'#slickAlbum'
     });
 }
 
