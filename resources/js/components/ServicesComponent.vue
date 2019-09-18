@@ -1,13 +1,13 @@
 <template>
     <div class="wrapper">
-        <slick ref="slick" :options="slickOptions" class="w-100">
-            <div class="solution-box-wrapper justify-content-center">
+        <slick ref="slick" :options="slickOptions" class="w-100 services">
+            <div class="solution-box-wrapper d-flex justify-content-center">
                 <div class="solution-box">
                     <div class="box-header">
                         {{ languageData.services }}
                     </div>
 
-                    <div>
+                    <div class="solution-box-content">
                         <div class="solution-title">
                             {{ languageData.math_modeling }}
                         </div>
@@ -18,9 +18,10 @@
                             {{ languageData.math_modeling_explain}}
                         </div>
 
-                        <div class="discover-btn">
-                            <a href="/math-modeling">{{languageData.read_more_btn}}</a>
-                        </div>
+                    </div>
+
+                    <div class="discover-btn">
+                        <a href="/math-modeling">{{languageData.read_more_btn}}</a>
                     </div>
 
                 </div>
@@ -31,7 +32,7 @@
                         {{ languageData.services }}
                     </div>
 
-                    <div>
+                    <div class="solution-box-content">
                         <div class="solution-title development">
                             {{ languageData.designing }}
                         </div>
@@ -42,9 +43,10 @@
 
                         </div>
 
-                        <div class="discover-btn">
-                            <a href="/designing-mechanisms">{{languageData.read_more_btn}}</a>
-                        </div>
+                    </div>
+
+                    <div class="discover-btn">
+                        <a href="/designing-mechanisms">{{languageData.read_more_btn}}</a>
                     </div>
 
                 </div>
@@ -54,40 +56,51 @@
                     <div class="box-header">
                         {{ languageData.services }}
                     </div>
-                    <div class="solution-title development">
-                        {{ languageData.expertise }}
-                    </div>
-                    <div class="solution-sub-title">
-                        {{ languageData.expertise_sub_head }}
-                    </div>
-                    <div class="solution-description" v-html="languageData.expertise_explain">
 
+                    <div class="solution-box-content">
+                        <div class="solution-title development">
+                            {{ languageData.expertise }}
+                        </div>
+                        <div class="solution-sub-title">
+                            {{ languageData.expertise_sub_head }}
+                        </div>
+                        <div class="solution-description" v-html="languageData.expertise_explain">
+
+                        </div>
                     </div>
 
                     <div class="discover-btn">
                         <a href="/expertise-of-mechanisms">{{languageData.read_more_btn}}</a>
                     </div>
+
                 </div>
+
+
             </div>
             <div class="solution-box-wrapper justify-content-center">
                 <div class="solution-box">
                     <div class="box-header">
                         {{ languageData.services }}
                     </div>
-                    <div class="solution-title development">
-                        {{ languageData.development_technical }}
-                    </div>
-                    <div class="solution-sub-title">
-                        {{languageData.development_technical_sub}}
-                    </div>
-                    <div class="solution-description" v-html="languageData.development_technical_explain">
 
+                    <div class="solution-box-content">
+                        <div class="solution-title development">
+                            {{ languageData.development_technical }}
+                        </div>
+                        <div class="solution-sub-title">
+                            {{languageData.development_technical_sub}}
+                        </div>
+                        <div class="solution-description" v-html="languageData.development_technical_explain">
+
+                        </div>
                     </div>
+
 
                     <div class="discover-btn">
                         <a href="/technical-development">{{languageData.read_more_btn}}</a>
                     </div>
                 </div>
+
             </div>
         </slick>
 
@@ -112,7 +125,7 @@
                     dots: true,
                     responsive: [
                         {
-                            breakpoint: 1024,
+                            breakpoint: 1201,
                             settings: {
                                 slidesToShow: 2,
                                 slidesToScroll: 2,
@@ -121,16 +134,7 @@
                             }
                         },
                         {
-                            breakpoint: 600,
-                            settings: {
-                                slidesToShow: 1,
-                                slidesToScroll: 1,
-                                arrows:false,
-                                dots: true
-                            }
-                        },
-                        {
-                            breakpoint: 480,
+                            breakpoint: 1200,
                             settings: {
                                 slidesToShow: 1,
                                 slidesToScroll: 1,
@@ -157,7 +161,7 @@
     }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
     .development {
         font-size: 26px !important;
         @media (max-width: 600px) {
@@ -186,5 +190,17 @@
             }
         }
     }
+
+    .solution-box-content{
+        height: 235px;
+        @media (max-width: 600px) {
+            height: 240px;
+        }
+
+        @media (max-width: 400px) {
+            height: 300px;
+        }
+    }
+
 
 </style>

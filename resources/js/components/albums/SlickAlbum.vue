@@ -69,8 +69,8 @@
     .designingMechanisms{
         .slick-slide{
             min-height: 430px !important;
-            display: flex !important;;
-            align-items: center !important;;
+            display: flex !important;
+            align-items: center !important;
             justify-content: center !important;
             @media (max-width: 600px) {
                 min-height: 325px !important;
