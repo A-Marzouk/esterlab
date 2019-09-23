@@ -24,8 +24,8 @@
 
         <div class="site-section pb-0 pt-0" id="projects-section">
             <div class="container d-flex flex-column">
-                <div class="solution-box-wrapper">
-                    <div class="solution-box w-100">
+                <div class="solution-box-wrapper" >
+                    <div class="solution-box w-100" style="height: auto!important; width: 100% !important;">
                         <div class="box-header">
                             Scientific Publication
                         </div>
