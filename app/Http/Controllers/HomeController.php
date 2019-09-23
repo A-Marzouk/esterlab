@@ -129,7 +129,7 @@ class HomeController extends Controller
             'Content-Type' => 'application/pdf',
         ];
 
-        return response()->download($file, 'scientific_publications.pdf', $headers);
+        return response()->download($file, 'A New Direction of Solar Trackers and Perspectives of Implementing Them to Increase Efficiency_Elkady&Pribora.pdf', $headers);
     }
 
 

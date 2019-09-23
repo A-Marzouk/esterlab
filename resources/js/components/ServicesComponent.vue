@@ -85,10 +85,10 @@
 
                     <div class="solution-box-content">
                         <div class="solution-title development">
-                            {{ languageData.development_technical }}
+                            {{languageData.development_technical_sub}}
                         </div>
                         <div class="solution-sub-title">
-                            {{languageData.development_technical_sub}}
+                            {{ languageData.development_technical }}
                         </div>
                         <div class="solution-description" v-html="languageData.development_technical_explain">
 
@@ -163,7 +163,7 @@
 
 <style lang="scss">
     .development {
-        font-size: 26px !important;
+        font-size: 25px !important;
         @media (max-width: 600px) {
             font-size: 20px !important;
             padding-bottom: 12px;

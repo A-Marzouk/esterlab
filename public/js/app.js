@@ -7003,7 +7003,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".development {\n  font-size: 26px !important;\n}\n@media (max-width: 600px) {\n.development {\n    font-size: 20px !important;\n    padding-bottom: 12px;\n}\n}\n.wrapper {\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: center;\n}\n.solution-box-wrapper .solution-box {\n  width: 520px !important;\n  height: 445px !important;\n}\n@media (max-width: 600px) {\n.solution-box-wrapper .solution-box {\n    width: 100% !important;\n    height: 450px !important;\n}\n}\n@media (max-width: 400px) {\n.solution-box-wrapper .solution-box {\n    width: 100% !important;\n    height: 530px !important;\n}\n}\n.solution-box-content {\n  height: 235px;\n}\n@media (max-width: 600px) {\n.solution-box-content {\n    height: 240px;\n}\n}\n@media (max-width: 400px) {\n.solution-box-content {\n    height: 300px;\n}\n}", ""]);
+exports.push([module.i, ".development {\n  font-size: 25px !important;\n}\n@media (max-width: 600px) {\n.development {\n    font-size: 20px !important;\n    padding-bottom: 12px;\n}\n}\n.wrapper {\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: center;\n}\n.solution-box-wrapper .solution-box {\n  width: 520px !important;\n  height: 445px !important;\n}\n@media (max-width: 600px) {\n.solution-box-wrapper .solution-box {\n    width: 100% !important;\n    height: 450px !important;\n}\n}\n@media (max-width: 400px) {\n.solution-box-wrapper .solution-box {\n    width: 100% !important;\n    height: 530px !important;\n}\n}\n.solution-box-content {\n  height: 235px;\n}\n@media (max-width: 600px) {\n.solution-box-content {\n    height: 240px;\n}\n}\n@media (max-width: 400px) {\n.solution-box-content {\n    height: 300px;\n}\n}", ""]);
 
 // exports
 
@@ -38805,7 +38805,7 @@ var render = function() {
                   _c("div", { staticClass: "solution-title development" }, [
                     _vm._v(
                       "\n                        " +
-                        _vm._s(_vm.languageData.development_technical) +
+                        _vm._s(_vm.languageData.development_technical_sub) +
                         "\n                    "
                     )
                   ]),
@@ -38813,7 +38813,7 @@ var render = function() {
                   _c("div", { staticClass: "solution-sub-title" }, [
                     _vm._v(
                       "\n                        " +
-                        _vm._s(_vm.languageData.development_technical_sub) +
+                        _vm._s(_vm.languageData.development_technical) +
                         "\n                    "
                     )
                   ]),
