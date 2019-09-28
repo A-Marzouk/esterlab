@@ -29,34 +29,9 @@
             @lang('green-energy/main.main_description')
           </p>
 
-          <p class="text-center">
-            @if($lang === 'en')
-              <img src="/images/solar-image.png" alt="Image" class="img-fluid">
-            @elseif($lang === 'de')
-              <img src="/images/tracker/tracker-de.jpg" alt="Image" class="img-fluid">
-            @endif
-          </p>
-          <p class="p-3">
-          <h3 class="text-center">
-            @lang('green-energy/main.tracker_overview')
-          </h3>
-          </p>
-          <div class="d-flex justify-content-center">
-            @if($lang === 'en')
-              <p><img src="/images/solar-image2.png" alt="Image" class="img-fluid"></p>
-            @elseif($lang === 'de')
-              <p><img src="/images/green-energy-de.jpg" alt="Image" class="img-fluid"></p>
-            @endif
-          </div>
 
-
-          <div class="d-flex justify-content-center pt-5">
-            <p><img src="/images/tracker.png" alt="Image" class="img-fluid w-100"></p>
-          </div>
-
-
-          <div class="d-flex justify-content-center pt-5">
-            <p><img src="/images/tracker/tracker-4.png" alt="Image" class="img-fluid w-100"></p>
+          <div id="slickAlbum" class="mt-5">
+            <slick-album :images="{{json_encode($images)}}"></slick-album>
           </div>
 
         </div>

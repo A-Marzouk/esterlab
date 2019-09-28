@@ -38904,7 +38904,7 @@ var render = function() {
             _vm._v(" "),
             _c(
               "div",
-              { staticClass: "w-100 d-flex justify-content-center mt-4" },
+              { staticClass: "w-100 d-flex justify-content-center mt-4 mb-4" },
               [
                 _vm._v(
                   "\n                " +

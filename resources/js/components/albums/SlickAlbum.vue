@@ -3,7 +3,7 @@
         <slick ref="slick" :options="slickOptions" class="designingMechanisms d-flex pt-0 flex-wrap justify-content-center align-items-center w-100">
             <div  v-for="(image,index) in images" :key="index">
                 <a href="javascript:void(0)" data-toggle="modal" :data-target="'#image_' + index" class="d-flex justify-content-center"><img :src="image.src" alt="Image" class="img-fluid p-2"  style="width: 340px;height: auto;" ></a>
-                <div class="w-100 d-flex justify-content-center mt-4">
+                <div class="w-100 d-flex justify-content-center mt-4 mb-4">
                     {{image.caption}}
                 </div>
             </div>
