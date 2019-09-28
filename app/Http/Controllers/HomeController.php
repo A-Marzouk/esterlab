@@ -8,6 +8,7 @@
 
 namespace App\Http\Controllers;
 use Illuminate\Support\Facades\App;
+use Illuminate\Support\Facades\Lang;
 use Illuminate\Support\Facades\Request;
 use Torann\GeoIP\Facades\GeoIP;
 use Illuminate\Support\Facades\Session;
@@ -53,8 +54,78 @@ class HomeController extends Controller
         if(Session::has('language')){
             $lang =  Session::get('language');
         }
+
+        $images = [
+            [
+                'src' =>  '/images/math-modeling/image1.webp',
+                'caption' =>  Lang::get('math-modeling/main.static_strength_body')
+            ],
+            [
+                'src' =>  '/images/math-modeling/R-2.png',
+                'caption' =>  Lang::get('math-modeling/main.static_strength_gear')
+            ],
+            [
+                'src' =>  '/images/math-modeling/1.jpg',
+                'caption' =>  Lang::get('math-modeling/main.static_strength_joint')
+            ],
+            [
+                'src' =>  '/images/math-modeling/2.jpg',
+                'caption' =>  Lang::get('math-modeling/main.static_strength_installation')
+            ],
+            [
+                'src' =>  '/images/math-modeling/3.jpg',
+                'caption' =>  Lang::get('math-modeling/main.static_strength_roller')
+            ],
+            [
+                'src' =>  '/images/math-modeling/4.jpg',
+                'caption' =>  Lang::get('math-modeling/main.static_strength_tool')
+            ],
+            [
+                'src' =>  '/images/math-modeling/5.jpg',
+                'caption' =>  Lang::get('math-modeling/main.static_strength_pressure')
+            ],
+            [
+                'src' =>  '/images/math-modeling/6.jpg',
+                'caption' =>  Lang::get('math-modeling/main.first_forms')
+            ],
+            [
+                'src' =>  '/images/math-modeling/7.jpg',
+                'caption' =>  Lang::get('math-modeling/main.gearing_elements')
+            ],
+            [
+                'src' =>  '/images/math-modeling/8.jpg',
+                'caption' =>  Lang::get('math-modeling/main.finite_element_motor')
+            ],
+            [
+                'src' =>  '/images/math-modeling/9.jpg',
+                'caption' =>  Lang::get('math-modeling/main.pressure_distribution')
+            ],
+            [
+                'src' =>  '/images/math-modeling/10.jpg',
+                'caption' =>  Lang::get('math-modeling/main.structure_analysis')
+            ],
+            [
+                'src' =>  '/images/math-modeling/11.jpg',
+                'caption' =>  Lang::get('math-modeling/main.analysis_scheme')
+            ],
+        ];
+//        $images = [
+//            '/images/math-modeling/1.jpg',
+//            '/images/math-modeling/2.jpg',
+//            '/images/math-modeling/3.jpg',
+//            '/images/math-modeling/4.jpg',
+//            '/images/math-modeling/5.jpg',
+//            '/images/math-modeling/6.jpg',
+//            '/images/math-modeling/7.jpg',
+//            '/images/math-modeling/8.jpg',
+//            '/images/math-modeling/9.jpg',
+//            '/images/math-modeling/10.jpg',
+//            '/images/math-modeling/11.jpg',
+//            '/images/math-modeling/R-2.png',
+//        ] ;
+
         App::setlocale($lang);
-        return view('math-modeling',compact('lang'));
+        return view('math-modeling',compact('lang','images'));
     }
 
     public function showDesigningMechanismsPage($lang = 'en'){
@@ -63,12 +134,31 @@ class HomeController extends Controller
         }
         App::setlocale($lang);
         $images = [
-            '/images/designing-mechanisms/image4.webp',
-            '/images/designing-mechanisms/image2.webp',
-            '/images/designing-mechanisms/image3.webp',
-            '/images/designing-mechanisms/image1.webp',
-            '/images/designing-mechanisms/image5.webp',
-            '/images/designing-mechanisms/image6.webp',
+            [
+                'src'=> '/images/designing-mechanisms/image4.webp',
+                'caption'=>'',
+            ],
+            [
+                'src'=> '/images/designing-mechanisms/image2.webp',
+                'caption'=>'',
+            ],
+            [
+                'src'=>  '/images/designing-mechanisms/image3.webp',
+                'caption'=>'',
+            ],
+            [
+                'src'=>  '/images/designing-mechanisms/image1.webp',
+                'caption'=>'',
+            ],
+            [
+                'src'=>'/images/designing-mechanisms/image1.webp',
+                'caption'=>'',
+            ],
+            [
+                'src'=>'/images/designing-mechanisms/image5.webp',
+                'caption'=>'',
+            ],
+           
         ] ;
         return view('designing-mechanisms',compact('lang','images'));
     }
@@ -79,12 +169,35 @@ class HomeController extends Controller
         }
         App::setlocale($lang);
         $images = [
-            '/images/design-expertise/image7.webp',
-            '/images/design-expertise/image8.webp',
-            '/images/design-expertise/image9.webp',
-            '/images/design-expertise/image10.webp',
-            '/images/design-expertise/image11.webp',
-            '/images/design-expertise/image12.webp',
+            [
+                'src'=> '/images/design-expertise/image7.webp',
+                'caption'=>'',
+            ],
+            [
+                'src'=>  '/images/design-expertise/image8.webp',
+
+                'caption'=>'',
+            ],
+            [
+                'src'=> '/images/design-expertise/image9.webp',
+
+                'caption'=>'',
+            ],
+            [
+                'src'=>'/images/design-expertise/image10.webp',
+
+                'caption'=>'',
+            ],
+            [
+                'src'=>'/images/design-expertise/image11.webp',
+
+                'caption'=>'',
+            ],
+            [
+                'src'=>'/images/design-expertise/image12.webp',
+                'caption'=>'',
+            ],
+          
         ] ;
         return view('expertise-of-mechanisms',compact('lang','images'));
     }
@@ -95,7 +208,12 @@ class HomeController extends Controller
         }
         App::setlocale($lang);
         $images = [
-            '/images/technical-development/image13-emf.webp',
+            [
+                'src'=>'/images/technical-development/image13-emf.webp',
+                'caption'=>'',
+            ],
+
+
         ] ;
         return view('technical-development',compact('lang','images'));
     }

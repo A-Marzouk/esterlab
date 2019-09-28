@@ -1,7 +1,13 @@
 <template>
     <div>
         <slick ref="slick" :options="slickOptions" class="designingMechanisms d-flex pt-0 flex-wrap justify-content-center align-items-center w-100">
-            <a href="javascript:void(0)"  v-for="(image,index) in images" :key="index" data-toggle="modal" :data-target="'#image_' + index" class="d-flex justify-content-center"><img :src="image" alt="Image" class="img-fluid p-2"  style="width: 340px;height: auto;" ></a>
+            <div  v-for="(image,index) in images" :key="index">
+                <a href="javascript:void(0)" data-toggle="modal" :data-target="'#image_' + index" class="d-flex justify-content-center"><img :src="image.src" alt="Image" class="img-fluid p-2"  style="width: 340px;height: auto;" ></a>
+                <div class="w-100 d-flex justify-content-center mt-4">
+                    {{image.caption}}
+                </div>
+            </div>
+
         </slick>
         <!-- Modal -->
 
@@ -10,7 +16,7 @@
             <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content" style="background: none;border:0;">
                     <div class="modal-body">
-                        <img :src="image" alt="" style="width: 100%;">
+                        <img :src="image.src" alt="" style="width: 100%;">
                     </div>
                 </div>
             </div>

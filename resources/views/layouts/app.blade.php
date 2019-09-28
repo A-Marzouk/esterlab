@@ -132,7 +132,7 @@
 
                 <div class="site-logo">
                     <a href="/" class="">
-                        <img src="/images/logo-new.webp" alt="" style=" width: 216px; height: 67px;">
+                        <img src="/images/logo-new.webp" alt="" style=" width: 260px; height: 80px;">
                     </a>
                 </div>
 

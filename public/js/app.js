@@ -1894,6 +1894,12 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "designingMechanismsAlbum",
@@ -38876,25 +38882,38 @@ var render = function() {
           attrs: { options: _vm.slickOptions }
         },
         _vm._l(_vm.images, function(image, index) {
-          return _c(
-            "a",
-            {
-              key: index,
-              staticClass: "d-flex justify-content-center",
-              attrs: {
-                href: "javascript:void(0)",
-                "data-toggle": "modal",
-                "data-target": "#image_" + index
-              }
-            },
-            [
-              _c("img", {
-                staticClass: "img-fluid p-2",
-                staticStyle: { width: "340px", height: "auto" },
-                attrs: { src: image, alt: "Image" }
-              })
-            ]
-          )
+          return _c("div", { key: index }, [
+            _c(
+              "a",
+              {
+                staticClass: "d-flex justify-content-center",
+                attrs: {
+                  href: "javascript:void(0)",
+                  "data-toggle": "modal",
+                  "data-target": "#image_" + index
+                }
+              },
+              [
+                _c("img", {
+                  staticClass: "img-fluid p-2",
+                  staticStyle: { width: "340px", height: "auto" },
+                  attrs: { src: image.src, alt: "Image" }
+                })
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              { staticClass: "w-100 d-flex justify-content-center mt-4" },
+              [
+                _vm._v(
+                  "\n                " +
+                    _vm._s(image.caption) +
+                    "\n            "
+                )
+              ]
+            )
+          ])
         }),
         0
       ),
@@ -38931,7 +38950,7 @@ var render = function() {
                     _c("div", { staticClass: "modal-body" }, [
                       _c("img", {
                         staticStyle: { width: "100%" },
-                        attrs: { src: image, alt: "" }
+                        attrs: { src: image.src, alt: "" }
                       })
                     ])
                   ]
