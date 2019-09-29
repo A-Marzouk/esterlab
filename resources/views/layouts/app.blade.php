@@ -139,12 +139,12 @@
                 <nav class="site-navigation text-center ml-auto" role="navigation">
 
                     <ul class="site-menu main-menu js-clone-nav ml-auto d-none d-lg-block">
-                        <li>
+                        <li class="nav-item-box">
                             <a @if(isset($view))href="#home-section" @else href="/#home-section"
-                               @endif class="nav-link">@lang('navbar.home')</a>
+                               @endif class="nav-link itemBorder">@lang('navbar.home')</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        <li class="nav-item dropdown nav-item-box">
+                            <a class="nav-link  dropdown-toggle itemBorder" href="#" id="navbarDropdown" role="button"
                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 @lang('navbar.about')
                             </a>
@@ -156,12 +156,12 @@
                                    style="color: black!important;">@lang('navbar.scientific_publications')</a>
                             </div>
                         </li>
-                        <li><a @if(isset($view))href="#services-section" @else href="/#services-section"
-                               @endif  class="nav-link">@lang('navbar.development_concept')</a></li>
-                        <li><a @if(isset($view))href="#projects-section" @else href="/#projects-section"
-                               @endif class="nav-link">@lang('navbar.our_solutions')</a></li>
-                        <li><a @if(isset($view))href="#services" @else href="/#services"
-                               @endif class="nav-link">@lang('navbar.services')</a></li>
+                        <li class="nav-item-box"><a @if(isset($view))href="#services-section" @else href="/#services-section"
+                               @endif  class="nav-link itemBorder">@lang('navbar.development_concept')</a></li>
+                        <li class="nav-item-box"><a @if(isset($view))href="#projects-section" @else href="/#projects-section"
+                               @endif class="nav-link itemBorder">@lang('navbar.our_solutions')</a></li>
+                        <li class="nav-item-box"><a @if(isset($view))href="#services" @else href="/#services"
+                               @endif class="nav-link itemBorder">@lang('navbar.services')</a></li>
                         <li>
                             <div id="languageSelector">
                                 <language-selector></language-selector>
