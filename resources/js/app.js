@@ -7,6 +7,7 @@
 require('./bootstrap');
 
 window.Vue = require('vue');
+Vue.config.productionTip = false;
 
 Vue.directive('click-outside', {
     bind: function (el, binding, vnode) {

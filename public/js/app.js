@@ -1911,7 +1911,7 @@ __webpack_require__.r(__webpack_exports__);
     return {
       slickOptions: {
         slidesToShow: 1,
-        autoplay: true,
+        autoplay: false,
         arrows: false,
         dots: true,
         responsive: [{
@@ -7028,7 +7028,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, ".designingMechanisms .slick-slide {\n  height: 430px !important;\n  display: flex !important;\n  align-items: center !important;\n  justify-content: center !important;\n}\n@media (max-width: 600px) {\n.designingMechanisms .slick-slide {\n    min-height: 325px !important;\n}\n}", ""]);
+exports.push([module.i, ".designingMechanisms .slick-slide {\n  min-height: 430px !important;\n  display: flex !important;\n  align-items: center !important;\n  justify-content: center !important;\n}\n@media (max-width: 600px) {\n.designingMechanisms .slick-slide {\n    min-height: 325px !important;\n}\n}\n.designingMechanisms .slick-dots {\n  bottom: -20px !important;\n}", ""]);
 
 // exports
 
@@ -38886,7 +38886,7 @@ var render = function() {
             _c(
               "a",
               {
-                staticClass: "d-flex justify-content-center",
+                staticClass: "d-flex justify-content-center mb-4",
                 attrs: {
                   href: "javascript:void(0)",
                   "data-toggle": "modal",
@@ -38904,7 +38904,10 @@ var render = function() {
             _vm._v(" "),
             _c(
               "div",
-              { staticClass: "w-100 d-flex justify-content-center mt-4 mb-4" },
+              {
+                staticClass:
+                  "w-100 d-flex justify-content-center mb-4 pl-3 pr-3"
+              },
               [
                 _vm._v(
                   "\n                " +
@@ -56960,6 +56963,7 @@ module.exports = function(module) {
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
+Vue.config.productionTip = false;
 Vue.directive('click-outside', {
   bind: function bind(el, binding, vnode) {
     this.event = function (event) {
