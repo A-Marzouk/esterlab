@@ -252,20 +252,20 @@
                             <ul class="list-unstyled">
                                 <li>
                                     <a @if(isset($view))href="#home-section" @else href="/#home-section"
-                                       @endif class="nav-link">@lang('navbar.home')</a>
+                                       @endif class="">@lang('navbar.home')</a>
                                 </li>
-                                <li><a href="#about-section" class="nav-link">@lang('navbar.about')</a></li>
+                                <li><a href="#about-section" class="">@lang('navbar.about')</a></li>
                                 <li>
                                     <a @if(isset($view))href="#certificates" @else href="/#certificates"
-                                       @endif  class="nav-link">@lang('navbar.certificates')</a>
+                                       @endif  class="">@lang('navbar.certificates')</a>
                                 </li>
-                                <li><a href="#contact-section" class="nav-link">@lang('navbar.contact')</a></li>
+                                <li><a href="#contact-section" class="">@lang('navbar.contact')</a></li>
                                 <li><a @if(isset($view))href="#services-section" @else href="/#services-section"
-                                       @endif  class="nav-link">@lang('navbar.development_concept')</a></li>
+                                       @endif  class="">@lang('navbar.development_concept')</a></li>
                                 <li><a @if(isset($view))href="#projects-section" @else href="/#projects-section"
-                                       @endif class="nav-link">@lang('navbar.our_solutions')</a></li>
+                                       @endif class="">@lang('navbar.our_solutions')</a></li>
                                 <li><a @if(isset($view))href="#services" @else href="/#services"
-                                       @endif class="nav-link">@lang('navbar.services')</a></li>
+                                       @endif class="">@lang('navbar.services')</a></li>
 
                             </ul>
                         </div>

@@ -50,7 +50,7 @@
                 <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
                     <img src="images/gears-min.webp" alt="Image" class="img-fluid mb-3"
                          style="height: 195px; width: 350px;">
-                    <h3 class="text-primary h4 mb-2">@lang('index/pre_section.smart_solutions')</h3>
+                    <h3 class="h4 mb-2" style="color: #002594;">@lang('index/pre_section.smart_solutions')</h3>
                     <p>
                         @lang('index/pre_section.smart_solutions_explain')
                     </p>
@@ -58,7 +58,7 @@
                 <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
                     <img src="images/science-min.webp" alt="Image" class="img-fluid mb-3"
                          style="height: 195px; width: 350px;">
-                    <h3 class="text-primary h4 mb-2">@lang('index/pre_section.scientific_research')</h3>
+                    <h3 class=" h4 mb-2" style="color: #002594;">@lang('index/pre_section.scientific_research')</h3>
                     <p>
                         @lang('index/pre_section.scientific_research_explain')
                     </p>
@@ -66,7 +66,7 @@
                 <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
                     <img src="images/hero_1-min.webp" alt="Image" class="img-fluid mb-3"
                          style="height: 195px; width: 350px;">
-                    <h3 class="text-primary h4 mb-2">
+                    <h3 class="h4 mb-2" style="color: #002594;">
                         @lang('index/pre_section.cost_effective')
                     </h3>
                     <p>
@@ -127,7 +127,7 @@
                     <img src="images/design-thinking-min.webp" alt="" style="width: 100%">
                 </div>
                 <div class="col-lg-5 ml-auto">
-                    <h2 class="text-primary mb-4">@lang('index/section1.welcome_message')</h2>
+                    <h2 class="mb-4" style="color: #002594;">@lang('index/section1.welcome_message')</h2>
                     <p>
                         @lang('index/section1.description1')
                     </p>
@@ -186,21 +186,21 @@
             <div class="row">
                 <div class="col-md-6 col-lg-3 mb-4">
                     <span class="icon-find_in_page d-block mb-3 display-3 text-secondary"></span>
-                    <h3 class="text-primary h4 mb-2">@lang('index/section3.scientific_research')</h3>
+                    <h3 class=" h4 mb-2" style="color: #002594;">@lang('index/section3.scientific_research')</h3>
                     <p>
                         @lang('index/section3.scientific_research_explain')
                     </p>
                 </div>
                 <div class="col-md-6 col-lg-3 mb-4">
                     <span class="icon-brush d-block mb-3 display-3 text-secondary"></span>
-                    <h3 class="text-primary h4 mb-2">@lang('index/section3.design')</h3>
+                    <h3 class=" h4 mb-2" style="color: #002594;">@lang('index/section3.design')</h3>
                     <p>
                         @lang('index/section3.design_explain')
                     </p>
                 </div>
                 <div class="col-md-6 col-lg-3 mb-4">
                     <span class="icon-developer_board d-block mb-3 display-3 text-secondary"></span>
-                    <h3 class="text-primary h4 mb-2">@lang('index/section3.production_dev')</h3>
+                    <h3 class=" h4 mb-2" style="color: #002594;">@lang('index/section3.production_dev')</h3>
                     <p>
                         @lang('index/section3.production_dev_explain')
                     </p>
@@ -208,7 +208,7 @@
 
                 <div class="col-md-6 col-lg-3 mb-4">
                     <span class="icon-extension d-block mb-3 display-3 text-secondary"></span>
-                    <h3 class="text-primary h4 mb-2">@lang('index/section3.proto')</h3>
+                    <h3 class=" h4 mb-2" style="color: #002594;">@lang('index/section3.proto')</h3>
                     <p>
                         @lang('index/section3.proto_explain')
                     </p>

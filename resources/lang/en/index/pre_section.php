@@ -6,7 +6,7 @@
 return [
        'smart_solutions' => 'Smart solutions',
    'scientific_research' => 'Scientific research',
-   'cost_effective' => 'Сost-effective',
+   'cost_effective' => 'Cost-effective',
 
    'smart_solutions_explain' => 'Our main task is developing smart solutions to make life safer and insure more comfortable for future users of multifunctional mechanical applications',
    'scientific_research_explain' => "It's the main pillar of our ideology. Our developments must keep up with trends in science.",
