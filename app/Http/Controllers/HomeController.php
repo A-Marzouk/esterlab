@@ -23,7 +23,43 @@ class HomeController extends Controller
         }
         App::setlocale($lang);
         $view = 'homepage';
-        return view('index', compact('view', 'lang'));
+        $albumImages = [
+            [
+                'src' => '/images/image1.png',
+                'caption' => ''
+            ],
+            [
+                'src' => '/images/image2-min.png',
+                'caption' => ''
+            ],
+            [
+                'src' => '/images/image3-min.webp',
+                'caption' => ''
+            ],
+            [
+                'src' => '/images/image4-min.webp',
+                'caption' => ''
+            ],
+            [
+                'src' => '/images/image5-min.png',
+                'caption' => ''
+            ],
+            [
+                'src' => '/images/image6-min.png',
+                'caption' => ''
+            ],
+            [
+                'src' => '/images/image7-min.png',
+                'caption' => ''
+            ],
+            [
+                'src' => '/images/image8-min.png',
+                'caption' => ''
+            ],
+        ];
+
+
+        return view('index', compact('view', 'lang', 'albumImages'));
     }
 
 
@@ -33,9 +69,9 @@ class HomeController extends Controller
             $lang = Session::get('language');
         }
         App::setlocale($lang);
-        $mainImageSrc =  '/images/green-energy/solar-image.png' ;
-        if($lang === 'de'){
-            $mainImageSrc =  '/images/green-energy/tracker-de.jpg'  ;
+        $mainImageSrc = '/images/green-energy/solar-image.png';
+        if ($lang === 'de') {
+            $mainImageSrc = '/images/green-energy/tracker-de.jpg';
         }
 
         $images = [
@@ -57,7 +93,7 @@ class HomeController extends Controller
             ],
         ];
 
-        return view('green-energy', compact('lang','images'));
+        return view('green-energy', compact('lang', 'images'));
     }
 
     public function showScientificPublicationsPage($lang = 'en')

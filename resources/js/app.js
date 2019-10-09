@@ -40,6 +40,7 @@ Vue.component('services-component', require('./components/ServicesComponent.vue'
 
 // albums
 Vue.component('slick-album', require('./components/albums/SlickAlbum.vue').default);
+Vue.component('logos-album', require('./components/albums/LogosAlbum.vue').default);
 
 
 /**
@@ -58,6 +59,11 @@ if ($("#languageSelector").length !== 0){
 if ($("#slickAlbum").length !== 0){
     let slickAlbum = new Vue({
         el:'#slickAlbum'
+    });
+}
+if ($("#logosAlbum").length !== 0){
+    let logosAlbum = new Vue({
+        el:'#logosAlbum'
     });
 }
 

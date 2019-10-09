@@ -80,42 +80,16 @@
 
     <div class="pt-5" id="investors-section">
         <div class="container d-flex align-items-center flex-column">
-            <div class="row">
+            <div class="row mb-4">
                 <div class="col-12 text-center">
                     <div class="block-heading-1">
                         <h2>@lang('index/section1.applications_header')</h2>
                     </div>
                 </div>
             </div>
-            <div class="row align-items-center pt-5 d-flex justify-content-center flex-wrap w-100">
-                <div>
-                    <img src="images/image1.png" alt="Image" class="img-fluid" style=" margin-top:20px; ">
-                </div>
-                <div>
-                    <img src="images/image2-min.png" alt="Image" class="img-fluid" style=" margin-top:20px; ">
-                </div>
-                <div>
-                    <img src="images/image3-min.webp" alt="Image" class="img-fluid"
-                         style=" margin-top:20px; width: 250px ">
-                </div>
-                <div>
-                    <img src="images/image4-min.webp" alt="Image" class="img-fluid"
-                         style=" margin-top:20px; width: 250px; ">
-                </div>
-            </div>
-            <div class="row align-items-center pt-5 d-flex justify-content-center flex-wrap w-100">
-                <div>
-                    <img src="images/image5-min.png" alt="Image" class="img-fluid" style=" margin-top:55px; ">
-                </div>
-                <div>
-                    <img src="images/image7-min.png" alt="Image" class="img-fluid ml-md-4" style=" margin-top:55px; ">
-                </div>
-                <div>
-                    <img src="images/image6-min.png" alt="Image" class="img-fluid" style=" margin-top:20px; ">
-                </div>
-                <div>
-                    <img src="images/image8-min.png" alt="Image" class="img-fluid" style=" margin-top:20px; ">
-                </div>
+
+            <div id="logosAlbum" class="w-100">
+                <logos-album :images="{{json_encode($albumImages)}}"></logos-album>
             </div>
         </div>
     </div>
