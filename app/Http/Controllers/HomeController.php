@@ -112,7 +112,54 @@ class HomeController extends Controller
             $lang = Session::get('language');
         }
         App::setlocale($lang);
-        return view('electric-bus', compact('lang'));
+
+
+        $images = [
+            [
+                'src' => '/images/bus-images/bus4.jpg',
+                'caption' => ''
+            ],
+            [
+                'src' => '/images/bus-images/bus5.jpg',
+                'caption' => ''
+            ],
+            [
+                'src' => '/images/bus-images/bus6.jpg',
+                'caption' => ''
+            ],
+            [
+                'src' => '/images/bus-images/bus-system1.jpg',
+                'caption' => Lang::get('electric-bus/main.analysis_sub_head')
+            ],
+            [
+                'src' => '/images/bus-images/bus-system1_2-de.png',
+                'caption' => Lang::get('electric-bus/main.figure_1')
+            ],
+            [
+                'src' => '/images/bus-images/bus-system2-de.jpg',
+                'caption' => 'Strength reserves for samples'
+            ],
+            [
+                'src' => '/images/bus-images/bus-system3-de.png',
+                'caption' => Lang::get('electric-bus/main.figure_2')
+            ],
+            [
+                'src' => '/images/bus-images/bus-system4-de.png',
+                'caption' => Lang::get('electric-bus/main.figure_3')
+            ],
+            [
+                'src' => '/images/bus-images/bus-system5-de.png',
+                'caption' => Lang::get('electric-bus/main.figure_4')
+            ],
+            [
+                'src' => '/images/bus-images/bus-system8.jpg',
+                'caption' => Lang::get('electric-bus/main.figure_4')
+            ],
+
+
+        ];
+
+        return view('electric-bus', compact('lang', 'images'));
     }
 
     public function showMathModelingPage($lang = 'en')
@@ -175,20 +222,6 @@ class HomeController extends Controller
                 'caption' => Lang::get('math-modeling/main.analysis_scheme')
             ],
         ];
-//        $images = [
-//            '/images/math-modeling/1.jpg',
-//            '/images/math-modeling/2.jpg',
-//            '/images/math-modeling/3.jpg',
-//            '/images/math-modeling/4.jpg',
-//            '/images/math-modeling/5.jpg',
-//            '/images/math-modeling/6.jpg',
-//            '/images/math-modeling/7.jpg',
-//            '/images/math-modeling/8.jpg',
-//            '/images/math-modeling/9.jpg',
-//            '/images/math-modeling/10.jpg',
-//            '/images/math-modeling/11.jpg',
-//            '/images/math-modeling/R-2.png',
-//        ] ;
 
         App::setlocale($lang);
         return view('math-modeling', compact('lang', 'images'));
