@@ -41,15 +41,15 @@ return [
     'task8_sub4' => 'thermal / strength',
 
     'static_calc_head' => 'Static calculations',
-    'static_calc_main_desc' => 'Determination of structural strength is the most common type of calculation in the framework of the mechanics of a deformable solid body, which is carried out by engineers in all industries. Our team with the help of mathematical modeling with ease provides the ability to calculate the stress-strain state of a structure of any complexity.
+    'static_calc_main_desc' => 'Determination of structural strength is the most common type of calculation in the framework of the mechanics of a deformable solid body, which is carried out by engineers in all industries. Our team with the help of mathematical modeling provides the ability to calculate the stress-strain state of a structure of any complexity.
 As a typical application of static calculations can be identified : ',
-    'static_calc_desc_point1' => 'Express stress-strain state assessment of structural elements. ',
+    'static_calc_desc_point1' => 'Expressing stress-strain state assessment of structural elements. ',
     'static_calc_desc_point2' => 'Calculations of parts under load, taking into account the nonlinear response of materials. ',
     'static_calc_desc_point3' => 'Solving contact problems: calculating seals, shaping and modifying, calculating gear joints and couplings, modeling bolted joints, etc. ',
     'static_calc_desc_point4' => 'Determining the stress-strain state of structures caused by heating or cooling. ANSYS Mechanical is certified in many industries, which guarantees high quality and accuracy of calculations and a high degree of verification of the obtained results with experimental data. ',
 
 
-    'examples_head' => 'Some examples of solved issues but our team',
+    'examples_head' => 'Some examples of issues developed by our team',
 
     'static_strength_body' => 'Static strength of the bus body',
     'static_strength_gear' => 'Static strength of gearing elements',
@@ -60,7 +60,7 @@ As a typical application of static calculations can be identified : ',
     'static_strength_pressure' => 'Static strength capacity from internal pressure',
 
     'dynamic_calc' => 'Dynamic calculations',
-    'dynamic_calc_main_desc' => 'Resonance is one of the most dangerous phenomena in technology. The ability to find out the composition of the natural frequencies of the structure allows to avoid the appearance of resonance, ensuring high reliability of the design and long service life. ',
+    'dynamic_calc_main_desc' => 'Resonance is one of the most dangerous phenomena in technology. The ability to find out the composition of the natural frequencies of the structure allows avoiding the appearance of resonance, ensuring high reliability of the design and long service life. ',
     'dynamic_calc_main_desc2' => 'To solve this problem, the possibility of a modal analysis is realized - analysis of the natural frequencies and vibrational modes of structures. These are the most important dynamic characteristics of each mechanical system, and it is with their definition that any dynamic calculation of structures begins.',
 
 
@@ -70,7 +70,7 @@ As a typical application of static calculations can be identified : ',
 
     'thermal_calc' => 'Thermal calculations',
 
-    'thermal_calc_point1' => 'As a rule, the main goal of heat exchange problems is to determine the temperature fields and heat fluxes, both in individual parts and in whole structures.',
+    'thermal_calc_point1' => 'As a rule, the main goal of heat exchange problems is to determine the temperature fields and heat fluxes, both in certain parts and in whole structures.',
     'thermal_calc_point2' => 'We simulated 3 types of heat exchange: thermal conductivity of an isotropic or orthotropic material, convective heat transfer and heat transfer by radiation with the environment.',
 
     'finite_element_motor' => 'Finite element motor model with flywheel',
@@ -82,14 +82,14 @@ As a typical application of static calculations can be identified : ',
     'structure_analysis' => 'Structural analysis of the scene frame',
 
     'large_models_calc_head' => 'Efficient calculation of large models',
-    'large_models_calc_desc' => 'Due to the possibility of performing parallel calculations in software products, the entire calculation process takes place in parallel mode. Additional in-depth techniques, such as cyclic symmetry analysis, sub-modeling techniques, also help to work effectively with large models',
+    'large_models_calc_desc' => 'Due to the possibility of performing parallel calculations in software products, the entire calculation process takes place in parallel mode. Additional in-depth techniques, such as cyclic symmetry analysis, sub-modeling techniques, also help to work with large models effectively',
 
 
     'analysis_scheme' => 'Interdisciplinary analysis scheme',
 
     'choice_head' => 'The choice is obvious',
     'choice_desc1' => 'Finite element modeling reduces the number of physical prototypes and tests, which accelerates the return on investment by reducing development time and also contributes to the development of a more flexible information-based development process and leads to the creation of innovative and high-quality products and production processes. This leads to a transition to a higher level of product launch into the market in less time and with less cost.',
-    'choice_desc2' => 'To remain competitive, to meet customer needs, to develop reliable innovative products, while reducing design steps, developers and engineers need modeling tools that provide reliable and accurate integrated solutions.',
+    'choice_desc2' => 'To remain competitive, to meet customer needs, and to develop reliable innovative products, while reducing design steps, developers and engineers need modeling tools that provide reliable and accurate integrated solutions.',
 
 
 ];
