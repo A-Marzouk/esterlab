@@ -62,15 +62,14 @@ class HomeController extends Controller
         return view('index', compact('view', 'lang', 'albumImages'));
     }
 
-
-    public function joinPage($lang = 'en'){
+    public function joinPage($lang = 'en')
+    {
         if (Session::has('language')) {
             $lang = Session::get('language');
         }
         App::setlocale($lang);
-        return view('join_page',compact( 'lang'));
+        return view('join_page', compact('lang'));
     }
-
 
     public function showGreenEnergyPage($lang = 'en')
     {
@@ -113,7 +112,6 @@ class HomeController extends Controller
         App::setlocale($lang);
         return view('scientific-publications', compact('lang'));
     }
-
 
     public function showElectricBusPage($lang = 'en')
     {
@@ -335,7 +333,6 @@ class HomeController extends Controller
         return redirect()->back();
     }
 
-
     public function getCurrentLanguage()
     {
         if (Session::has('language')) {
@@ -351,7 +348,6 @@ class HomeController extends Controller
         ];
     }
 
-
     public function getDownload()
     {
         //PDF file is stored under project/public/download/info.pdf
@@ -364,5 +360,19 @@ class HomeController extends Controller
         return response()->download($file, 'A New Direction of Solar Trackers and Perspectives of Implementing Them to Increase Efficiency_Elkady&Pribora.pdf', $headers);
     }
 
+    public function userAgreementPage($lang = 'en')
+    {
+        return view('user_agreement', compact('lang'));
+    }
+
+    public function privacyPolicyPage($lang = 'en')
+    {
+        return view('privacy_policy', compact('lang'));
+    }
+
+    public function cookiePolicyPage($lang = 'en')
+    {
+        return view('cookie_policy', compact('lang'));
+    }
 
 }

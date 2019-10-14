@@ -11,14 +11,13 @@
 |
 */
 
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\App;
-use Illuminate\Support\Facades\Config;
-use Illuminate\Support\Facades\Session;
 
+// user agreements and policies
+Route::get('/user-agreement','HomeController@userAgreementPage')->name('user.agreement');
+Route::get('/privacy-policy','HomeController@privacyPolicyPage')->name('privacy.policy');
+Route::get('/cookie-policy','HomeController@cookiePolicyPage')->name('cookie.policy');
 
-
-
+// main pages
 
 Route::get('/green-energy/{lang?}','HomeController@showGreenEnergyPage')->name('green.energy');
 Route::get('/electric-bus/{lang?}','HomeController@showElectricBusPage')->name('electric.bus');
@@ -27,12 +26,11 @@ Route::get('/scientific-publications/{lang?}','HomeController@showScientificPubl
 Route::get('/designing-mechanisms/{lang?}','HomeController@showDesigningMechanismsPage')->name('designing.mechanisms');
 Route::get('/expertise-of-mechanisms/{lang?}','HomeController@showExpertiseOfMechanismsPage')->name('expertise.of.mechanisms');
 Route::get('/technical-development/{lang?}','HomeController@showTechnicalDevelopmentPage')->name('technical.development');
-
 // join us
 Route::get('/join/{lang?}','HomeController@joinPage')->name('join.page');
-
-
 Route::get('/{lang?}','HomeController@index')->name('home');
+
+
 
 Route::get('/language/switch/{lang}','HomeController@switchLanguage')->name('switch.language');
 Route::get('/language/get/current','HomeController@getCurrentLanguage')->name('get.language');
@@ -40,12 +38,11 @@ Route::get('/language/get/current','HomeController@getCurrentLanguage')->name('g
 // contact-us:
 Route::post('/contact-us/submit','ContactUsController@submitContactForm')->name('contact.submit');
 Route::get('/contact-us/submit/successful','ContactUsController@successful')->name('contact.submit');
+Route::get('/client/geo','HomeController@getClientGEO');
 
 
 // download pdf file :
 Route::get('/scientific-publications/download/pdf','HomeController@getDownload')->name('download.scientific.pdf');
 
 
-// test route
-Route::get('/client/geo','HomeController@getClientGEO');
 
