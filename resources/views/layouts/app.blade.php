@@ -162,6 +162,8 @@
                                @endif class="nav-link itemBorder">@lang('navbar.our_solutions')</a></li>
                         <li class="nav-item-box"><a @if(isset($view))href="#services" @else href="/#services"
                                @endif class="nav-link itemBorder">@lang('navbar.services')</a></li>
+                        <li class="nav-item-box"><a @if(isset($view))href="/join" @else href="/join"
+                                                    @endif class="nav-link itemBorder">@lang('navbar.oversee_your_project')</a></li>
                         <li>
                             <div id="languageSelector">
                                 <language-selector></language-selector>
@@ -413,7 +415,6 @@
 
 <script>
     $(document).ready(function () {
-        Preloader
         $(window).on("load", function () {
             preloaderFadeOutTime = 150;
 

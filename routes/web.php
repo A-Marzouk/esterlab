@@ -28,14 +28,19 @@ Route::get('/designing-mechanisms/{lang?}','HomeController@showDesigningMechanis
 Route::get('/expertise-of-mechanisms/{lang?}','HomeController@showExpertiseOfMechanismsPage')->name('expertise.of.mechanisms');
 Route::get('/technical-development/{lang?}','HomeController@showTechnicalDevelopmentPage')->name('technical.development');
 
+// join us
+Route::get('/join/{lang?}','HomeController@joinPage')->name('join.page');
+
+
 Route::get('/{lang?}','HomeController@index')->name('home');
 
 Route::get('/language/switch/{lang}','HomeController@switchLanguage')->name('switch.language');
 Route::get('/language/get/current','HomeController@getCurrentLanguage')->name('get.language');
 
-// contactus:
+// contact-us:
 Route::post('/contact-us/submit','ContactUsController@submitContactForm')->name('contact.submit');
 Route::get('/contact-us/submit/successful','ContactUsController@successful')->name('contact.submit');
+
 
 // download pdf file :
 Route::get('/scientific-publications/download/pdf','HomeController@getDownload')->name('download.scientific.pdf');

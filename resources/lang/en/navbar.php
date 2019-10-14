@@ -12,5 +12,6 @@
         'contact' => 'Contact',
         'scientific_publications' => 'Scientific publications',
         'services' => 'Services',
+        'oversee_your_project' => 'Oversee your project',
     ];
 

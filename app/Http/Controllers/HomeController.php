@@ -63,6 +63,15 @@ class HomeController extends Controller
     }
 
 
+    public function joinPage($lang = 'en'){
+        if (Session::has('language')) {
+            $lang = Session::get('language');
+        }
+        App::setlocale($lang);
+        return view('join_page',compact( 'lang'));
+    }
+
+
     public function showGreenEnergyPage($lang = 'en')
     {
         if (Session::has('language')) {
