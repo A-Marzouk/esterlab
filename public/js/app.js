@@ -1697,6 +1697,8 @@ module.exports = {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
 //
 //
 //
@@ -1769,21 +1771,44 @@ __webpack_require__.r(__webpack_exports__);
     register: function register() {
       var _this = this;
 
-      if (!this.checkForm()) {
-        return;
-      }
-
-      axios.post('/contact-us/submit', this.contactUsData).then(function (response) {
+      axios.post('/register', this.registerData).then(function (response) {
         _this.successfulSubmission();
       })["catch"](function (error) {
+        if (_typeof(error.response.data) === 'object') {
+          console.log(error.response.data.errors);
+          var errors = error.response.data.errors;
+
+          if (errors.password) {
+            _this.errors.password = errors.password[0];
+          } else {
+            _this.errors.password = '';
+          }
+
+          if (errors.name) {
+            _this.errors.name = errors.name[0];
+          } else {
+            _this.errors.name = '';
+          }
+
+          if (errors.company) {
+            _this.errors.company = errors.company[0];
+          } else {
+            _this.errors.company = '';
+          }
+
+          if (errors.email) {
+            _this.errors.email = errors.email[0];
+          } else {
+            _this.errors.email = '';
+          }
+        } else {
+          console.log('Something went wrong. Please try again.');
+        }
+
         _this.failSubmission();
       });
     },
     successfulSubmission: function successfulSubmission() {
-      $('.successMessage').removeClass('d-none');
-      setTimeout(function () {
-        $('.successMessage').addClass('d-none');
-      }, 2500);
       this.errors = {
         name: '',
         email: '',
@@ -1791,12 +1816,7 @@ __webpack_require__.r(__webpack_exports__);
         password: ''
       };
     },
-    failSubmission: function failSubmission() {
-      $('.errorMessage').removeClass('d-none');
-      setTimeout(function () {
-        $('.errorMessage').addClass('d-none');
-      }, 2500);
-    },
+    failSubmission: function failSubmission() {},
     checkForm: function checkForm() {
       var validated = true;
       this.errors = {
@@ -39007,8 +39027,8 @@ var render = function() {
                 {
                   name: "show",
                   rawName: "v-show",
-                  value: _vm.errors.name.length > 0,
-                  expression: "errors.name.length > 0"
+                  value: _vm.errors.name,
+                  expression: "errors.name"
                 }
               ],
               staticClass: "error"
@@ -39063,8 +39083,8 @@ var render = function() {
                 {
                   name: "show",
                   rawName: "v-show",
-                  value: _vm.errors.email.length > 0,
-                  expression: "errors.email.length > 0"
+                  value: _vm.errors.email,
+                  expression: "errors.email"
                 }
               ],
               staticClass: "error"
@@ -39119,8 +39139,8 @@ var render = function() {
                 {
                   name: "show",
                   rawName: "v-show",
-                  value: _vm.errors.company.length > 0,
-                  expression: "errors.company.length > 0"
+                  value: _vm.errors.company,
+                  expression: "errors.company"
                 }
               ],
               staticClass: "error"
@@ -39175,8 +39195,8 @@ var render = function() {
                 {
                   name: "show",
                   rawName: "v-show",
-                  value: _vm.errors.password.length > 0,
-                  expression: "errors.password.length > 0"
+                  value: _vm.errors.password,
+                  expression: "errors.password"
                 }
               ],
               staticClass: "error"

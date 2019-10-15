@@ -11,6 +11,7 @@
 |
 */
 
+Auth::routes();
 
 // user agreements and policies
 Route::get('/user-agreement','HomeController@userAgreementPage')->name('user.agreement');
@@ -31,10 +32,6 @@ Route::get('/join/{lang?}','HomeController@joinPage')->name('join.page');
 Route::get('/{lang?}','HomeController@index')->name('home');
 
 
-// register
-
-
-
 Route::get('/language/switch/{lang}','HomeController@switchLanguage')->name('switch.language');
 Route::get('/language/get/current','HomeController@getCurrentLanguage')->name('get.language');
 
@@ -46,6 +43,5 @@ Route::get('/client/geo','HomeController@getClientGEO');
 
 // download pdf file :
 Route::get('/scientific-publications/download/pdf','HomeController@getDownload')->name('download.scientific.pdf');
-
 
 

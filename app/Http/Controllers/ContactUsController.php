@@ -19,9 +19,7 @@ class ContactUsController extends Controller
     public function submitContactForm(ContactUsRequest $request){
         // validate request
         $validated = $request->validated();
-
         Mail::send(new ContactUsNotify($validated)) ;
-
         return $validated ;
     }
 

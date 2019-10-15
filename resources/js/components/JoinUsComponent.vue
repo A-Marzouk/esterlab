@@ -5,7 +5,7 @@
         </div>
         <div class="right pt-0">
             <div class="form-inputs w-100">
-                <span class="error" v-show="errors.name.length > 0">{{errors.name}}</span>
+                <span class="error" v-show="errors.name">{{errors.name}}</span>
                 <div class="w-100 d-flex justify-content-center align-items-center">
                     <input type="text" placeholder="Name" v-model="registerData.name"
                            autocomplete="off">
@@ -13,7 +13,7 @@
     width: 38px;">
                 </div>
 
-                <span class="error" v-show="errors.email.length > 0">{{errors.email}}</span>
+                <span class="error" v-show="errors.email">{{errors.email}}</span>
                 <div class="w-100 d-flex justify-content-center align-items-center">
                     <input type="email" placeholder="Email" v-model="registerData.email"
                            autocomplete="off">
@@ -21,7 +21,7 @@
     width: 38px;">
                 </div>
 
-                <span class="error" v-show="errors.company.length > 0">{{errors.company}}</span>
+                <span class="error" v-show="errors.company">{{errors.company}}</span>
                 <div class="w-100 d-flex justify-content-center align-items-center">
                     <input type="text" placeholder="Company" v-model="registerData.company"
                            autocomplete="off">
@@ -29,7 +29,7 @@
     width: 38px;">
                 </div>
 
-                <span class="error" v-show="errors.password.length > 0">{{errors.password}}</span>
+                <span class="error" v-show="errors.password">{{errors.password}}</span>
                 <div class="w-100 d-flex justify-content-center align-items-center">
                     <input type="password" placeholder="Password" v-model="registerData.password"
                            autocomplete="off">
@@ -69,25 +69,43 @@
         },
         methods: {
             register() {
-                if (!this.checkForm()) {
-                    return;
-                }
-
-                axios.post('/contact-us/submit', this.contactUsData)
+                axios.post('/register', this.registerData)
                     .then((response) => {
                         this.successfulSubmission();
                     })
                     .catch((error) => {
+                        if (typeof error.response.data === 'object') {
+                            console.log(error.response.data.errors);
+                            let errors = error.response.data.errors ;
+                            if(errors.password){
+                                this.errors.password = errors.password[0];
+                            }else{
+                                this.errors.password = '';
+                            }
+                            if(errors.name){
+                                this.errors.name = errors.name[0];
+                            }else{
+                                this.errors.name = '';
+                            }
+                            if(errors.company){
+                                this.errors.company = errors.company[0];
+                            }else{
+                                this.errors.company = '';
+                            }
+                            if(errors.email){
+                                this.errors.email = errors.email[0];
+                            }else{
+                                this.errors.email = '';
+                            }
+
+                        } else {
+                            console.log('Something went wrong. Please try again.');
+                        }
                         this.failSubmission();
                     });
 
             },
             successfulSubmission() {
-                $('.successMessage').removeClass('d-none');
-                setTimeout(() => {
-                    $('.successMessage').addClass('d-none');
-                }, 2500);
-
                 this.errors = {
                     name:'',
                     email:'',
@@ -96,12 +114,7 @@
                 };
 
             },
-            failSubmission() {
-                $('.errorMessage').removeClass('d-none');
-                setTimeout(() => {
-                    $('.errorMessage').addClass('d-none');
-                }, 2500);
-            },
+            failSubmission() {},
             checkForm() {
                 let validated = true;
 
