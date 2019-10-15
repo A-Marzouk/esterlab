@@ -1749,6 +1749,12 @@ function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterat
 //
 //
 //
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "JoinUsComponent",
   data: function data() {
@@ -1764,13 +1770,21 @@ function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterat
         email: '',
         company: '',
         password: ''
-      }
+      },
+      status: 'register' // onRegister // completed
+
     };
   },
   methods: {
     register: function register() {
       var _this = this;
 
+      // disable the button
+      if (this.status === 'onRegister') {
+        return;
+      }
+
+      this.status = 'onRegister';
       axios.post('/register', this.registerData).then(function (response) {
         _this.successfulSubmission();
       })["catch"](function (error) {
@@ -1809,6 +1823,7 @@ function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterat
       });
     },
     successfulSubmission: function successfulSubmission() {
+      this.status = 'completed';
       this.errors = {
         name: '',
         email: '',
@@ -1816,7 +1831,9 @@ function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterat
         password: ''
       };
     },
-    failSubmission: function failSubmission() {},
+    failSubmission: function failSubmission() {
+      this.status = 'register';
+    },
     checkForm: function checkForm() {
       var validated = true;
       this.errors = {
@@ -7282,7 +7299,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".error[data-v-1127534c] {\n  color: red;\n  font-weight: 600;\n  margin-left: 10px;\n}\n.contact-form[data-v-1127534c] {\n  border-radius: 4px;\n  background-color: #002594;\n  background-position: center;\n  /* Center the image */\n  background-repeat: no-repeat;\n  /* Do not repeat the image */\n  background-size: cover;\n  /* Resize the background image to cover the entire container */\n}\n@media (max-width: 991px) {\n.contact-form[data-v-1127534c] {\n    width: 100%;\n    height: auto;\n    flex-wrap: wrap;\n    background-color: #002594;\n    background-position: center;\n    /* Center the image */\n    background-repeat: no-repeat;\n    /* Do not repeat the image */\n    background-size: cover;\n    /* Resize the background image to cover the entire container */\n}\n}\n.contact-form .right[data-v-1127534c] {\n  padding: 40px 30px 30px 30px;\n  width: 50%;\n  border-bottom-right-radius: 15px;\n  border-top-right-radius: 15px;\n}\n@media (max-width: 991px) {\n.contact-form .right[data-v-1127534c] {\n    width: 100%;\n    background-color: #002594;\n    border-bottom-right-radius: 15px;\n    border-bottom-left-radius: 15px;\n    border-top-right-radius: 0;\n    padding: 20px 30px 30px 30px;\n}\n}\n.contact-form .right .form-inputs[data-v-1127534c] {\n  padding-left: 12px;\n  display: flex;\n  justify-content: center;\n  flex-direction: column;\n  margin-top: 2%;\n  margin-left: -10px;\n}\n@media (max-width: 991px) {\n.contact-form .right .form-inputs[data-v-1127534c] {\n    margin-top: 15%;\n    margin-left: -15px;\n}\n}\n.contact-form .right .form-inputs input[data-v-1127534c], .contact-form .right .form-inputs select[data-v-1127534c] {\n  width: 100%;\n  height: 50px;\n  border: 1px solid white;\n  border-radius: 10px;\n  margin-bottom: 12px;\n  background: none;\n  color: white;\n  padding-left: 15px;\n}\n.contact-form .right .form-inputs select[data-v-1127534c] {\n  width: 30%;\n  border-bottom-right-radius: 0;\n  border-top-right-radius: 0;\n  padding-left: 6px;\n  border-right: 0;\n}\n.contact-form .right .form-inputs input.mobile-number[data-v-1127534c] {\n  padding-left: 5px;\n  border-bottom-left-radius: 0;\n  border-top-left-radius: 0;\n  border-left: 0;\n}\n.contact-form .right .form-inputs .input-image[data-v-1127534c] {\n  width: 40px;\n  margin-left: -55px;\n  margin-bottom: 15px;\n  padding-left: 17px;\n}\n.contact-form .right .form-inputs .callMeBtn[data-v-1127534c] {\n  width: 100%;\n  height: 50px;\n  border-radius: 50px;\n  border: solid 1px white;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  color: white;\n  font-size: 18px;\n  margin-left: 6px;\n  font-weight: bold;\n}\n.contact-form .right .form-inputs[data-v-1127534c] ::-webkit-input-placeholder {\n  /* Firefox, Chrome, Opera */\n  color: white;\n  opacity: 0.5;\n}\n.contact-form .right .form-inputs[data-v-1127534c] ::-moz-placeholder {\n  /* Firefox, Chrome, Opera */\n  color: white;\n  opacity: 0.5;\n}\n.contact-form .right .form-inputs[data-v-1127534c] :-ms-input-placeholder {\n  /* Firefox, Chrome, Opera */\n  color: white;\n  opacity: 0.5;\n}\n.contact-form .right .form-inputs[data-v-1127534c] ::-ms-input-placeholder {\n  /* Firefox, Chrome, Opera */\n  color: white;\n  opacity: 0.5;\n}\n.contact-form .right .form-inputs[data-v-1127534c] ::placeholder {\n  /* Firefox, Chrome, Opera */\n  color: white;\n  opacity: 0.5;\n}\n.contact-form .right .form-inputs[data-v-1127534c] :-ms-input-placeholder {\n  /* Internet Explorer 10-11 */\n  color: white;\n  opacity: 0.5;\n}\n.contact-form .right .form-inputs[data-v-1127534c] ::-ms-input-placeholder {\n  /* Microsoft Edge */\n  color: white;\n  opacity: 0.5;\n}", ""]);
+exports.push([module.i, ".error[data-v-1127534c] {\n  color: red;\n  font-weight: 600;\n  margin-left: 10px;\n}\n.thanksMessage[data-v-1127534c] {\n  color: white;\n  text-align: center;\n  padding: 20px;\n}\n.contact-form[data-v-1127534c] {\n  height: 480px;\n  border-radius: 4px;\n  background: linear-gradient(90deg, #020024 0%, #090979 0%, #00d4ff 100%);\n  background-position: center;\n  /* Center the image */\n  background-repeat: no-repeat;\n  /* Do not repeat the image */\n  background-size: cover;\n  /* Resize the background image to cover the entire container */\n}\n@media (max-width: 991px) {\n.contact-form[data-v-1127534c] {\n    width: 100%;\n    height: auto;\n    flex-wrap: wrap;\n    background: #002594;\n    background-position: center;\n    /* Center the image */\n    background-repeat: no-repeat;\n    /* Do not repeat the image */\n    background-size: cover;\n    /* Resize the background image to cover the entire container */\n}\n}\n.contact-form .right[data-v-1127534c] {\n  padding: 40px 30px 30px 30px;\n  width: 50%;\n  border-bottom-right-radius: 15px;\n  border-top-right-radius: 15px;\n}\n@media (max-width: 991px) {\n.contact-form .right[data-v-1127534c] {\n    width: 100%;\n    background-color: #002594;\n    border-bottom-right-radius: 15px;\n    border-bottom-left-radius: 15px;\n    border-top-right-radius: 0;\n    padding: 20px 30px 30px 30px;\n}\n}\n.contact-form .right .form-inputs[data-v-1127534c] {\n  padding-left: 12px;\n  display: flex;\n  justify-content: center;\n  flex-direction: column;\n  margin-top: 2%;\n  margin-left: -10px;\n}\n@media (max-width: 991px) {\n.contact-form .right .form-inputs[data-v-1127534c] {\n    margin-top: 5%;\n    margin-left: -15px;\n}\n}\n.contact-form .right .form-inputs input[data-v-1127534c], .contact-form .right .form-inputs select[data-v-1127534c] {\n  width: 100%;\n  height: 50px;\n  border: 1px solid white;\n  border-radius: 10px;\n  margin-bottom: 12px;\n  background: none;\n  color: white;\n  padding-left: 15px;\n}\n.contact-form .right .form-inputs select[data-v-1127534c] {\n  width: 30%;\n  border-bottom-right-radius: 0;\n  border-top-right-radius: 0;\n  padding-left: 6px;\n  border-right: 0;\n}\n.contact-form .right .form-inputs input.mobile-number[data-v-1127534c] {\n  padding-left: 5px;\n  border-bottom-left-radius: 0;\n  border-top-left-radius: 0;\n  border-left: 0;\n}\n.contact-form .right .form-inputs .input-image[data-v-1127534c] {\n  width: 40px;\n  margin-left: -55px;\n  margin-bottom: 15px;\n  padding-left: 17px;\n}\n.contact-form .right .form-inputs .callMeBtn[data-v-1127534c] {\n  width: 100%;\n  height: 50px;\n  border-radius: 50px;\n  border: solid 1px white;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  color: white;\n  font-size: 18px;\n  margin-left: 6px;\n  font-weight: bold;\n}\n.contact-form .right .form-inputs .callMeBtn.disabled[data-v-1127534c] {\n  background: grey;\n  cursor: not-allowed;\n  border: solid 1px darkgray;\n  background: gray;\n  color: darkgray;\n}\n.contact-form .right .form-inputs[data-v-1127534c] ::-webkit-input-placeholder {\n  /* Firefox, Chrome, Opera */\n  color: white;\n  opacity: 0.5;\n}\n.contact-form .right .form-inputs[data-v-1127534c] ::-moz-placeholder {\n  /* Firefox, Chrome, Opera */\n  color: white;\n  opacity: 0.5;\n}\n.contact-form .right .form-inputs[data-v-1127534c] :-ms-input-placeholder {\n  /* Firefox, Chrome, Opera */\n  color: white;\n  opacity: 0.5;\n}\n.contact-form .right .form-inputs[data-v-1127534c] ::-ms-input-placeholder {\n  /* Firefox, Chrome, Opera */\n  color: white;\n  opacity: 0.5;\n}\n.contact-form .right .form-inputs[data-v-1127534c] ::placeholder {\n  /* Firefox, Chrome, Opera */\n  color: white;\n  opacity: 0.5;\n}\n.contact-form .right .form-inputs[data-v-1127534c] :-ms-input-placeholder {\n  /* Internet Explorer 10-11 */\n  color: white;\n  opacity: 0.5;\n}\n.contact-form .right .form-inputs[data-v-1127534c] ::-ms-input-placeholder {\n  /* Microsoft Edge */\n  color: white;\n  opacity: 0.5;\n}\n.contact-form .customLink a[data-v-1127534c] {\n  color: lightblue;\n}", ""]);
 
 // exports
 
@@ -39016,247 +39033,306 @@ var render = function() {
         "contact-form d-flex justify-content-center flex-column align-items-center"
     },
     [
-      _vm._m(0),
+      _c(
+        "div",
+        {
+          directives: [
+            {
+              name: "show",
+              rawName: "v-show",
+              value: _vm.status !== "completed",
+              expression: "status !== 'completed'"
+            }
+          ],
+          staticClass: "mt-5 text-center pl-1 pr-1"
+        },
+        [
+          _c("h1", { staticStyle: { color: "white" } }, [
+            _vm._v("Oversee your project right now in real-time!")
+          ])
+        ]
+      ),
       _vm._v(" "),
-      _c("div", { staticClass: "right pt-0" }, [
-        _c("div", { staticClass: "form-inputs w-100" }, [
-          _c(
-            "span",
+      _c(
+        "div",
+        {
+          directives: [
             {
-              directives: [
-                {
-                  name: "show",
-                  rawName: "v-show",
-                  value: _vm.errors.name,
-                  expression: "errors.name"
-                }
-              ],
-              staticClass: "error"
-            },
-            [_vm._v(_vm._s(_vm.errors.name))]
-          ),
-          _vm._v(" "),
-          _c(
-            "div",
-            {
-              staticClass:
-                "w-100 d-flex justify-content-center align-items-center"
-            },
-            [
-              _c("input", {
+              name: "show",
+              rawName: "v-show",
+              value: _vm.status !== "completed",
+              expression: "status !== 'completed'"
+            }
+          ],
+          staticClass: "right pt-2"
+        },
+        [
+          _c("div", { staticClass: "form-inputs w-100" }, [
+            _c(
+              "span",
+              {
                 directives: [
                   {
-                    name: "model",
-                    rawName: "v-model",
-                    value: _vm.registerData.name,
-                    expression: "registerData.name"
+                    name: "show",
+                    rawName: "v-show",
+                    value: _vm.errors.name,
+                    expression: "errors.name"
                   }
                 ],
-                attrs: {
-                  type: "text",
-                  placeholder: "Name",
-                  autocomplete: "off"
-                },
-                domProps: { value: _vm.registerData.name },
-                on: {
-                  input: function($event) {
-                    if ($event.target.composing) {
-                      return
+                staticClass: "error"
+              },
+              [_vm._v(_vm._s(_vm.errors.name))]
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              {
+                staticClass:
+                  "w-100 d-flex justify-content-center align-items-center"
+              },
+              [
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.registerData.name,
+                      expression: "registerData.name"
                     }
-                    _vm.$set(_vm.registerData, "name", $event.target.value)
+                  ],
+                  attrs: {
+                    type: "text",
+                    placeholder: "Name",
+                    autocomplete: "off"
+                  },
+                  domProps: { value: _vm.registerData.name },
+                  on: {
+                    input: function($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.$set(_vm.registerData, "name", $event.target.value)
+                    }
                   }
-                }
-              }),
-              _vm._v(" "),
-              _c("img", {
-                staticClass: "input-image",
-                staticStyle: { height: "19px", width: "38px" },
-                attrs: { src: "/images/person.png", alt: "" }
-              })
-            ]
-          ),
-          _vm._v(" "),
-          _c(
-            "span",
-            {
-              directives: [
-                {
-                  name: "show",
-                  rawName: "v-show",
-                  value: _vm.errors.email,
-                  expression: "errors.email"
-                }
-              ],
-              staticClass: "error"
-            },
-            [_vm._v(_vm._s(_vm.errors.email))]
-          ),
-          _vm._v(" "),
-          _c(
-            "div",
-            {
-              staticClass:
-                "w-100 d-flex justify-content-center align-items-center"
-            },
-            [
-              _c("input", {
+                }),
+                _vm._v(" "),
+                _c("img", {
+                  staticClass: "input-image",
+                  staticStyle: { height: "19px", width: "38px" },
+                  attrs: { src: "/images/person.png", alt: "" }
+                })
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "span",
+              {
                 directives: [
                   {
-                    name: "model",
-                    rawName: "v-model",
-                    value: _vm.registerData.email,
-                    expression: "registerData.email"
+                    name: "show",
+                    rawName: "v-show",
+                    value: _vm.errors.email,
+                    expression: "errors.email"
                   }
                 ],
-                attrs: {
-                  type: "email",
-                  placeholder: "Email",
-                  autocomplete: "off"
-                },
-                domProps: { value: _vm.registerData.email },
-                on: {
-                  input: function($event) {
-                    if ($event.target.composing) {
-                      return
+                staticClass: "error"
+              },
+              [_vm._v(_vm._s(_vm.errors.email))]
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              {
+                staticClass:
+                  "w-100 d-flex justify-content-center align-items-center"
+              },
+              [
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.registerData.email,
+                      expression: "registerData.email"
                     }
-                    _vm.$set(_vm.registerData, "email", $event.target.value)
+                  ],
+                  attrs: {
+                    type: "email",
+                    placeholder: "Email",
+                    autocomplete: "off"
+                  },
+                  domProps: { value: _vm.registerData.email },
+                  on: {
+                    input: function($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.$set(_vm.registerData, "email", $event.target.value)
+                    }
                   }
-                }
-              }),
-              _vm._v(" "),
-              _c("img", {
-                staticClass: "input-image",
-                staticStyle: { height: "15px", width: "38px" },
-                attrs: { src: "/images/icons/email.webp", alt: "" }
-              })
-            ]
-          ),
-          _vm._v(" "),
-          _c(
-            "span",
-            {
-              directives: [
-                {
-                  name: "show",
-                  rawName: "v-show",
-                  value: _vm.errors.company,
-                  expression: "errors.company"
-                }
-              ],
-              staticClass: "error"
-            },
-            [_vm._v(_vm._s(_vm.errors.company))]
-          ),
-          _vm._v(" "),
-          _c(
-            "div",
-            {
-              staticClass:
-                "w-100 d-flex justify-content-center align-items-center"
-            },
-            [
-              _c("input", {
+                }),
+                _vm._v(" "),
+                _c("img", {
+                  staticClass: "input-image",
+                  staticStyle: { height: "15px", width: "38px" },
+                  attrs: { src: "/images/icons/email.webp", alt: "" }
+                })
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "span",
+              {
                 directives: [
                   {
-                    name: "model",
-                    rawName: "v-model",
-                    value: _vm.registerData.company,
-                    expression: "registerData.company"
+                    name: "show",
+                    rawName: "v-show",
+                    value: _vm.errors.company,
+                    expression: "errors.company"
                   }
                 ],
-                attrs: {
-                  type: "text",
-                  placeholder: "Company",
-                  autocomplete: "off"
-                },
-                domProps: { value: _vm.registerData.company },
-                on: {
-                  input: function($event) {
-                    if ($event.target.composing) {
-                      return
+                staticClass: "error"
+              },
+              [_vm._v(_vm._s(_vm.errors.company))]
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              {
+                staticClass:
+                  "w-100 d-flex justify-content-center align-items-center"
+              },
+              [
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.registerData.company,
+                      expression: "registerData.company"
                     }
-                    _vm.$set(_vm.registerData, "company", $event.target.value)
+                  ],
+                  attrs: {
+                    type: "text",
+                    placeholder: "Company",
+                    autocomplete: "off"
+                  },
+                  domProps: { value: _vm.registerData.company },
+                  on: {
+                    input: function($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.$set(_vm.registerData, "company", $event.target.value)
+                    }
                   }
-                }
-              }),
-              _vm._v(" "),
-              _c("img", {
-                staticClass: "input-image",
-                staticStyle: { height: "19px", width: "38px" },
-                attrs: { src: "/images/icons/company.webp", alt: "" }
-              })
-            ]
-          ),
-          _vm._v(" "),
-          _c(
-            "span",
-            {
-              directives: [
-                {
-                  name: "show",
-                  rawName: "v-show",
-                  value: _vm.errors.password,
-                  expression: "errors.password"
-                }
-              ],
-              staticClass: "error"
-            },
-            [_vm._v(_vm._s(_vm.errors.password))]
-          ),
-          _vm._v(" "),
-          _c(
-            "div",
-            {
-              staticClass:
-                "w-100 d-flex justify-content-center align-items-center"
-            },
-            [
-              _c("input", {
+                }),
+                _vm._v(" "),
+                _c("img", {
+                  staticClass: "input-image",
+                  staticStyle: { height: "19px", width: "38px" },
+                  attrs: { src: "/images/icons/company.webp", alt: "" }
+                })
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "span",
+              {
                 directives: [
                   {
-                    name: "model",
-                    rawName: "v-model",
-                    value: _vm.registerData.password,
-                    expression: "registerData.password"
+                    name: "show",
+                    rawName: "v-show",
+                    value: _vm.errors.password,
+                    expression: "errors.password"
                   }
                 ],
-                attrs: {
-                  type: "password",
-                  placeholder: "Password",
-                  autocomplete: "off"
-                },
-                domProps: { value: _vm.registerData.password },
-                on: {
-                  input: function($event) {
-                    if ($event.target.composing) {
-                      return
+                staticClass: "error"
+              },
+              [_vm._v(_vm._s(_vm.errors.password))]
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              {
+                staticClass:
+                  "w-100 d-flex justify-content-center align-items-center"
+              },
+              [
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.registerData.password,
+                      expression: "registerData.password"
                     }
-                    _vm.$set(_vm.registerData, "password", $event.target.value)
+                  ],
+                  attrs: {
+                    type: "password",
+                    placeholder: "Password",
+                    autocomplete: "off"
+                  },
+                  domProps: { value: _vm.registerData.password },
+                  on: {
+                    input: function($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.$set(
+                        _vm.registerData,
+                        "password",
+                        $event.target.value
+                      )
+                    }
                   }
-                }
-              }),
-              _vm._v(" "),
-              _c("img", {
-                staticClass: "input-image",
-                staticStyle: { height: "23px", width: "38px" },
-                attrs: { src: "/images/icons/password.webp", alt: "" }
-              })
-            ]
-          ),
-          _vm._v(" "),
-          _vm._m(1),
-          _vm._v(" "),
-          _c(
-            "a",
+                }),
+                _vm._v(" "),
+                _c("img", {
+                  staticClass: "input-image",
+                  staticStyle: { height: "23px", width: "38px" },
+                  attrs: { src: "/images/icons/password.webp", alt: "" }
+                })
+              ]
+            ),
+            _vm._v(" "),
+            _vm._m(0),
+            _vm._v(" "),
+            _c(
+              "a",
+              {
+                staticClass: "callMeBtn",
+                class: { disabled: _vm.status === "onRegister" },
+                attrs: { href: "javascript:void(0)" },
+                on: { click: _vm.register }
+              },
+              [_vm._v("Agree & Join")]
+            )
+          ])
+        ]
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        {
+          directives: [
             {
-              staticClass: "callMeBtn",
-              attrs: { href: "javascript:void(0)" },
-              on: { click: _vm.register }
-            },
-            [_vm._v("Agree & Join")]
-          )
-        ])
-      ])
+              name: "show",
+              rawName: "v-show",
+              value: _vm.status === "completed",
+              expression: "status === 'completed'"
+            }
+          ],
+          staticClass: "thanksMessage"
+        },
+        [
+          _c("h1", [
+            _vm._v(
+              "\n            Thank you for the registration! We'll send a verification letter to your email! Very soon you'll be able to oversee all stages of your project!\n        "
+            )
+          ])
+        ]
+      )
     ]
   )
 }
@@ -39265,19 +39341,16 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "mt-4 text-center" }, [
-      _c("h1", { staticStyle: { color: "white" } }, [
-        _vm._v("Oversee your project in real time")
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
     return _c(
       "div",
-      { staticStyle: { "margin-left": "10px", "margin-bottom": "8px" } },
+      {
+        staticClass: "customLink",
+        staticStyle: {
+          "margin-left": "10px",
+          "margin-bottom": "8px",
+          color: "white"
+        }
+      },
       [
         _vm._v("\n                You agree to the Esterlab "),
         _c("a", { attrs: { href: "/user-agreement", target: "_blank" } }, [

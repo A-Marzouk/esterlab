@@ -21,7 +21,7 @@ class RegisterNotify extends Mailable
     public function __construct($registerData)
     {
         $this->registerData = $registerData ;
-//        $this->NotifyToTelegram();
+        $this->NotifyToTelegram();
     }
 
     /**
