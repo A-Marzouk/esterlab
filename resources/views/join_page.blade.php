@@ -5,4 +5,5 @@
     <div id="join_us">
         <join-us></join-us>
     </div>
+
 @endsection

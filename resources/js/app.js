@@ -37,6 +37,8 @@ Vue.directive('click-outside', {
 Vue.component('language-selector', require('./components/languageSelector.vue').default);
 Vue.component('contact-us', require('./components/contactUsComponent.vue').default);
 Vue.component('services-component', require('./components/ServicesComponent.vue').default);
+Vue.component('join-us', require('./components/JoinUsComponent.vue').default);
+
 
 // albums
 Vue.component('slick-album', require('./components/albums/SlickAlbum.vue').default);
@@ -77,6 +79,12 @@ if ($("#services").length !== 0){
 if ($("#contact_us").length !== 0){
     let contact_us = new Vue({
         el:'#contact_us'
+    });
+}
+
+if ($("#join_us").length !== 0){
+    let join_us = new Vue({
+        el:'#join_us'
     });
 }
 

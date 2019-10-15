@@ -31,6 +31,9 @@ Route::get('/join/{lang?}','HomeController@joinPage')->name('join.page');
 Route::get('/{lang?}','HomeController@index')->name('home');
 
 
+// register
+
+
 
 Route::get('/language/switch/{lang}','HomeController@switchLanguage')->name('switch.language');
 Route::get('/language/get/current','HomeController@getCurrentLanguage')->name('get.language');
