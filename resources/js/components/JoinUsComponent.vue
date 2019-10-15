@@ -214,7 +214,7 @@
     }
 
     .contact-form {
-        height: 530px;
+        height: 545px;
         border-radius: 4px;
         background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 100%);
         background-position: center; /* Center the image */
