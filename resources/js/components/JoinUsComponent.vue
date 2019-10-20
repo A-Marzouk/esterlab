@@ -146,43 +146,13 @@
                     password:'',
                 };
 
+                this.logoutUser();
+
             },
             failSubmission() {
                 this.status = 'register';
             },
-            checkForm() {
-                let validated = true;
 
-                this.errors = {
-                    name:'',
-                    email:'',
-                    company:'',
-                    password:'',
-                };
-
-                if (!this.registerData.name) {
-                    this.errors.name = 'Name required.';
-                    validated = false;
-                }
-
-                if (!this.registerData.email) {
-                    this.errors.email = 'Email required.';
-                    validated = false;
-                }
-
-                if (!this.registerData.company) {
-                    this.errors.company = 'Company required.';
-                    validated = false;
-                }
-
-                if (!this.registerData.password) {
-                    this.errors.password = 'Password required.';
-                    validated = false;
-                }
-
-
-                return validated;
-            },
             getTrans(text) {
                 if (this.lang === 'en') {
                     return this.trans['en'][text];
@@ -209,6 +179,13 @@
                     });
 
             },
+            logoutUser(){
+                axios.post('/logout').then(
+                    (response) => {
+                        console.log(response.data);
+                    }
+                );
+            }
 
 
         },

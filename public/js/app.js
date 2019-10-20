@@ -1847,40 +1847,10 @@ function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterat
         company: '',
         password: ''
       };
+      this.logoutUser();
     },
     failSubmission: function failSubmission() {
       this.status = 'register';
-    },
-    checkForm: function checkForm() {
-      var validated = true;
-      this.errors = {
-        name: '',
-        email: '',
-        company: '',
-        password: ''
-      };
-
-      if (!this.registerData.name) {
-        this.errors.name = 'Name required.';
-        validated = false;
-      }
-
-      if (!this.registerData.email) {
-        this.errors.email = 'Email required.';
-        validated = false;
-      }
-
-      if (!this.registerData.company) {
-        this.errors.company = 'Company required.';
-        validated = false;
-      }
-
-      if (!this.registerData.password) {
-        this.errors.password = 'Password required.';
-        validated = false;
-      }
-
-      return validated;
     },
     getTrans: function getTrans(text) {
       if (this.lang === 'en') {
@@ -1903,6 +1873,11 @@ function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterat
         });
       })["catch"](function (error) {
         console.log('Error getting geo data, ' + error);
+      });
+    },
+    logoutUser: function logoutUser() {
+      axios.post('/logout').then(function (response) {
+        console.log(response.data);
       });
     }
   },
@@ -2096,6 +2071,8 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
 //
 //
 //
@@ -2157,36 +2134,51 @@ __webpack_require__.r(__webpack_exports__);
       }
 
       this.signInStatus = 'onSigning';
+      axios.post('/login', this.signInData).then(function (response) {
+        console.log(response.data);
 
-      if (this.checkForm()) {
-        setTimeout(function () {
-          _this.signInStatus = 'completed';
-        }, 1000);
-      } else {
-        this.signInStatus = 'signIn';
-      }
+        _this.successfulSubmission();
+      })["catch"](function (error) {
+        if (_typeof(error.response.data) === 'object') {
+          console.log(error.response.data.errors);
+          var errors = error.response.data.errors;
+
+          if (errors.password) {
+            _this.signInErrors.password = errors.password[0];
+          } else {
+            _this.signInErrors.password = '';
+          }
+
+          if (errors.email) {
+            _this.signInErrors.email = errors.email[0];
+          } else {
+            _this.signInErrors.email = '';
+          }
+        } else {
+          console.log('Something went wrong. Please try again.');
+        }
+
+        _this.failSubmission();
+      });
     },
-    checkForm: function checkForm() {
-      var validated = true;
-      this.signInErrors = {
+    successfulSubmission: function successfulSubmission() {
+      this.signInStatus = 'completed';
+      this.errors = {
         email: '',
         password: ''
       };
-
-      if (!this.signInData.email) {
-        this.signInErrors.email = 'Email required.';
-        validated = false;
-      }
-
-      if (!this.signInData.password) {
-        this.signInErrors.password = 'Password required.';
-        validated = false;
-      }
-
-      return validated;
+      this.logoutUser();
+    },
+    failSubmission: function failSubmission() {
+      this.signInStatus = 'signin';
     },
     notMember: function notMember() {
       this.$emit('notMember');
+    },
+    logoutUser: function logoutUser() {
+      axios.post('/logout').then(function (response) {
+        console.log(response.data);
+      });
     }
   },
   mounted: function mounted() {}

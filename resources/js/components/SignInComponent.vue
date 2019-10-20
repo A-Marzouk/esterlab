@@ -58,40 +58,60 @@
 
                 this.signInStatus = 'onSigning';
 
-                if( this.checkForm()){
-                    setTimeout(()=>{
-                        this.signInStatus = 'completed';
-                    },1000);
-                }else{
-                    this.signInStatus = 'signIn' ;
-                }
+                axios.post('/login', this.signInData)
+                    .then((response) => {
+                        console.log(response.data);
+                        this.successfulSubmission();
+                    })
+                    .catch((error) => {
+                        if (typeof error.response.data === 'object') {
+                            console.log(error.response.data.errors);
+                            let errors = error.response.data.errors ;
+                            if(errors.password){
+                                this.signInErrors.password = errors.password[0];
+                            }else{
+                                this.signInErrors.password = '';
+                            }
+                            if(errors.email){
+                                this.signInErrors.email = errors.email[0];
+                            }else{
+                                this.signInErrors.email = '';
+                            }
+
+                        } else {
+                            console.log('Something went wrong. Please try again.');
+                        }
+                        this.failSubmission();
+                    });
                 
             },
-            checkForm() {
-                let validated = true;
+            successfulSubmission() {
+                this.signInStatus = 'completed';
 
-                this.signInErrors = {
+                this.errors = {
                     email:'',
                     password:'',
                 };
-                
 
-                if (!this.signInData.email) {
-                    this.signInErrors.email = 'Email required.';
-                    validated = false;
-                }
+                this.logoutUser();
 
-                if (!this.signInData.password) {
-                    this.signInErrors.password = 'Password required.';
-                    validated = false;
-                }
-
-
-                return validated;
             },
+            failSubmission() {
+                this.signInStatus = 'signin';
+            },
+
             notMember(){
                 this.$emit('notMember');
+            },
+
+            logoutUser(){
+                axios.post('/logout').then(
+                    (response) => {
+                        console.log(response.data);
+                    }
+                );
             }
+
         },
         mounted() {
 
