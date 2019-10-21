@@ -420,6 +420,11 @@
             }
 
             hidePreloader();
+
+            $('.lazyLoad').each( (index,img) => {
+                img.src = img.getAttribute("data-src");
+            });
+
         });
 
         // main album auto listing every 7 seconds
