@@ -60,23 +60,19 @@
     </script>
     <!-- End Google Analytics -->
 
-    <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,700" rel="stylesheet">
 
-    <link rel="stylesheet" href="fonts/icomoon/style.css">
-
-    <link rel="stylesheet" href="/css/jquery-ui.css">
-    <link rel="stylesheet" href="/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="/css/owl.theme.default.min.css">
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    <link rel="preload" as="style" onload="this.rel='stylesheet'" href="/css/jquery-ui.css">
+    <link rel="preload" as="style" onload="this.rel='stylesheet'" href="/css/owl.carousel.min.css">
+    <link rel="preload" as="style" onload="this.rel='stylesheet'" href="/css/owl.theme.default.min.css">
+    <link rel="preload" as="style" onload="this.rel='stylesheet'" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
           integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="/css/bootstrap-datepicker.css">
-    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+    <link rel="preload" as="style" onload="this.rel='stylesheet'" href="/css/bootstrap-datepicker.css">
 
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"
+    <link rel="preload" as="style" onload="this.rel='stylesheet'" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"
           integrity="sha256-3h45mwconzsKjTUULjY+EoEkoRhXcOIU4l5YAw2tSOU=" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
+    <link rel="preload" as="style" onload="this.rel='stylesheet'" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
           integrity="sha256-etrwgFLGpqD4oNAFW08ZH9Bzif5ByXK2lXNHKy7LQGo=" crossorigin="anonymous"/>
 
 
@@ -89,7 +85,7 @@
 
     <meta property="og:image" content="https://www.esterlab.org/images/logo-new-og.webp"/>
     <link rel="stylesheet" href="/css/app.css">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preload" as="style" onload="this.rel='stylesheet'" href="/css/style.css">
     <link rel="icon"
           type="image/png"
           href="/favicon.png">
