@@ -14,7 +14,7 @@
                 <div class="content d-flex flex-column">
                     <div class="d-flex">
                         <div class="icon">
-                            <img src="/images/phone.png" alt="phone icon" style="width: 26px;">
+                            <img src="/images/phone.webp" alt="phone icon" style="width: 26px;">
                         </div>
                         <div class="data d-flex flex-column">
                             <div>
@@ -25,7 +25,7 @@
 
                     <div class="d-flex">
                         <div class="icon">
-                            <img src="/images/mail.png" alt="mail icon" style="width: 26px;">
+                            <img src="/images/mail.webp" alt="mail icon" style="width: 26px;">
                         </div>
                         <div class="data d-flex flex-column">
                             <div>

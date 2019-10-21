@@ -295,7 +295,7 @@
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content" style="background: none;border:0;">
                 <div class="modal-body">
-                    <img src="/images/certificates/1.jpg" alt="" style="width: 100%;">
+                    <img src="/images/certificates/1.webp" alt="" style="width: 100%;">
                 </div>
             </div>
         </div>
@@ -315,7 +315,7 @@
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content" style="background: none;border:0;">
                 <div class="modal-body">
-                    <img src="/images/certificates/3.jpg" alt="" style="width: 100%;">
+                    <img src="/images/certificates/3.webp" alt="" style="width: 100%;">
                 </div>
             </div>
         </div>
@@ -325,7 +325,7 @@
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content" style="background: none;border:0;">
                 <div class="modal-body">
-                    <img src="/images/certificates/4.jpg" alt="" style="width: 100%;">
+                    <img src="/images/certificates/4.webp" alt="" style="width: 100%;">
                 </div>
             </div>
         </div>
@@ -345,7 +345,7 @@
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content" style="background: none;border:0;">
                 <div class="modal-body">
-                    <img src="/images/certificates/6.jpg" alt="" style="width: 100%;">
+                    <img src="/images/certificates/6.webp" alt="" style="width: 100%;">
                 </div>
             </div>
         </div>

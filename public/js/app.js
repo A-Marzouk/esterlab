@@ -42626,7 +42626,7 @@ var staticRenderFns = [
       _c("div", { staticClass: "icon" }, [
         _c("img", {
           staticStyle: { width: "26px" },
-          attrs: { src: "/images/phone.png", alt: "phone icon" }
+          attrs: { src: "/images/phone.webp", alt: "phone icon" }
         })
       ]),
       _vm._v(" "),
@@ -42647,7 +42647,7 @@ var staticRenderFns = [
       _c("div", { staticClass: "icon" }, [
         _c("img", {
           staticStyle: { width: "26px" },
-          attrs: { src: "/images/mail.png", alt: "mail icon" }
+          attrs: { src: "/images/mail.webp", alt: "mail icon" }
         })
       ]),
       _vm._v(" "),

@@ -25,35 +25,35 @@ class HomeController extends Controller
         $view = 'homepage';
         $albumImages = [
             [
-                'src' => '/images/image1.png',
+                'src' => '/images/applications/image1.webp',
                 'caption' => ''
             ],
             [
-                'src' => '/images/image2-min.png',
+                'src' => '/images/applications/image2-min.webp',
                 'caption' => ''
             ],
             [
-                'src' => '/images/image3-min.webp',
+                'src' => '/images/applications/image3-min.webp',
                 'caption' => ''
             ],
             [
-                'src' => '/images/image4-min.webp',
+                'src' => '/images/applications/image4-min.webp',
                 'caption' => ''
             ],
             [
-                'src' => '/images/image5-min.png',
+                'src' => '/images/applications/image5-min.webp',
                 'caption' => ''
             ],
             [
-                'src' => '/images/image6-min.png',
+                'src' => '/images/applications/image6-min.webp',
                 'caption' => ''
             ],
             [
-                'src' => '/images/image7-min.png',
+                'src' => '/images/applications/image7-min.webp',
                 'caption' => ''
             ],
             [
-                'src' => '/images/image8-min.png',
+                'src' => '/images/applications/image8-min.webp',
                 'caption' => ''
             ],
         ];
