@@ -84,7 +84,7 @@
     <meta property="og:description" content=" A fast growing research &amp; developing company"/>
 
     <meta property="og:image" content="https://www.esterlab.org/images/logo-new-og.webp"/>
-    <link rel="preload" as="style" onload="this.rel='stylesheet'" href="/css/app.css">
+    <link rel="stylesheet" href="/css/app.css">
     <link rel="preload" as="style" onload="this.rel='stylesheet'" href="/css/style.css">
     <link rel="icon"
           type="image/png"
