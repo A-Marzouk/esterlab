@@ -64,14 +64,13 @@
 
     <link  rel="preload" as="style" onload="this.rel='stylesheet'" href="fonts/icomoon/style.css">
 
-    <link  rel="preload" as="style" onload="this.rel='stylesheet'" href="/css/jquery-ui.css">
-    <link  rel="preload" as="style" onload="this.rel='stylesheet'" href="/css/owl.carousel.min.css">
-    <link  rel="preload" as="style" onload="this.rel='stylesheet'" href="/css/owl.theme.default.min.css">
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"  rel="preload" as="style" onload="this.rel='stylesheet'"
+    <link rel="preload" as="style" onload="this.rel='stylesheet'" href="/css/jquery-ui.css">
+    <link rel="preload" as="style" onload="this.rel='stylesheet'" href="/css/owl.carousel.min.css">
+    <link rel="preload" as="style" onload="this.rel='stylesheet'" href="/css/owl.theme.default.min.css">
+    <link rel="preload" as="style" onload="this.rel='stylesheet'" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
           integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
-    <link  rel="preload" as="style" onload="this.rel='stylesheet'" href="/css/bootstrap-datepicker.css">
-    <link  rel="preload" as="style" onload="this.rel='stylesheet'" href="fonts/flaticon/font/flaticon.css">
+    <link rel="preload" as="style" onload="this.rel='stylesheet'" href="/css/bootstrap-datepicker.css">
 
 
     <link rel="preload" as="style" onload="this.rel='stylesheet'" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"
