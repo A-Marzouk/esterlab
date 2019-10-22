@@ -98,15 +98,15 @@
 
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300" style="background: white;">
 
-{{--<div class="spinner-wrapper">--}}
-    {{--<div class="spinner">--}}
-        {{--<div class="rect1"></div>--}}
-        {{--<div class="rect2"></div>--}}
-        {{--<div class="rect3"></div>--}}
-        {{--<div class="rect4"></div>--}}
-        {{--<div class="rect5"></div>--}}
-    {{--</div>--}}
-{{--</div>--}}
+<div class="spinner-wrapper">
+    <div class="spinner">
+        <div class="rect1"></div>
+        <div class="rect2"></div>
+        <div class="rect3"></div>
+        <div class="rect4"></div>
+        <div class="rect5"></div>
+    </div>
+</div>
 
 <div class="site-wrap" id="home-section">
 
@@ -415,7 +415,7 @@
 <script>
     $(document).ready(function () {
         $(window).on("load", function () {
-            preloaderFadeOutTime = 150;
+            preloaderFadeOutTime = 100;
 
             function hidePreloader() {
                 var preloader = $('.spinner-wrapper');
