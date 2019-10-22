@@ -67,16 +67,17 @@
     <link rel="preload" as="style" onload="this.rel='stylesheet'" href="/css/jquery-ui.css">
     <link rel="preload" as="style" onload="this.rel='stylesheet'" href="/css/owl.carousel.min.css">
     <link rel="preload" as="style" onload="this.rel='stylesheet'" href="/css/owl.theme.default.min.css">
-    <link rel="preload" as="style" onload="this.rel='stylesheet'" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="preload" as="font" type="font/woff2" onload="this.rel='stylesheet'"  href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin>
 
-    <link rel="preload" as="style" onload="this.rel='stylesheet'" href="/css/bootstrap-datepicker.css">
+    <link rel="preload" as="style" onload="this.rel=''" href="/css/bootstrap-datepicker.css">
 
 
     <link rel="preload" as="style" onload="this.rel='stylesheet'" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"
-          integrity="sha256-3h45mwconzsKjTUULjY+EoEkoRhXcOIU4l5YAw2tSOU=" crossorigin="anonymous"/>
-    <link rel="preload" as="style" onload="this.rel='stylesheet'" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
-          integrity="sha256-etrwgFLGpqD4oNAFW08ZH9Bzif5ByXK2lXNHKy7LQGo=" crossorigin="anonymous"/>
+          integrity="sha256-3h45mwconzsKjTUULjY+EoEkoRhXcOIU4l5YAw2tSOU=" crossorigin/>
+
+    <link rel="preload" as="style" onload="this.rel='stylesheet'"  href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
+          integrity="sha256-etrwgFLGpqD4oNAFW08ZH9Bzif5ByXK2lXNHKy7LQGo=" crossorigin/>
 
 
     <meta name="description" content="Esterlab, A fast growing research &amp; developing company ">
@@ -98,15 +99,15 @@
 
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300" style="background: white;">
 
-<div class="spinner-wrapper">
-    <div class="spinner">
-        <div class="rect1"></div>
-        <div class="rect2"></div>
-        <div class="rect3"></div>
-        <div class="rect4"></div>
-        <div class="rect5"></div>
-    </div>
-</div>
+{{--<div class="spinner-wrapper">--}}
+    {{--<div class="spinner">--}}
+        {{--<div class="rect1"></div>--}}
+        {{--<div class="rect2"></div>--}}
+        {{--<div class="rect3"></div>--}}
+        {{--<div class="rect4"></div>--}}
+        {{--<div class="rect5"></div>--}}
+    {{--</div>--}}
+{{--</div>--}}
 
 <div class="site-wrap" id="home-section">
 
