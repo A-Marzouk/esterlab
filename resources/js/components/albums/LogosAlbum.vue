@@ -2,7 +2,7 @@
     <div class="w-100">
         <slick ref="slick" :options="slickOptions" class="logos d-flex pt-0 flex-wrap justify-content-center align-items-center w-100">
             <div  v-for="(image,index) in images" :key="index">
-                <a class="d-flex justify-content-center mb-4"><img :src="image.src" alt="Image" class="img-fluid p-2"  style="width: 200px;height: auto;" ></a>
+                <a class="d-flex justify-content-center mb-4"><img src="images/placeholder.webp" :data-src="image.src" alt="Image" class="lazyLoad img-fluid p-2"  style="width: 200px;height: auto;" ></a>
                 <div class="w-100 d-flex justify-content-center pl-3 pr-3">
                     {{image.caption}}
                 </div>

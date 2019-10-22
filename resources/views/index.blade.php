@@ -48,7 +48,7 @@
         <div class="container">
             <div class="row smart-solutions-section">
                 <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
-                    <img src="images/gears-min.webp" alt="Image" class="img-fluid mb-3"
+                    <img src="images/placeholder.webp" data-src="images/gears-min.webp" alt="Image" class="lazyLoad img-fluid mb-3"
                          style="height: 195px; width: 350px;">
                     <h3 class="h4 mb-2" style="color: #002594;">@lang('index/pre_section.smart_solutions')</h3>
                     <p>
@@ -56,7 +56,7 @@
                     </p>
                 </div>
                 <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
-                    <img src="images/science-min.webp" alt="Image" class="img-fluid mb-3"
+                    <img src="images/placeholder.webp" data-src="images/science-min.webp" alt="Image"  class="lazyLoad img-fluid mb-3"
                          style="height: 195px; width: 350px;">
                     <h3 class=" h4 mb-2" style="color: #002594;">@lang('index/pre_section.scientific_research')</h3>
                     <p>
@@ -64,7 +64,7 @@
                     </p>
                 </div>
                 <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
-                    <img src="images/hero_1-min.webp" alt="Image" class="img-fluid mb-3"
+                    <img src="images/placeholder.webp" data-src="images/hero_1-min.webp" alt="Image" class="lazyLoad img-fluid mb-3"
                          style="height: 195px; width: 350px;">
                     <h3 class="h4 mb-2" style="color: #002594;">
                         @lang('index/pre_section.cost_effective')
@@ -98,7 +98,7 @@
         <div class="container">
             <div class="row mb-5">
                 <div class="col-lg-6 mb-4">
-                    <img src="images/design-thinking-min.webp" alt="" style="width: 100%">
+                    <img src="images/placeholder.webp" data-src="images/design-thinking-min.webp" class="lazyLoad"  alt="" style="width: 100%">
                 </div>
                 <div class="col-lg-5 ml-auto">
                     <h2 class="mb-4" style="color: #002594;">@lang('index/section1.welcome_message')</h2>
@@ -270,21 +270,21 @@
             <div class="multiple-items pb-4" style="width: 90%;">
                 <a class="d-flex justify-content-center align-items-center" href="javascript:void(0)"
                    data-toggle="modal" data-target="#certificate_1">
-                    <img src="" data-src="images/certificates/1_10.webp"  class="lazyLoad" alt="" style="width: 250px; height: 300px;">
+                    <img src="images/placeholder.webp" data-src="images/certificates/1_10.webp"  class="lazyLoad" alt="" style="width: 250px; height: 300px;">
                     <div class="certificate-title">
                         @lang('index/section5.certificate_1_title')
                     </div>
                 </a>
                 <a class="d-flex justify-content-center" href="javascript:void(0)" data-toggle="modal"
                    data-target="#certificate_2">
-                    <img src="" data-src="images/certificates/2.webp" class="lazyLoad" alt="" style="width: 250px; height: 300px;">
+                    <img src="images/placeholder.webp" data-src="images/certificates/2.webp" class="lazyLoad" alt="" style="width: 250px; height: 300px;">
                     <div class="certificate-title">
                         @lang('index/section5.certificate_2_title')
                     </div>
                 </a>
                 <a class="d-flex justify-content-center" href="javascript:void(0)" data-toggle="modal"
                    data-target="#certificate_3">
-                    <img src="" data-src="images/certificates/3_10.webp" class="lazyLoad" alt="" style="width: 250px; height: 300px;">
+                    <img src="images/placeholder.webp" data-src="images/certificates/3_10.webp" class="lazyLoad" alt="" style="width: 250px; height: 300px;">
                     <div class="certificate-title" style="font-size: 17px;">
                         @lang('index/section5.certificate_3_title')
                     </div>
@@ -292,7 +292,7 @@
 
                 <a class="d-flex justify-content-center" href="javascript:void(0)" data-toggle="modal"
                    data-target="#certificate_4">
-                    <img src="" data-src="images/certificates/4_10.webp" class="lazyLoad" alt="" style="width: 250px; height: 300px;">
+                    <img src="images/placeholder.webp" data-src="images/certificates/4_10.webp" class="lazyLoad" alt="" style="width: 250px; height: 300px;">
                     <div class="certificate-title">
                         @lang('index/section5.certificate_4_title')
                     </div>
@@ -300,7 +300,7 @@
 
                 <a class="d-flex justify-content-center" href="javascript:void(0)" data-toggle="modal"
                    data-target="#certificate_5">
-                    <img src="" data-src="images/certificates/5_10.webp"  class="lazyLoad" alt="" style="width: 250px; height: 300px;">
+                    <img src="images/placeholder.webp" data-src="images/certificates/5_10.webp"  class="lazyLoad" alt="" style="width: 250px; height: 300px;">
                     <div class="certificate-title">
                         @lang('index/section5.certificate_5_title')
                     </div>
@@ -308,7 +308,7 @@
 
                 <a class="d-flex justify-content-center" href="javascript:void(0)" data-toggle="modal"
                    data-target="#certificate_6">
-                    <img src="" data-src="images/certificates/6_10.webp" class="lazyLoad" alt="" style="width: 250px; height: 300px;">
+                    <img src="images/placeholder.webp" data-src="images/certificates/6_10.webp" class="lazyLoad" alt="" style="width: 250px; height: 300px;">
                     <div class="certificate-title">
                         @lang('index/section5.certificate_6_title')
                     </div>
